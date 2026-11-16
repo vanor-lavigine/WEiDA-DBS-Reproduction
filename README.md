@@ -1,5 +1,15 @@
 # WEiDA-DBS Reproduction
 
+## 原始队列审计（2026 年 11 月 16 日）
+
+用户提供的原始数据位置为 105 上的 `PD_DBS_zcc` 和 `PD_TI_zcc`。本轮已登录确认两个目录可读。通过原始文件与迁移清单对账，V100 批次 **126/126** 条 BOLD 都来自 `PD_DBS_zcc`。原表确认 **27 对 STN、28 对 GPi、15 个 HC 编码**，另有 1 条 HC 命名影像待补身份记录。tTIS 中 **11 对 active PRE/ACT** 已由原生分期和体素块匹配，另有对应的 11 对 sham 时间点。
+
+这批 V100 输入的原始来源已核实。具体论文样本名单、逐例用药和部分 T1w 采集身份仍待确认。tTIS 可读 NIfTI 为 214 帧，论文报告采集 218 帧。以下 V100 预处理交接保留原记录。
+
+- [105 原始队列与临床证据清点](reports/02_raw_cohort_inventory_105.md)
+- [原始影像到 V100 的 126 条映射汇总](reports/03_raw_to_v100_mapping.md)
+- [论文差异与下一轮验证](reports/04_paper_alignment_update.md)
+
 ## V100 预处理交接
 
 截至 2026 年 11 月 16 日，V100 上这批修复 BIDS 副本的 **126 个静息态 BOLD run** 已完成 fMRIPrep 和 XCP-D。122 个 run 走 CIFTI，4 个 run 走 NIfTI。每个 run 均保留 210 个时间点，TR 为 2.1 秒。计数单位为 run，独立受试人数及 ON/OFF 配对仍需依据原始队列证据确认。
