@@ -179,12 +179,20 @@ def family(frame):
             dy = groups[metric, "ON", state] - groups[metric, "OFF", state]
             use = np.isfinite(dy)
             x, y = motion[use].to_numpy(), dy[use].to_numpy()
-            require(len(y) >= 3 and np.isfinite(x).all(), "Too few finite pairs for the planned analysis")
+            require(np.isfinite(x).all(), "Missing FD among the eligible outcome pairs")
+            if len(y) < 3:
+                rows.append(dict(state=state, metric=metric, n_pairs=len(y), family_size=12,
+                                 status="not_estimable", reason="fewer_than_three_outcome_pairs",
+                                 original_delta=np.nan, original_ci_low=np.nan, original_ci_high=np.nan,
+                                 original_p_raw=np.nan, adjusted_delta=np.nan, adjusted_ci_low=np.nan,
+                                 adjusted_ci_high=np.nan, adjusted_p_raw=np.nan))
+                continue
             def rng(purpose):
                 return _rng(SEED, 1, state, index, purpose)
             raw = signflip_pvalue(y, FLIPS, rng(0))
             low, high, _ = _bootstrap_mean(y, BOOTS, rng(1))
             adjusted = adjusted_endpoint(x, y, FLIPS, BOOTS, rng(0), rng(1))
+            adjusted.setdefault("adjusted_p_raw", np.nan)
             if adjusted["status"] == "ok":
                 jack = []
                 for omit in range(len(x)):
