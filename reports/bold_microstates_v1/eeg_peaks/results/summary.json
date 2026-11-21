@@ -1,0 +1,39 @@
+{
+  "data_kind": "real",
+  "k": 4,
+  "tr_sec": 2.1,
+  "matched_scans": 63,
+  "matched_pairs": 24,
+  "aligned_initial_frames": 3,
+  "fit": {
+    "105": {
+      "starts": 65,
+      "best_mean_squared_r": 0.36006813867730425,
+      "lowest_start_mean_squared_r": 0.34922094497677736,
+      "people": 40,
+      "assignment_gap_sum_abs_r": 0.0675104583274595
+    },
+    "SyN9": {
+      "starts": 67,
+      "best_mean_squared_r": 0.3383810985122921,
+      "lowest_start_mean_squared_r": 0.3257803615933228,
+      "people": 41,
+      "assignment_gap_sum_abs_r": 0.0708779424934356
+    },
+    "shared": {
+      "starts": 126,
+      "best_mean_squared_r": 0.3425058317218667,
+      "lowest_start_mean_squared_r": 0.33524210667938054,
+      "people": 39,
+      "assignment_gap_sum_abs_r": 0.12942637848166783
+    }
+  },
+  "verified_old_endpoints": 24,
+  "seed": 20261121,
+  "n_flips": 10000,
+  "n_bootstrap": 2000,
+  "python": "3.12.7",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "pandas": "2.2.2"
+}

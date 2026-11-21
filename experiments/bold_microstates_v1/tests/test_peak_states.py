@@ -85,6 +85,18 @@ class PeakTests(unittest.TestCase):
         np.testing.assert_allclose(corr.diagonal(),1,atol=1e-12)
         self.assertAlmostEqual(info["best_mean_squared_r"],1)
 
+    def test_spatial_midpoints_choose_only_between_the_two_adjacent_peak_states(self):
+        peaks = np.array([1,3,7,11,13])
+        labels = np.array([3,0,2,1,3])
+        sim = np.zeros((15,4))
+        sim[5] = [.2,.99,.8,.1]
+        valid = np.ones(15,dtype=bool)
+        original,_ = interpolate_peaks(15,peaks,labels,valid)
+        adapted,_ = interpolate_peaks(15,peaks,labels,valid,sim)
+        self.assertEqual(original[5],0)
+        self.assertEqual(adapted[5],2)
+        np.testing.assert_array_equal(np.flatnonzero(adapted != original),[5])
+
 
 if __name__ == "__main__":
     unittest.main()

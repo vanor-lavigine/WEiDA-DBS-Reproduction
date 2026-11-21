@@ -118,8 +118,8 @@ def match_to_signed(reference, new):
     return aligned, aligned_corr, float(gap)
 
 
-def interpolate_peaks(n, peaks, labels, valid):
-    """Linear one-hot interpolation, first-index ties, and removal of the two edge episodes."""
+def interpolate_peaks(n, peaks, labels, valid, midpoint_similarity=None):
+    """Linear indicator interpolation with optional spatial tie-breaking at exact midpoints."""
     out = np.full(n, -1, dtype=int)
     boundaries = np.flatnonzero(np.diff(np.r_[False, valid, False]))
     ties = 0
@@ -135,6 +135,11 @@ def interpolate_peaks(n, peaks, labels, valid):
         segment = np.where(dl < dr, v[left], v[right])
         tied = (dl == dr) & (v[left] != v[right])
         segment[tied] = np.minimum(v[left[tied]], v[right[tied]])
+        if midpoint_similarity is not None and tied.any():
+            lstate, rstate = v[left[tied]], v[right[tied]]
+            lfit = midpoint_similarity[frames[tied], lstate]
+            rfit = midpoint_similarity[frames[tied], rstate]
+            segment[tied] = np.where(lfit > rfit, lstate, np.where(rfit > lfit, rstate, segment[tied]))
         ties += int(tied.sum())
         changes = np.flatnonzero(segment[1:] != segment[:-1]) + 1
         if len(changes) >= 2:
