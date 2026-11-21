@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+# Keep patient-level input, clinical information, and derivative arrays on the server.
+local_data/
+local_results/
+*.nii
+*.nii.gz
+*.npy
+*.npz

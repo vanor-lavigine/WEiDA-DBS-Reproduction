@@ -1,5 +1,18 @@
 # WEiDA-DBS Reproduction
 
+## 微状态方法迁移实验 v1
+
+新增独立实验：将 EEG 微状态的空间模板、全时点回填和时间指标框架迁移到已有 ROI-BOLD，检验与 STN-DBS 状态及运动严重程度的关系。该分支不重跑既有影像预处理。
+
+主输入以[2026-11-21 SyN9 专项报告](reports/2026-11-21-v100-syn9-stn-hc.md)为准：26 对 STN-DBS OFF/ON 和 15 名 HC，67 份 210×78 AAL78 时序。下方 126-run 交接是较早批次背景。
+
+- [实验规范](experiments/bold_microstates_v1/PROTOCOL.md)
+- [服务器 Codex 执行任务](experiments/bold_microstates_v1/CODEX_TASK.md)
+- [程序入口](experiments/bold_microstates_v1/run.py)
+- [开发验证记录](experiments/bold_microstates_v1/VALIDATION.md)
+
+当前完成的是程序与合成数据验证；真实队列状态提取、患者配对统计和临床关联等待服务器执行。BOLD 状态编号 M1–M4 不代表 EEG A–D。
+
 ## V100 预处理交接
 
 截至 2026 年 11 月 16 日，V100 上这批修复 BIDS 副本的 **126 个静息态 BOLD run** 已完成 fMRIPrep 和 XCP-D。122 个 run 走 CIFTI，4 个 run 走 NIfTI。每个 run 均保留 210 个时间点，TR 为 2.1 秒。计数单位为 run，独立受试人数及 ON/OFF 配对仍需依据原始队列证据确认。
@@ -125,3 +138,4 @@ PY
 作者主分析使用 78 个 AAL 皮层 ROI，论文报告 fMRIPrep 21.0.2、fieldmap-less SDC、FreeSurfer 6.0 的 9 自由度 BOLD-to-T1w 配准，以及 BIDS-fMRIpost 和 36 个混杂回归量。作者 `StateSpace_modelling.m` 从 AAL78 CSV 去掉首列索引后转置，示例文件尾缀为 `AAL78_MNI_basic36_sm6.csv`。该入口按 16 个 HC、25 个 STN-DBS OFF 和 25 个 STN-DBS ON run 拟合状态空间，使用 0.04–0.07 Hz 带通、Hilbert 相位和 K-means（`K=4`、平方欧氏距离、300 次初始化、最大 500 次迭代）。入口的条件分配依赖文件排序，接入当前数据前应以有来源证据的 HC / STN-OFF / STN-ON 清单核对每一条记录及配对。[论文方法](https://doi.org/10.1038/s41531-026-01354-3) · [作者数据入口和聚类实现](https://github.com/chenfei-ye/WEIDA-DBS/blob/main/StateSpace_modelling.m)
 
 本次已交接的成果是 fMRIPrep / XCP-D 计算产物。用当前 4S 时间序列可做 WEiDA 方法的技术验证。论文主图的对齐仍需确认队列来源和人工 QC，落实作者的体积预处理及 AAL78 ROI 映射，再按作者输入契约生成时间序列。状态占比、驻留时间、转移概率和论文组间结果均待实验验证。作者将 tTIS 的预测入口单列在 `WEiDA_pred.m`。[作者代码与输入说明](https://github.com/chenfei-ye/WEIDA-DBS)
+
