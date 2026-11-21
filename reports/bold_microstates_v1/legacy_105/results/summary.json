@@ -1,0 +1,49 @@
+{
+  "data_kind": "real",
+  "fit": {
+    "n_iter": 40,
+    "objective": 0.6581661920552946,
+    "min_repeat_cosine": 0.9971582447907424,
+    "valid_frames": 13647
+  },
+  "motion": {
+    "legacy_refit_25": {
+      "n_pairs": 25,
+      "mean_delta_fd_mm": 0.044027906593836284,
+      "median_delta_fd_mm": 0.032346053291866045,
+      "on_higher": 18
+    },
+    "syn9_original_26": {
+      "n_pairs": 26,
+      "mean_delta_fd_mm": 0.03922988483691232,
+      "median_delta_fd_mm": 0.028480501413964618,
+      "on_higher": 19
+    },
+    "legacy_common_24": {
+      "n_pairs": 24,
+      "mean_delta_fd_mm": 0.0416550121405093,
+      "median_delta_fd_mm": 0.03190686732062203,
+      "on_higher": 17
+    },
+    "syn9_common_24": {
+      "n_pairs": 24,
+      "mean_delta_fd_mm": 0.041679051234579705,
+      "median_delta_fd_mm": 0.02861533388924483,
+      "on_higher": 18
+    }
+  },
+  "short_legacy_scans": 3,
+  "shared_omitted_initial_frames": 3,
+  "matched_signed_cosines": [
+    0.8525092338719188,
+    0.8631687723097813,
+    0.882245850847544,
+    0.7593462461576248
+  ],
+  "syn9_original_rows_verified": 12,
+  "python": "3.12.7",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "pandas": "2.2.2",
+  "matplotlib": "3.9.2"
+}
