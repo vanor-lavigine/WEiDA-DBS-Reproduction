@@ -1,0 +1,28 @@
+{
+  "data_kind": "real",
+  "source_terminal_scans": 69,
+  "source_technical_pass": 68,
+  "source_excluded_by_phase": {
+    "ERROR": 1
+  },
+  "technical_pass_without_pair": 1,
+  "included_scans": 67,
+  "included_subjects": 41,
+  "complete_dbs_pairs": 26,
+  "included_hc": 15,
+  "frames_per_scan": 210,
+  "roi_count": 78,
+  "tr_sec": 2.1,
+  "roi_order_check": "all 67 raw headers exactly equal to archived MATLAB order",
+  "packing_sha256_matches": 67,
+  "source_batch_finish_sha256": "d96eabb442092b7db8e849267a4f1af4a24598ed1396838cdba23f4d66e94ea0",
+  "packing_manifest_sha256": "6645bd6bcb1d6ca59227465ca7f6df541013bb9648b28810e561b4246fef7612",
+  "roi_order_json_sha256": "31252dc3804f93fcef0d63505fcc40a7b239bba89257ebabc553d5f46f9e021a",
+  "minimum_roi_coverage": 0.32573456,
+  "visual_qc_status": {
+    "PENDING": 67
+  },
+  "motion_status": {
+    "available": 67
+  }
+}

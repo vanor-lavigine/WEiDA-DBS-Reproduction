@@ -1,0 +1,9 @@
+{
+  "assignment_verified_frames": 14070,
+  "metric_rows_recomputed": 268,
+  "transition_counts_recomputed": 2144,
+  "min_standardized_frame_norm": 2.4193288953702865,
+  "max_metric_recalculation_error": 1.7763568394002505e-15,
+  "max_metric_identity_error": 1.3877787807814457e-16,
+  "subjects_with_equal_total_training_weight": 41
+}
