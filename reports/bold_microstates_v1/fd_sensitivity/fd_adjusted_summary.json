@@ -1,0 +1,23 @@
+{
+  "data_kind": "real",
+  "analysis": "post_hoc_delta_FD_sensitivity",
+  "covariate": "mean fMRIPrep FD ON minus OFF, uncentered, mm",
+  "target": "ON minus OFF intercept at delta FD = 0 mm",
+  "test": "two-sided Freedman-Lane sign flips on reduced-model residuals, HC3 t",
+  "ci": "95% marginal patient-pairs percentile bootstrap with refitting",
+  "n_dbs_pairs": 26,
+  "n_verified_scan_FD_means": 52,
+  "mean_delta_fd_mm": 0.0392298848369123,
+  "median_delta_fd_mm": 0.028480501413964604,
+  "fd_on_higher": 19,
+  "fd_on_lower": 7,
+  "fd_equal": 0,
+  "max_full_model_leverage": 0.5302541451956595,
+  "n_sign_flips": 10000,
+  "n_bootstrap": 2000,
+  "seed": 20261121,
+  "family_size": 12,
+  "original_rows_reproduced": 12,
+  "estimable": 12,
+  "holm_below_0_05": 1
+}

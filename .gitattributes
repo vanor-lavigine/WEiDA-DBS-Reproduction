@@ -1,0 +1,2 @@
+experiments/bold_microstates_v1/*.sh text eol=lf
+reports/bold_microstates_v1/fd_sensitivity/run_fd.sh text eol=lf
