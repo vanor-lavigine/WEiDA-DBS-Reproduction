@@ -49,7 +49,7 @@ class PipelineTests(unittest.TestCase):
                     index_rows.append({"roi_time_series": str(path), "atlas": "TEST_ATLAS",
                                        "format": "cifti", "label": "COMPUTATIONAL_CHECKS_PASS",
                                        "n_frames": 48, "n_regions": 8})
-                    truth[str(path)] = {"subject_id": "S%d" % patient, "cohort": "DBS",
+                    truth[str(path.resolve())] = {"subject_id": "S%d" % patient, "cohort": "DBS",
                                         "condition": condition, "mapping_source": "synthetic_fixture",
                                         "clinical_scale": "MDS-UPDRS-III",
                                         "clinical_score": (20 + patient * 2 if condition == "OFF" else 14 + patient)}

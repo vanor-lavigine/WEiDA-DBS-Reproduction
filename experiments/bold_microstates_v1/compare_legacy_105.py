@@ -226,8 +226,11 @@ def main(root, destination):
         tables[label], motions[label] = family(frame)
     published = pd.read_csv(REPORTS / "fd_sensitivity/fd_adjusted_stats.csv").set_index(["state", "metric"])
     check = tables["syn9_original_26"].set_index(["state", "metric"]).loc[published.index]
-    numeric = published.select_dtypes(include="number").columns
-    np.testing.assert_allclose(check[numeric], published[numeric], rtol=1e-11, atol=1e-12)
+    for column in ("status", "reason"):
+        np.testing.assert_array_equal(check[column].fillna(""), published[column].fillna(""))
+    numeric = published.columns.drop(["status", "reason"])
+    np.testing.assert_allclose(check[numeric].to_numpy(dtype=float), published[numeric].to_numpy(dtype=float),
+                               rtol=1e-11, atol=1e-12)
 
     output = new_output(destination)
     pd.concat(tables, names=["analysis", "row"]).droplevel("row").to_csv(output / "paired_results.csv",
