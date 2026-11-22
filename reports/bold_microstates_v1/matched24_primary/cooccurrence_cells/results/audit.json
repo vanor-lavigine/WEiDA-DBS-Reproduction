@@ -1,0 +1,83 @@
+{
+  "data_kind": "real",
+  "tr_s": 2.1,
+  "frequency_hz": [
+    0.04,
+    0.07
+  ],
+  "pairs": 24,
+  "visits_per_source": 48,
+  "aligned_input_frames_per_source": 10077,
+  "frames_off": 5039,
+  "frames_on": 5038,
+  "scans_with_frame0_removed_off": 1,
+  "scans_with_frame0_removed_on": 2,
+  "archived_phase_norm_max_abs_error": 6.938893903907228e-14,
+  "pack_vs_source_max_abs_error": 8.881784197001252e-16,
+  "common_frames_per_source": 8650,
+  "templates_sha256_lf": "17db70b146e1b431007a5589cc10be33ddb0c1e605471ecf4eba4a510225a408",
+  "original_result_commit": "40b33428640ff7a555f6e83a956cfaa2cfbef4a5",
+  "shift_draws": 99999,
+  "shift_seeds": [
+    [
+      20261122,
+      0,
+      0,
+      99
+    ],
+    [
+      20261122,
+      1,
+      0,
+      99
+    ]
+  ],
+  "holm_family_per_pipeline": 16,
+  "bootstrap_draws": 19999,
+  "bootstrap_seed": [
+    20261122,
+    24,
+    16,
+    2
+  ],
+  "bootstrap_same_top_fraction": 0.9319965998299915,
+  "motion_zero_within_data": {
+    "105": true,
+    "SyN9": true
+  },
+  "reproduced_ami": [
+    {
+      "n_pairs": 24,
+      "observed_ami": 0.08949607973694394,
+      "null_ami": 0.06552526115458303,
+      "excess_ami": 0.023970818582360914,
+      "null_q025": 0.05556454040887443,
+      "null_q975": 0.076267302963633,
+      "n_draws": 99999,
+      "extreme": 0,
+      "p_shift": 1e-05,
+      "source": "105"
+    },
+    {
+      "n_pairs": 24,
+      "observed_ami": 0.10279594807909208,
+      "null_ami": 0.07078543965304657,
+      "excess_ami": 0.03201050842604551,
+      "null_q025": 0.06067308911700199,
+      "null_q975": 0.08160189865916274,
+      "n_draws": 99999,
+      "extreme": 0,
+      "p_shift": 1e-05,
+      "source": "SyN9"
+    }
+  ],
+  "verified_cell_tests": 32,
+  "verified_all_scan_lags": true,
+  "python": "3.12.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "1.26.4",
+  "pandas": "2.2.2",
+  "scipy": "1.13.1",
+  "sklearn": "1.5.1",
+  "matplotlib": "3.9.2"
+}

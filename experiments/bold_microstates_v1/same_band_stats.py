@@ -12,6 +12,15 @@ SEED = 20261122
 SHIFT_DRAWS, PERMUTATIONS, BOOTSTRAPS = 99999, 19999, 5000
 
 
+def joint_counts_by_shift(micro, phase):
+    """Count (lag, micro, WEiDA) for two already aligned, valid state sequences."""
+    n = len(micro)
+    offsets = np.arange(n)
+    rotated = phase[(offsets[None, :] - offsets[:, None]) % n]
+    cells = (offsets[:, None] * K + micro[None, :]) * K + rotated
+    return np.bincount(cells.ravel(), minlength=n*K*K).reshape(n, K, K)
+
+
 def shift_profile(micro, phase):
     """AMI and joint counts for every circular displacement on the common interior."""
     micro, phase = np.asarray(micro), np.asarray(phase)
@@ -24,10 +33,7 @@ def shift_profile(micro, phase):
         raise ValueError("Discontinuous overlap requires separate within-segment rotations")
     m, s = micro[positions], phase[positions]
     n = len(m)
-    offsets = np.arange(n)
-    rotated = s[(offsets[None, :] - offsets[:, None]) % n]
-    cells = (offsets[:, None] * K + m[None, :]) * K + rotated
-    counts = np.bincount(cells.ravel(), minlength=n*K*K).reshape(n, K, K)
+    counts = joint_counts_by_shift(m, s)
     row, col = counts[0].sum(1), counts[0].sum(0)
     if np.count_nonzero(row) == np.count_nonzero(col) == 1:
         return None
@@ -44,14 +50,24 @@ def shift_profile(micro, phase):
     return dict(ami=ami, observed_cells=counts[0]/n, null_cells=null_cells, n_frames=n)
 
 
+def zero_motion_weights(delta_fd):
+    """OLS intercept weights along the last (patient) axis, including bootstrap samples."""
+    x = np.asarray(delta_fd, dtype=float)
+    if x.ndim == 0 or x.shape[-1] < 3 or not np.isfinite(x).all():
+        raise ValueError("Insufficient independent pairs or motion variation")
+    mean = x.mean(axis=-1, keepdims=True)
+    centered = x - mean
+    ss = np.sum(centered**2, axis=-1, keepdims=True)
+    if np.any(np.ptp(x,axis=-1) == 0) or np.any(ss == 0):
+        raise ValueError("Insufficient independent pairs or motion variation")
+    return 1/x.shape[-1] - mean * centered / ss
+
+
 def group_shifts(profiles, fd, rng, draws=SHIFT_DRAWS):
     people = sorted(p for p, visit in profiles if visit == "OFF" and
                     profiles[p, "OFF"] is not None and profiles[p, "ON"] is not None)
     x = np.array([fd[p, "ON"] - fd[p, "OFF"] for p in people])
-    centered = x - x.mean()
-    if len(x) < 3 or np.dot(centered, centered) == 0:
-        raise ValueError("Insufficient independent pairs or motion variation")
-    weights = np.full(len(x), 1/len(x)) - x.mean() * centered / (centered @ centered)
+    weights = zero_motion_weights(x)
     np.testing.assert_allclose([weights.sum(), weights @ x], [1, 0], atol=1e-12)
     profiles_by_visit = [profiles[p, visit] for p in people for visit in ("OFF","ON")]
     scan_weights = np.repeat(weights/2, 2)
