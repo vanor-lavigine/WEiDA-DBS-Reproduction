@@ -1,0 +1,37 @@
+{
+  "data_kind": "real",
+  "pairs": 24,
+  "visits_per_source": 48,
+  "aligned_input_frames_per_source": 10077,
+  "frames_off": 5039,
+  "frames_on": 5038,
+  "scans_with_frame0_removed_off": 1,
+  "scans_with_frame0_removed_on": 2,
+  "archived_phase_norm_max_abs_error": 6.938893903907228e-14,
+  "pack_vs_source_max_abs_error": 8.881784197001252e-16,
+  "source_sha256": {
+    "legacy105/inputs.mat": "2cac2605ace324d817bad6532a47c15187649ab6072762c1220bfb673759d90b",
+    "legacy105/author_matched_k4.mat": "19b79f1f6515533107d77c8ca4d1dbd3a193da59a333808d78b4b2ddd3faff70",
+    "v100_syn9/inputs.mat": "fba6879a49c0bbea61a903765e883d46c5015778260bdf4a1b6d3e3dc0ed65ce",
+    "v100_syn9/author_matched_k4.mat": "9a58e4bfdc9fa784c602716f588087a83560cb4a42f4f3fbaf284dd65bd665a9",
+    "author_feature_code": "448304eba0f7480aba23778de4f08723a4d86771b90978aa03e915014946cc14",
+    "paper_template_file": "3cc2fe9a72efe0f3c3c9ebf14c7d5c45784c764fdac57a7c92e51847c039ead1",
+    "prior_state_templates": "77bf4bfec242fcdcdd219122b31aa0e7c308d9fda125e2ce5ab2fbb08684a685"
+  },
+  "tr_s": 2.1,
+  "frequency_hz": [
+    0.04,
+    0.07
+  ],
+  "python": "3.12.7",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "1.26.4",
+  "pandas": "2.2.2",
+  "scipy": "1.13.1",
+  "sklearn": "1.5.1",
+  "seed": 20261122,
+  "permutations": 19999,
+  "bootstrap_marginal": 5000,
+  "bootstrap_gap": 19999,
+  "circular_shifts": 99999
+}

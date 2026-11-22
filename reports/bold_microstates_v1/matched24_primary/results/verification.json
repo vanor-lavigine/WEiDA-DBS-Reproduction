@@ -1,0 +1,66 @@
+{
+  "data_kind": "real",
+  "full_endpoints_checked": 24,
+  "deletion_endpoints_checked": 1152,
+  "full_template_and_refits": 25,
+  "matched_participant_visits_per_source": 48,
+  "independent_test": "rank OLS t, identical Freedman–Lane draws",
+  "full_duration_missing": [
+    {
+      "source": "105",
+      "state": 1,
+      "off_absent": 0,
+      "on_absent": 0,
+      "patients_without_paired_duration": 0
+    },
+    {
+      "source": "105",
+      "state": 2,
+      "off_absent": 0,
+      "on_absent": 0,
+      "patients_without_paired_duration": 0
+    },
+    {
+      "source": "105",
+      "state": 3,
+      "off_absent": 1,
+      "on_absent": 1,
+      "patients_without_paired_duration": 2
+    },
+    {
+      "source": "105",
+      "state": 4,
+      "off_absent": 0,
+      "on_absent": 0,
+      "patients_without_paired_duration": 0
+    },
+    {
+      "source": "SyN9",
+      "state": 1,
+      "off_absent": 0,
+      "on_absent": 1,
+      "patients_without_paired_duration": 1
+    },
+    {
+      "source": "SyN9",
+      "state": 2,
+      "off_absent": 0,
+      "on_absent": 0,
+      "patients_without_paired_duration": 0
+    },
+    {
+      "source": "SyN9",
+      "state": 3,
+      "off_absent": 0,
+      "on_absent": 0,
+      "patients_without_paired_duration": 0
+    },
+    {
+      "source": "SyN9",
+      "state": 4,
+      "off_absent": 0,
+      "on_absent": 0,
+      "patients_without_paired_duration": 0
+    }
+  ]
+}
