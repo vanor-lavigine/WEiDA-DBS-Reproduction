@@ -1,0 +1,63 @@
+{
+  "data_kind": "real",
+  "quality": {
+    "105": {
+      "mask_dice_median": 0.90981197,
+      "mask_hd95_median_mm": 9.16515139,
+      "weakest_roi_median_pct": 29.907895099999998,
+      "scans_all_78_at_20pct": 35,
+      "low_roi_scan_counts": {
+        "SupraMarginal_R": 10,
+        "Angular_R": 2,
+        "Temporal_Inf_R": 1
+      }
+    },
+    "SyN9": {
+      "mask_dice_median": 0.928603455,
+      "mask_hd95_median_mm": 7.21110255,
+      "weakest_roi_median_pct": 61.626139815,
+      "scans_all_78_at_20pct": 48,
+      "low_roi_scan_counts": {}
+    },
+    "common_grid": "MNI152NLin2009cAsym 2 mm",
+    "scans": 48,
+    "eligible_pairs": 16,
+    "scans_dice_higher": 45,
+    "scans_hd95_lower": 48,
+    "scans_weakest_roi_higher": 48
+  },
+  "changed_midpoint_frames": {
+    "105": 176,
+    "SyN9": 220
+  },
+  "shared_template": "matched24_primary/results/shared_templates.tsv",
+  "midpoint_minus_original_s2_m1_pp": {
+    "105": -0.09476830762154215,
+    "SyN9": 0.02954141217308123
+  },
+  "simultaneous_95_ci_pp": {
+    "105": [
+      -0.20044160157695595,
+      0.010904986333871658
+    ],
+    "SyN9": [
+      -0.07613188178233257,
+      0.13521470612849504
+    ]
+  },
+  "simultaneous_95_bootstrap_radius_pp": 0.1056732939554138,
+  "bootstrap_draws": 19999,
+  "bootstrap_seed": [
+    20261122,
+    24,
+    16,
+    3
+  ],
+  "frame_rule": "intersection of both pipelines and both boundary rules for midpoint comparison",
+  "rotation_draws": 99999,
+  "family_n": 16,
+  "python": "3.12.7",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "pandas": "2.2.2"
+}
