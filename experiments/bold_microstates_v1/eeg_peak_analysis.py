@@ -43,6 +43,26 @@ def segment(prepared, templates):
     return pd.DataFrame(peak_rows), pd.DataFrame(direct_rows), pd.DataFrame(diagnostics), sequences
 
 
+def paired_condition_summary(measured, contrasts):
+    """Summarize each endpoint over the same complete patient pairs used for inference."""
+    patients = measured.loc[measured.condition.isin(["OFF", "ON"])]
+    long = patients.melt(id_vars=["subject_id", "state", "condition"], value_vars=METRICS,
+                         var_name="metric")
+    visits = long.pivot(index=["state", "metric", "subject_id"], columns="condition", values="value")
+    complete = visits[["OFF", "ON"]].dropna()
+    means = complete.groupby(["state", "metric"]).agg(
+        counted_pairs=("OFF", "size"), off_mean=("OFF", "mean"), on_mean=("ON", "mean"))
+    effects = contrasts.set_index(["state", "metric"], verify_integrity=True)
+    means = means.reindex(effects.index)
+    np.testing.assert_array_equal(means.counted_pairs.fillna(0), effects.n_pairs)
+    estimated = effects.original_delta.notna()
+    np.testing.assert_allclose((means.on_mean - means.off_mean)[estimated],
+                               effects.original_delta[estimated], rtol=0, atol=1e-12)
+    columns = ["original_delta", "adjusted_delta", "adjusted_ci_low", "adjusted_ci_high",
+               "adjusted_p_raw", "adjusted_p_holm"]
+    return pd.concat([effects.n_pairs, means.off_mean, means.on_mean, effects[columns]], axis=1)
+
+
 def aggregate(frame, subset):
     rows = []
     groups = [("all", frame), *frame.groupby("condition", sort=True)]
@@ -111,6 +131,7 @@ def main(root, destination):
     archived = pd.read_csv(REPORTS / "legacy_105/results/paired_results.csv")
     old_name = {"105": "legacy_refit_25", "SyN9": "syn9_original_26"}
     prepared, templates, tables, fits, matched, shared_labels = {}, {}, {}, {}, {}, {}
+    condition_summaries = {}
     diagnostics, crosswalk, spatial = [], [], []
     for src in sources:
         prepared[src] = {key: prepare_scan(s.values, s.mean_fd) for key, s in raw[src].items()}
@@ -126,6 +147,7 @@ def main(root, destination):
         for variant, frame in [("old_signed", base), ("peak_interp", peak), ("peak_direct", direct),
                                ("paired_method_change", method_change(peak, base))]:
             tables[src, variant] = family(frame)[0]
+        condition_summaries[src] = paired_condition_summary(peak, tables[src, "peak_interp"])
         baseline_check(tables[src, "old_signed"], archived.loc[archived.analysis.eq(old_name[src])])
     spatial.extend(spatial_rows("105_peak_to_SyN9_peak", templates["105"] @ templates["SyN9"].T))
 
@@ -167,6 +189,7 @@ def main(root, destination):
     out = new_output(destination)
     stats = pd.concat(tables, names=["source", "variant", "row"]).droplevel("row")
     stats.to_csv(out / "paired_stats.csv", na_rep="NA")
+    pd.concat(condition_summaries, names=["source"]).to_csv(out / "condition_summary.csv", na_rep="NA")
     pd.DataFrame(diagnostics).to_csv(out / "diagnostics.csv", index=False)
     pd.DataFrame(crosswalk).to_csv(out / "frame_crosswalk.csv", index=False)
     spatial_frame.to_csv(out / "spatial_matches.csv", index=False)
