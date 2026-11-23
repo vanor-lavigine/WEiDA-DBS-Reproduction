@@ -1,0 +1,43 @@
+{
+  "data_kind": "real",
+  "template_scans": 67,
+  "stn_pairs": 26,
+  "scored_pairs": 24,
+  "concordant_pairs": 17,
+  "same_day_and_medication_verified_pairs": 0,
+  "environment": {
+    "python": "3.10.20",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.14.1"
+  },
+  "visit_source": "historical research analysis exports",
+  "effect_verification": [
+    {
+      "scenario": "archive_main",
+      "estimates_checked": 28,
+      "max_abs_difference": 1.1102230246251565e-16
+    },
+    {
+      "scenario": "archive_alternate",
+      "estimates_checked": 16,
+      "max_abs_difference": 9.020562075079397e-17
+    },
+    {
+      "scenario": "concordant_pairs",
+      "estimates_checked": 16,
+      "max_abs_difference": 1.1102230246251565e-16
+    }
+  ],
+  "source_fit_checked": true,
+  "condition_effects_ci_and_p_exact_against_frozen_report": 12,
+  "condition_means_max_abs_difference": 8.881784197001252e-16,
+  "holm_test_families_independently_recalculated": 7,
+  "full_real_repeat_identical": true,
+  "switch_rate_aggregate_exact_against_repository": true,
+  "cooccurrence_tests_exact_against_repository": 32,
+  "states_k": 4,
+  "clinical_permutations": 10000,
+  "clinical_bootstraps": 2000,
+  "clinical_seed": 20261121
+}
