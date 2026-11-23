@@ -1,0 +1,91 @@
+{
+  "fit": {
+    "data_kind": "real",
+    "patients": 24,
+    "runs": 48,
+    "frames_per_run": 210,
+    "n_roi": 78,
+    "tr_sec": 2.1,
+    "k": 4,
+    "n_hc": 0,
+    "assigned_frames": {
+      "AAHC": 10080,
+      "signed": 10080
+    },
+    "peaks_total": 2185,
+    "peaks_per_scan_min": 38,
+    "peaks_per_scan_max": 52,
+    "pooled_peak_gev": 0.196370329716527,
+    "peak_group_fit": {
+      "starts": 48,
+      "best_mean_squared_r": 0.33305220218633885,
+      "lowest_start_mean_squared_r": 0.31868064860303
+    },
+    "signed_n_init": 100,
+    "signed_max_iter": 300,
+    "seed": 20261121,
+    "signed_best_objective": 0.6792291882395906,
+    "signed_winning_iterations": 91,
+    "environment": {
+      "python": "3.12.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.2",
+      "pandas": "2.2.3"
+    }
+  },
+  "sequence_metric_check": {
+    "sequences": 96,
+    "scan_state_metric_rows": 384,
+    "max_abs_error": 0.0
+  },
+  "cohort": {
+    "scored_pairs": 24,
+    "score_versions_concordant_pairs": 17,
+    "score_versions_discordant_pairs": 7,
+    "individually_confirmed_scan_date_and_medication_pairs": 0
+  },
+  "clinical_environment": {
+    "python": "3.10.20",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "pandas": "2.3.3"
+  },
+  "checked_effects": [
+    {
+      "method": "AAHC",
+      "scenario": "archive_main",
+      "effects_checked": 28,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "method": "signed",
+      "scenario": "archive_main",
+      "effects_checked": 28,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "method": "AAHC",
+      "scenario": "archive_alternate",
+      "effects_checked": 16,
+      "max_abs_error": 9.71445146547012e-17
+    },
+    {
+      "method": "signed",
+      "scenario": "archive_alternate",
+      "effects_checked": 16,
+      "max_abs_error": 8.326672684688674e-17
+    },
+    {
+      "method": "AAHC",
+      "scenario": "concordant_pairs",
+      "effects_checked": 16,
+      "max_abs_error": 8.326672684688674e-17
+    },
+    {
+      "method": "signed",
+      "scenario": "concordant_pairs",
+      "effects_checked": 16,
+      "max_abs_error": 1.1102230246251565e-16
+    }
+  ]
+}
