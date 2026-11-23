@@ -1,0 +1,20 @@
+{
+  "data_kind": "real",
+  "shared_patients": 24,
+  "visits_per_source": 48,
+  "valid_frames_per_source": 8650,
+  "baseline_coefficients_verified": 24,
+  "max_abs_baseline_r_error": 2.220446049250313e-16,
+  "permutations": 19999,
+  "bootstrap_draws": 5000,
+  "seed": 20261123,
+  "python": "3.12.7",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.5.1",
+    "matplotlib": "3.9.2",
+    "threadpoolctl": "3.5.0"
+  }
+}
