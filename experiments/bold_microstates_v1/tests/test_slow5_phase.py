@@ -5,12 +5,12 @@ import sys
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from slow5_phase_clinical import BAND, WEIDA_BAND, off_band_difference, partial_correlation, scan_metric
+from slow5_phase_clinical import BAND, WEIDA_BAND, partial_correlation, scan_metric
 
 
 def test_synchronous_regions_have_zero_temporal_dispersion():
     t = np.arange(209) * 2.1
-    wave = np.sin(2*np.pi*0.018*t)
+    wave = np.sin(2*np.pi*0.055*t)
     metrics = scan_metric(np.tile(wave[:, None], (1, 78)))
     assert metrics["metric"] < 1e-12
     assert metrics["trimmed"] < 1e-12
@@ -18,7 +18,7 @@ def test_synchronous_regions_have_zero_temporal_dispersion():
 
 def test_two_frequencies_create_phase_drift_independent_of_roi_order():
     t = np.arange(210) * 2.1
-    x = np.sin(2*np.pi*t[:, None]*np.repeat([0.014, 0.023], 39))
+    x = np.sin(2*np.pi*t[:, None]*np.repeat([0.047, 0.063], 39))
     m = scan_metric(x)
     assert m["metric"] > 0.15
     np.testing.assert_allclose(m["metric"], scan_metric(x[:, ::-1])["metric"], atol=1e-12)
@@ -39,8 +39,6 @@ def test_primary_passband_uses_the_requested_frequencies():
     assert scan_metric(x, BAND)["median_roi_band_power_fraction"] < .01
 
 
-def test_paired_frequency_contrast_cancels_for_identical_metrics():
-    x, y = np.random.default_rng(23).normal(size=(2,25))
-    result = off_band_difference(x,x,y)
-    assert result["difference"] == result["percentile_ci_low"] == result["percentile_ci_high"] == 0
-    np.testing.assert_allclose(result["r_weida"],np.corrcoef(x,y)[0,1])
+def test_default_filter_is_the_primary_frequency_band():
+    x = np.random.default_rng(23).normal(size=(209,78))
+    assert scan_metric(x) == scan_metric(x, WEIDA_BAND)

@@ -20,7 +20,7 @@ from peak_states import group_maps, interpolate_peaks, match_to_signed, prepare_
 from stats import holm_adjust
 
 
-BANDS = {"weida_band": (0.04, 0.07), "slow5": (0.01, 0.027)}
+BANDS = {"weida_band": (0.04, 0.07)}
 TR = 2.1
 DURATION = "duration_s"
 RATE = "occurrence_s"
@@ -123,40 +123,32 @@ def analyze_archive(bids_root, project):
                            "condition":[m[1].upper() for m in ids]}).set_index("run")
     if roster.shape[0]!=50 or roster.person.nunique()!=25 or len({x.tobytes() for x in scans.values()})!=50:
         raise ValueError("Expected the 25 distinct audited pairs")
-    reference = None
-    fitted = {}
-    for band, bounds in BANDS.items():
-        prepared, maps, alignment = fit_band(scans, motion, roster, bounds, reference)
-        if reference is None:
-            reference = maps["OFF"]
-        observations, diagnostics, matrices = {}, [], {"OFF":[], "ON":[]}
-        for name, record in roster.iterrows():
-            condition = record.condition
-            features, qc, matrix = scan_features(prepared[name], maps[condition])
-            observations[name] = features
-            diagnostics.append(dict(condition=condition, **qc))
-            matrices[condition].append(matrix)
-        summaries, transitions = {}, []
-        for condition, group in pd.DataFrame(diagnostics).groupby("condition"):
-            summaries[condition] = dict(peaks=int(group.peaks.sum()), frames=int(group.frames.sum()),
-                                        retained=int(group.retained.sum()), mean_peak_gev=group.peak_gev.mean())
-            array = np.stack(matrices[condition])
-            for i,j in np.ndindex(4,4):
-                col = array[:,i,j]
-                transitions.append(dict(condition=condition, source=i+1, target=j+1,
-                                        n=int(np.isfinite(col).sum()), mean=float(np.nanmean(col))))
-        fitted[band] = dict(maps={k:v.tolist() for k,v in maps.items()}, alignment=alignment,
-                            qc=summaries, transitions=transitions, table=pd.DataFrame(observations).T)
+    prepared, maps, alignment = fit_band(scans, motion, roster, BANDS["weida_band"], None)
+    observations, diagnostics, matrices = {}, [], {"OFF":[], "ON":[]}
+    for name, record in roster.iterrows():
+        condition = record.condition
+        features, qc, matrix = scan_features(prepared[name], maps[condition])
+        observations[name] = features
+        diagnostics.append(dict(condition=condition, **qc))
+        matrices[condition].append(matrix)
+    summaries, transitions = {}, []
+    for condition, group in pd.DataFrame(diagnostics).groupby("condition"):
+        summaries[condition] = dict(peaks=int(group.peaks.sum()), frames=int(group.frames.sum()),
+                                    retained=int(group.retained.sum()), mean_peak_gev=group.peak_gev.mean())
+        array = np.stack(matrices[condition])
+        for i,j in np.ndindex(4,4):
+            col = array[:,i,j]
+            transitions.append(dict(condition=condition, source=i+1, target=j+1,
+                                    n=int(np.isfinite(col).sum()), mean=float(np.nanmean(col))))
     salt = secrets.token_hex(32)
     main, duplicate = [clinical_visits(project, folder, series, salt) for folder,series in VERSIONS[:2]]
     pd.testing.assert_series_equal(main.score, duplicate.score)
     np.testing.assert_array_equal(main.score, main[list(ENGLISH_DOMAINS)].sum(axis=1))
     scores = pd.Series([main.score.at[scan_key(name,salt)] for name in names], index=names)
-    for result in fitted.values():
-        paired, clinical, sensitivity = band_stats(result.pop("table"), roster, scores)
-        result.update(paired=paired,clinical=clinical,pooled_duration_sensitivity=sensitivity)
-    add_adjustment([r for v in fitted.values() for r in v["clinical"]], "bh", "q_bh84")
-    add_adjustment([r for v in fitted.values() for r in v["paired"]], "holm", "p_holm28")
+    paired, clinical, sensitivity = band_stats(pd.DataFrame(observations).T, roster, scores)
+    fitted = {"weida_band":dict(maps={k:v.tolist() for k,v in maps.items()}, alignment=alignment,
+                               qc=summaries, transitions=transitions, paired=paired, clinical=clinical,
+                               pooled_duration_sensitivity=sensitivity)}
     return dict(data_kind="real", patients=25, visits=50, tr=TR, lengths=dict(Counter(map(len,scans.values()))),
                 axis=axis, bands=fitted, environment=dict(python=platform.python_version(),numpy=np.__version__,
                                                          pandas=pd.__version__,scipy=scipy.__version__))

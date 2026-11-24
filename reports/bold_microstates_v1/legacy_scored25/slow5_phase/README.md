@@ -39,7 +39,7 @@
 105 原机以 Python 3.10.20、NumPy 1.26.4、SciPy 1.14.1、pandas 2.3.3 在内存中调用下列分析入口。读取原始 fMRIpost 实际保留帧，核对扫描名册、TR、脑区顺序、位移记录和两个归档版本的总分。影像指标提取完成后才合并评分。采用相位向量长度与成对相位差余弦的恒等式抽查每条扫描。下列命令为相同计算的命令行入口，第二条复核组级 r、置信区间及双侧 p，并生成图。
 
 ```bash
-python -B experiments/bold_microstates_v1/slow5_phase_clinical.py --bids-root "$BIDS_ROOT" --clinical-root "$CLINICAL_ROOT" > reports/bold_microstates_v1/legacy_scored25/slow5_phase/results.json
+python -B experiments/bold_microstates_v1/slow5_phase_clinical.py --bids-root "$BIDS_ROOT" --clinical-root "$CLINICAL_ROOT" --band slow5 > reports/bold_microstates_v1/legacy_scored25/slow5_phase/results.json
 python -B experiments/bold_microstates_v1/report_slow5_phase.py reports/bold_microstates_v1/legacy_scored25/slow5_phase/results.json
 ```
 

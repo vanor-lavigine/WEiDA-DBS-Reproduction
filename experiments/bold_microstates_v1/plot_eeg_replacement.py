@@ -14,8 +14,8 @@ from scipy.ndimage import affine_transform
 from scipy.stats import t
 
 
-NAMES = {"weida_band":"WEiDA 主频段 0.04–0.07 Hz", "slow5":"slow-5  0.010–0.027 Hz"}
-COLORS = {"weida_band":"#116c74", "slow5":"#975424"}
+NAMES = {"weida_band":"WEiDA 主频段 0.04–0.07 Hz"}
+COLORS = {"weida_band":"#116c74"}
 METRICS = [("duration_s", "持续时间（秒）", 1), ("occurrence_s", "出现率（次/分）", 60),
            ("coverage", "时间占比（百分点）", 100)]
 
@@ -81,8 +81,8 @@ def anatomical_figures(result, out, atlas_path, lut_path, template_path, mask_pa
 
 
 def paired_plot(paired, out):
-    fig, axes = plt.subplots(2,3,figsize=(11,6.5),layout="constrained")
-    fig.suptitle("开机前后，各状态的持续时间、出现率和时间占比如何变化？", fontsize=16)
+    fig, axes = plt.subplots(1,3,figsize=(10.8,3.7),layout="constrained", squeeze=False)
+    fig.suptitle("DBS 开关机配对差异 · 0.04–0.07 Hz", fontsize=16)
     for row, band in zip(axes, NAMES):
         for ax, (metric, label, scale) in zip(row, METRICS):
             sub = paired[(paired.band==band)&(paired.metric==metric)&(paired.state!="all")].sort_values("state")
@@ -92,7 +92,7 @@ def paired_plot(paired, out):
                         fmt="o",color=COLORS[band],capsize=3)
             ax.set(yticks=range(4),yticklabels=[f"{s}  n={n}" for s,n in zip(sub.state,sub.n)],
                    ylim=(3.6,-.65),xlabel=f"ON − OFF  {label}")
-            ax.set_title(NAMES[band],fontsize=10,loc="left")
+            ax.set_title(label.split("（")[0],fontsize=12,loc="left")
             ax.spines[["right","top","left"]].set_visible(False)
             ax.tick_params(axis="y",length=0)
     fig.savefig(out/"paired_effects.png",dpi=160)
@@ -100,7 +100,7 @@ def paired_plot(paired, out):
 
 
 def clinical_plot(clinical, out):
-    fig, axes = plt.subplots(1,2,figsize=(9.3,3.8),sharey=True)
+    fig, axes = plt.subplots(1,2,figsize=(9.3,3.35),sharey=True)
     fig.subplots_adjust(left=.19,right=.98,bottom=.22,top=.76,wspace=.12)
     fig.suptitle("关机时的运动评分与总体微状态指标",fontsize=16)
     for ax, metric, title, eeg in zip(axes,("duration_s","occurrence_s"),("平均持续时间","总出现率"),(.68,-.76)):
@@ -112,8 +112,8 @@ def clinical_plot(clinical, out):
                          &(clinical.contrast=="off_score")].iloc[0]
             ax.errorbar(s.r,i,xerr=[[s.r-s.ci_low],[s.ci_high-s.r]],fmt="o",color=COLORS[band],capsize=3)
             ax.annotate(f"{s.r:+.2f}  (n={s.n})",(s.r,i),xytext=(0,8),textcoords="offset points",ha="center",fontsize=9)
-        ax.set(title=title, xlim=(-1.02,1.02), ylim=(2.58,-.6), yticks=[0,1,2],
-               yticklabels=["EEG 论文（20 人）","BOLD 主频段","BOLD slow-5"], xlabel="Pearson r")
+        ax.set(title=title, xlim=(-1.02,1.02), ylim=(1.48,-.55), yticks=[0,1],
+               yticklabels=["EEG 论文（20 人）","BOLD 0.04–0.07 Hz"], xlabel="Pearson r")
         ax.spines[["right","top","left"]].set_visible(False)
         ax.tick_params(axis="y",length=0)
     fig.text(.5,.035,"BOLD 横线为逐项 95% 置信区间；EEG 点取自 Li 等论文图 4。",ha="center",fontsize=9)
@@ -137,7 +137,7 @@ def export(path, atlas, lut, template, mask):
     pd.concat(templates).to_csv(out/"templates.tsv",sep="\t",index=False)
     c = tables["clinical"]
     p = tables["paired"]
-    assert result["visits"] == 50 and len(c)==84 and len(p)==28
+    assert result["visits"] == 50 and set(result["bands"])=={"weida_band"} and len(c)==42 and len(p)==14
     np.testing.assert_allclose(c.p_raw,2*t.sf(abs(c.r)*np.sqrt((c.n-2)/(1-c.r**2)),c.n-2),atol=1e-12)
     np.testing.assert_allclose(p.on-p.off,p.delta,atol=1e-12)
     trans=tables["transitions"]

@@ -34,8 +34,10 @@ def render(path):
     ax.set(xlim=(-1, 1), ylim=(2.55, -.55), yticks=range(3), yticklabels=labels)
     ax.axvline(0, color="#888888", lw=1, ls="--", zorder=0)
     ax.set_xlabel("Pearson r（线段为逐项 95% 置信区间）" if cjk else "Pearson r (95% confidence intervals)")
-    ax.set_title("slow-5 全脑相位同步波动与运动评分（25 人）" if cjk else
-                 "Slow-5 global phase synchrony variability and motor score (25 patients)", loc="left")
+    low, high = result["band_hz"]
+    band = f"{low:g}–{high:g} Hz"
+    ax.set_title(f"{band} 全脑相位同步波动与运动评分（25 人）" if cjk else
+                 f"{band} global phase synchrony variability and motor score (25 patients)", loc="left")
     ax.spines[["top", "right", "left"]].set_visible(False)
     ax.tick_params(axis="y", length=0, pad=10)
     fig.savefig(path.with_name("correlations.png"), dpi=175, facecolor="white")
