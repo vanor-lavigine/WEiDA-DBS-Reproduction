@@ -1,4 +1,4 @@
-"""Patient-level motor correlations of slow-5 global BOLD phase metastability."""
+"""Patient-level motor correlations of global BOLD phase metastability."""
 import argparse
 from collections import Counter
 import json
@@ -20,17 +20,18 @@ from stats import holm_adjust
 
 TR = 2.1
 BAND = (0.010, 0.027)
+WEIDA_BAND = (0.04, 0.07)
 EDGE = 24
 
 
-def scan_metric(x):
+def scan_metric(x, band=BAND):
     centered = signal.detrend(x, axis=0)
     f, spectrum = signal.periodogram(centered, fs=1/TR, axis=0, window="hann", detrend=False)
-    selected = (f >= BAND[0]) & (f <= BAND[1])
+    selected = (f >= band[0]) & (f <= band[1])
     fraction = spectrum[selected].sum(axis=0) / spectrum[1:].sum(axis=0)
     if not np.all((fraction > 0) & (fraction <= 1)):
-        raise ValueError("Invalid input slow-5 spectral power")
-    b, a = signal.butter(2, BAND, btype="bandpass", fs=1/TR)
+        raise ValueError("Invalid input band spectral power")
+    b, a = signal.butter(2, band, btype="bandpass", fs=1/TR)
     filtered = signal.filtfilt(b, a, centered, axis=0, padlen=12)
     analytic = signal.hilbert(filtered, axis=0)
     if not np.isfinite(analytic).all() or (abs(analytic) == 0).any():
@@ -68,7 +69,22 @@ def check_correlation(x, y, fd, trimmed, permutations):
                 trimmed=correlation(trimmed, y), permutation_p=permutation_p)
 
 
-def analyze_archive(bids_root, project):
+def off_band_difference(fast, slow, score):
+    """Paired-patient bootstrap of the difference between two dependent correlations."""
+    def r(x, y):
+        x = x - x.mean(axis=-1, keepdims=True)
+        y = y - y.mean(axis=-1, keepdims=True)
+        return (x*y).sum(axis=-1)/np.sqrt((x*x).sum(axis=-1)*(y*y).sum(axis=-1))
+    idx = np.random.default_rng(20261124).integers(0, len(score), size=(20000, len(score)))
+    delta = r(fast[idx],score[idx]) - r(slow[idx],score[idx])
+    if not np.isfinite(delta).all():
+        raise ValueError("Undefined bootstrap correlation")
+    lo, hi = np.quantile(delta, [.025,.975])
+    return dict(n=len(score), draws=len(delta), r_weida=r(fast,score), r_slow5=r(slow,score),
+                difference=r(fast,score)-r(slow,score), percentile_ci_low=lo, percentile_ci_high=hi)
+
+
+def analyze_archive(bids_root, project, band=BAND):
     scans, motion, axis, _ = read_archive(bids_root, project)
     if len(scans) != 50 or len({x.tobytes() for x in scans.values()}) != 50:
         raise ValueError("Expected 50 unique scans")
@@ -76,7 +92,7 @@ def analyze_archive(bids_root, project):
     for run, x in sorted(scans.items()):
         match = re.fullmatch(r"sub-STN(off|on)(\d+)", run, re.I)
         rows.append(dict(run=run, condition=match[1].upper(), person=match[2],
-                         fd=motion[run], **scan_metric(x)))
+                         fd=motion[run], **scan_metric(x, band)))
     frame = pd.DataFrame(rows)
     salt = secrets.token_hex(32)
     main, duplicate = [clinical_visits(project, folder, series, salt) for folder,series in VERSIONS[:2]]
@@ -111,9 +127,13 @@ def analyze_archive(bids_root, project):
         influence[name] = [min(estimates), max(estimates)]
     posthoc = dict(leave_one_patient_out_r_range=influence,
                    change_adjusted_off_metric_and_score=partial_correlation(dx, benefit, off.metric, off.score))
+    if band == WEIDA_BAND:
+        off_runs = frame[frame.condition.eq("OFF")].set_index("person").loc[off.index,"run"]
+        slow = np.array([scan_metric(scans[run], BAND)["metric"] for run in off_runs])
+        posthoc["off_frequency_comparison"] = off_band_difference(off.metric.to_numpy(), slow, off.score.to_numpy())
     return dict(data_kind="real", patients=len(wide), scans=len(scans), roi_count=len(axis),
                 frames=sum(map(len,scans.values())), lengths=dict(Counter(map(len,scans.values()))),
-                TR=TR, band_hz=BAND, global_sd_mean=frame.groupby("condition").metric.mean().to_dict(),
+                TR=TR, band_hz=band, global_sd_mean=frame.groupby("condition").metric.mean().to_dict(),
                 spectral_qc=dict(n_scan_roi=len(axis)*len(scans),
                                  median_of_scan_median_roi_power_fraction=frame.median_roi_band_power_fraction.median()),
                 effects=effects, posthoc=posthoc, environment=dict(python=platform.python_version(), scipy=scipy.__version__,
@@ -124,5 +144,7 @@ if __name__ == "__main__":
     args = argparse.ArgumentParser(description=__doc__)
     args.add_argument("--bids-root", type=Path, required=True)
     args.add_argument("--clinical-root", type=Path, required=True)
+    args.add_argument("--band", choices=("slow5", "weida"), default="slow5")
     cfg = args.parse_args()
-    print(json.dumps(analyze_archive(cfg.bids_root, cfg.clinical_root), indent=2, allow_nan=False))
+    selected = BAND if cfg.band == "slow5" else WEIDA_BAND
+    print(json.dumps(analyze_archive(cfg.bids_root, cfg.clinical_root, selected), indent=2, allow_nan=False))
