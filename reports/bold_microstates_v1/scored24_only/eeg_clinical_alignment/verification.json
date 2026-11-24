@@ -1,0 +1,119 @@
+{
+  "source": "real",
+  "patients": 24,
+  "visits": 48,
+  "tr_sec": 2.1,
+  "n_roi": 78,
+  "frozen_direct_frames_verified": 10080,
+  "total_spatial_peaks": 2185,
+  "condition_qc": [
+    {
+      "variant": "direct",
+      "condition": "OFF",
+      "visits": 24,
+      "usable_frames": 5040,
+      "min_frames": 210,
+      "max_frames": 210,
+      "mean_frames": 210.0,
+      "total_episodes": 2535
+    },
+    {
+      "variant": "direct",
+      "condition": "ON",
+      "visits": 24,
+      "usable_frames": 5040,
+      "min_frames": 210,
+      "max_frames": 210,
+      "mean_frames": 210.0,
+      "total_episodes": 2522
+    },
+    {
+      "variant": "peak",
+      "condition": "OFF",
+      "visits": 24,
+      "usable_frames": 4680,
+      "min_frames": 181,
+      "max_frames": 203,
+      "mean_frames": 195.0,
+      "total_episodes": 741
+    },
+    {
+      "variant": "peak",
+      "condition": "ON",
+      "visits": 24,
+      "usable_frames": 4695,
+      "min_frames": 180,
+      "max_frames": 202,
+      "mean_frames": 195.625,
+      "total_episodes": 734
+    }
+  ],
+  "contrast_families": {
+    "peak": {
+      "tests": 42,
+      "q_below_0_01": 0
+    },
+    "direct": {
+      "tests": 42,
+      "q_below_0_01": 0
+    }
+  },
+  "rerun_max_abs_differences": {
+    "r": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "p_raw": 0.0,
+    "q_bh42": 1.1102230246251565e-16
+  },
+  "frozen_off_correlations_max_abs_difference": 5.551115123125783e-17,
+  "primary_sensitivity": {
+    "peak": {
+      "n": 24,
+      "spearman_rho": -0.0733086813081434,
+      "permutation_p_10000": 0.9086091390860914,
+      "partial_r_off_fd": -0.03118192529463365,
+      "partial_p_off_fd": 0.8876822277902265,
+      "partial_df": 21,
+      "leave_one_out_min": -0.21759762749675043,
+      "leave_one_out_max": 0.10021716189437724,
+      "equal_class_weight": {
+        "n": 24,
+        "r": 0.09915570496499909,
+        "ci_low": -0.31691741131243234,
+        "ci_high": 0.4832239007785441,
+        "p_raw": 0.6448209305666229
+      }
+    },
+    "direct": {
+      "n": 24,
+      "spearman_rho": -0.05138923515112342,
+      "permutation_p_10000": 0.47565243475652436,
+      "partial_r_off_fd": -0.14434434391983236,
+      "partial_p_off_fd": 0.51111558994182,
+      "partial_df": 21,
+      "leave_one_out_min": -0.23436406941448978,
+      "leave_one_out_max": 0.041222578189549636,
+      "equal_class_weight": {
+        "n": 24,
+        "r": -0.19922425672904195,
+        "ci_low": -0.5577931349000453,
+        "ci_high": 0.2220150016034789,
+        "p_raw": 0.35066712295698027
+      }
+    }
+  },
+  "environment": {
+    "backfit": {
+      "python": "3.12.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.2",
+      "pandas": "2.2.3"
+    },
+    "clinical": {
+      "python": "3.10.20",
+      "numpy": "1.26.4",
+      "scipy": "1.14.1",
+      "pandas": "2.3.3"
+    }
+  }
+}
