@@ -1,0 +1,87 @@
+{
+  "summary": {
+    "patients": 25,
+    "visits": 50,
+    "frames": 10497,
+    "lengths": {
+      "210": 47,
+      "209": 3
+    },
+    "data_kind": "real",
+    "tr_seconds": 2.1
+  },
+  "exposure": [
+    {
+      "variant": "direct",
+      "condition": "OFF",
+      "retained": 5249,
+      "episodes": 2570
+    },
+    {
+      "variant": "direct",
+      "condition": "ON",
+      "retained": 5248,
+      "episodes": 2562
+    },
+    {
+      "variant": "peak",
+      "condition": "OFF",
+      "retained": 4859,
+      "episodes": 684
+    },
+    {
+      "variant": "peak",
+      "condition": "ON",
+      "retained": 4949,
+      "episodes": 680
+    }
+  ],
+  "peaks": 2199,
+  "fit": {
+    "starts": 50,
+    "best_mean_squared_r": 0.34767980629532724,
+    "lowest_start_mean_squared_r": 0.3333005750553287
+  },
+  "primary_sensitivity": {
+    "peak": {
+      "n": 25,
+      "spearman_rho": 0.23662949038983527,
+      "permutation_p_10000": 0.0817918208179182,
+      "partial_r_off_fd": 0.3409527233665393,
+      "partial_p_off_fd": 0.10300975979958454,
+      "partial_df": 22,
+      "leave_one_out_min": 0.13054190087321133,
+      "leave_one_out_max": 0.457139139114248,
+      "equal_class_weight": {
+        "n": 25,
+        "r": 0.4046435720380882,
+        "ci_low": 0.011323090216068308,
+        "ci_high": 0.6895278142284372,
+        "p_raw": 0.044815219354800366
+      }
+    },
+    "direct": {
+      "n": 25,
+      "spearman_rho": 0.02898574590336423,
+      "permutation_p_10000": 0.5716428357164284,
+      "partial_r_off_fd": 0.12184517320624014,
+      "partial_p_off_fd": 0.5705976165271505,
+      "partial_df": 22,
+      "leave_one_out_min": -0.023723414506857082,
+      "leave_one_out_max": 0.20289990071880426,
+      "equal_class_weight": {
+        "n": 25,
+        "r": 0.20940560280721984,
+        "ci_low": -0.20247893429637437,
+        "ci_high": 0.5583381388604104,
+        "p_raw": 0.3150802236758211
+      }
+    }
+  },
+  "environment": {
+    "python": "3.10.20",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "pandas": "2.3.3"
+  }
+}

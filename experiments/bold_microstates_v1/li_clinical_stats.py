@@ -29,7 +29,7 @@ def correlation(x, y):
 
 def primary_sensitivity(x, y, fd, equal_class_duration):
     x, y, fd = map(np.asarray, (x, y, fd))
-    if not all(np.isfinite(v).all() for v in (x, y, fd)) or len(x) != 24 or np.ptp(fd) == 0:
+    if not all(np.isfinite(v).all() for v in (x, y, fd)) or len(x) < 4 or np.ptp(fd) == 0:
         raise ValueError("Incomplete primary or motion-adjusted observations")
     rng = np.random.default_rng(20261124)
     indices = np.stack([rng.permutation(len(y)) for _ in range(10000)])
@@ -72,9 +72,9 @@ def scan_features(data):
     return features, equal_weight
 
 
-def analyze(metrics, visits):
-    if (len(visits)!=48 or visits.person.nunique()!=24 or not visits.run_id.is_unique
-            or visits.score.isna().any() or len(metrics)!=384 or set(metrics.variant)!={"direct","peak"}):
+def analyze(metrics, visits, expected_patients=24):
+    if (len(visits)!=2*expected_patients or visits.person.nunique()!=expected_patients or not visits.run_id.is_unique
+            or visits.score.isna().any() or len(metrics)!=16*expected_patients or set(metrics.variant)!={"direct","peak"}):
         raise ValueError("Unexpected visit roster or metrics")
     by_condition = visits.pivot(index="person", columns="condition", values="run_id").sort_index()
     scores = visits.pivot(index="person", columns="condition", values="score").reindex(by_condition.index)
