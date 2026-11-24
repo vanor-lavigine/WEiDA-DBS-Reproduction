@@ -83,7 +83,7 @@ def run(scans, motion, project, salt, axis):
     return result
 
 
-def analyze_archive(bids_root, project):
+def read_archive(bids_root, project):
     packed_dir = project/'data'/VERSIONS[0][1]
     packed_files = sorted(packed_dir.glob('sub-STN*_BOLD_AAL1+PD25_MNI_basic36_sm6.csv'))
     labels = [p.name.split('_')[0] for p in packed_files]
@@ -130,6 +130,11 @@ def analyze_archive(bids_root, project):
         copy_checks.append(dict(frames=len(x),max_abs_diff_after_start_trim=float(abs(packed.to_numpy()[missing:]-x).max()),
                                 max_abs_diff_after_end_trim=float(abs(packed.to_numpy()[:len(x)]-x).max())))
         scans[label],motion[label]=x,float(fd[1:].mean())
+    return scans, motion, axis, copy_checks
+
+
+def analyze_archive(bids_root, project):
+    scans, motion, axis, copy_checks = read_archive(bids_root, project)
     result = run(scans,motion,project,secrets.token_hex(32),axis)
     result.update(summary=dict(patients=25,visits=50,frames=sum(map(len,scans.values())),
                                lengths=dict(Counter(map(len,scans.values()))),data_kind='real',tr_seconds=2.1),
