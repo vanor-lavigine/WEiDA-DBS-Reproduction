@@ -2,6 +2,8 @@
 
 ## 105 队列的运动评分与脑状态
 
+健康对照分析已覆盖 15 名健康人和 25 对 STN 患者。分组模板下，患者的总体段长稍长、出现稍少，四项总体差异均未显著，方向随模板选择改变。[健康组与 OFF、ON 的完整统计和图](reports/bold_microstates_v1/hc_stn_comparison/README.md)
+
 本分支整理了 25 名 STN-DBS 患者的 50 次真实 BOLD 扫描。关机时的总体持续时间未复现 EEG 论文的相关。开机时，M4 出现率与运动评分呈负相关（r = −0.641，BH q = 0.0232）。报告另列同一批患者的全脑相位同步结果，并说明控制关机起点后变化量关联如何改变。[阅读中文报告和图表](reports/bold_microstates_v1/eeg_replacement_105/README.md)
 
 ## 微状态方法迁移实验 v1

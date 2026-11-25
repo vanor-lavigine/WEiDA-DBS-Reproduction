@@ -27,7 +27,7 @@ RATE = "occurrence_s"
 COVERAGE = "coverage"
 
 
-def fit_band(scans, motion, roster, band, reference):
+def fit_band(scans, motion, roster, band, reference, conditions=("OFF", "ON")):
     b, a = signal.butter(2, band, btype="bandpass", fs=1/TR)
     prepared = {}
     for name, values in scans.items():
@@ -36,7 +36,7 @@ def fit_band(scans, motion, roster, band, reference):
         filtered = signal.filtfilt(b, a, centered, axis=0, padlen=12)
         prepared[name] = prepare_scan(filtered, motion[name])
     maps, qc = {}, {}
-    for condition in ("OFF", "ON"):
+    for condition in conditions:
         individual = [prepared[n].individual for n in roster.index[roster.condition == condition]]
         centers, fit = group_maps(individual, np.ones(len(individual)))
         anchor = maps.get("OFF", reference)
