@@ -1,0 +1,9 @@
+﻿field,verified_units,expected_units,evidence,use
+Age,0,65,Confirmed acquisition sidecars and original roster lack consistent age data,no
+Sex,0,65,Confirmed acquisition sidecars and original roster lack consistent sex data,no
+Mean FD,65,65,Frozen V4 mean FD and independently archived scan-quality rows agree,Model 1
+DVARS and standardized DVARS,65,65,"All original confound sources had matching hashes. 13,585 defined points per measure",diagnostic
+tSNR,0,65,A comparable pre-normalization measure for the frozen ROI input was unavailable,no
+Scan order,24,25,Verified original DICOM time via linked scan sidecars,order confounded with condition
+Medication timing,0,50,No verified last-dose timestamps or elapsed hours in linked visit audit,no
+Scan interval,24,25,OFF and ON DICOM timestamp difference,diagnostic

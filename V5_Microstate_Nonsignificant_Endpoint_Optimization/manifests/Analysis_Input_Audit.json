@@ -1,0 +1,8 @@
+{
+  "participants": 40,
+  "scans": 65,
+  "paired_patients": 25,
+  "recorded_valid_frames": 12574,
+  "missing_transition_scan_rows": 0,
+  "frozen_coverage_transition_occurrence_parity": true
+}

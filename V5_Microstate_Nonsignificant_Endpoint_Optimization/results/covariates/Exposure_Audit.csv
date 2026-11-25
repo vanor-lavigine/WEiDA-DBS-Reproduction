@@ -1,0 +1,4 @@
+﻿condition,n,min_frames,median_frames,max_frames,total_valid_seconds,total_adjacent_transitions
+HC,15,180,198.0,202,6115.200000000001,2897
+OFF,25,180,197.0,203,10189.2,4827
+ON,25,173,195.0,202,10101.0,4785

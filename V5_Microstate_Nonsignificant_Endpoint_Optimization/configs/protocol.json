@@ -1,0 +1,23 @@
+{
+  "v4_commit": "2d66fb12b5883aa3a81f30c5cf9bd749d6ffaaad",
+  "v4_tag": "v4-microstate-frozen-2026-11-25",
+  "branch": "experiment/v5-targeted-nonsignificant-endpoints",
+  "cohort": {"hc": 15, "paired_pd": 25, "scans": 65, "atlas": "AAL78", "tr": 2.1},
+  "baseline": {"method": "A3", "k": 4, "band": "F1", "normalization": "N0", "learner": "G1", "decoder": "S1", "lambda": 0.04},
+  "seed": 70261125,
+  "permutations": 10000,
+  "bootstrap": 2000,
+  "alpha": 0.05,
+  "normality_alpha": 0.05,
+  "transition_ridge": 0.10,
+  "jeffreys": 0.5,
+  "contrasts": ["OFF-HC", "ON-HC", "ON-OFF"],
+  "primary": {"coverage_energy": ["OFF-HC", "ON-HC"], "transition_wald": ["OFF-HC", "ON-HC", "ON-OFF"], "restoration": ["ON-OFF"]},
+  "restoration_alternative": "greater",
+  "count_phi_nb2": 1.5,
+  "simulation": {"calibration_seed": 75261125, "formal_seed": 76261125, "stride": 3001, "draws_per_setting": 200,
+    "settings": ["S0", "S1", "S2", "S3", "S5_moderate", "S5_high"],
+    "candidates": [0, 0.01, 0.02, 0.04, 0.08, 0.12], "wild_draws": 399,
+    "s0_max_wilson": 0.10, "s5_max_wilson": 0.15, "min_core_estimability": 0.90,
+    "small_state_minimum": 0.015, "max_small_state_rate": 0.05, "min_gev_retention": 0.95, "max_short_recall_loss": 0.05}
+}

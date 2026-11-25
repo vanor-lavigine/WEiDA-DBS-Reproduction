@@ -1,0 +1,8 @@
+{
+  "selected_lambda": null,
+  "candidate_count": 6,
+  "cohorts_per_candidate": 1200,
+  "baseline_lambda": 0.04,
+  "uses_real_group_p": false,
+  "fixed_templates": true
+}

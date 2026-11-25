@@ -1,0 +1,18 @@
+{
+  "pairs_in_frozen_cohort": 25,
+  "matched_scans": 48,
+  "matched_pairs": 24,
+  "on_first": 24,
+  "off_first": 0,
+  "same_day": 24,
+  "interval_minutes": {
+    "min": 41.86058333333334,
+    "q1": 97.04144166666666,
+    "median": 109.97695833333333,
+    "q3": 142.51910833333332,
+    "max": 171.90016666666668
+  },
+  "verified_medication_intervals": 0,
+  "source_visit_workbook_sha256": "f056d9314b760ea72ba0dc26b71a015c0090a87a1bc9fb3d387b5a621e1cb196",
+  "paired_scan_match_basis": "Original DBS scan sidecar key, condition and frozen paired participant"
+}

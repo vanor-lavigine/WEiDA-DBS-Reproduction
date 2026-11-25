@@ -1,0 +1,7 @@
+{
+  "model_0": "unadjusted",
+  "model_1": "Mean FD",
+  "model_2": "unavailable because individual age and sex remain incomplete",
+  "raw_dvars_archive_sha256": "ef7961c8e940d4c4a094739a1cf7182d2e00b75fac270e0243bd6d5cfd39dfba",
+  "frozen_confounds_sha256_matches": 65
+}
