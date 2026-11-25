@@ -1,0 +1,5 @@
+comparison,alpha,power,standardized_mde
+HC vs patient,0.05,0.8,0.9389444275016934
+HC vs patient,0.0125,0.8,1.1377039537335103
+paired ON vs OFF,0.05,0.8,0.5840266715500849
+paired ON vs OFF,0.0125,0.8,0.7149097301465971

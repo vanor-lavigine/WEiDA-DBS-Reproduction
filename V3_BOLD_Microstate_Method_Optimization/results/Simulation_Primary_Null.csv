@@ -1,0 +1,2 @@
+record_type,wild_seed,wild_draws,replicates,fwer,family_rejections,mc95_low,mc95_high,composition_estimable_fraction,all_four_estimable,switching_rate_C1_valid_n,switching_rate_C1_holm_hits,switching_rate_C2_valid_n,switching_rate_C2_holm_hits,ilr_C1_valid_n,ilr_C1_holm_hits,ilr_C2_valid_n,ilr_C2_holm_hits
+summary,20261125,999,500.0,0.058,29.0,0.0406837291117572,0.08205618785625499,1.0,500.0,500.0,14.0,500.0,14.0,500.0,3.0,500.0,8.0
