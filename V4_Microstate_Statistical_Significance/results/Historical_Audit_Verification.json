@@ -1,0 +1,15 @@
+{
+  "formal_synthetic_cohorts": 1200,
+  "core_simulation_rows_replayed": 4800,
+  "eligible_methods": [],
+  "fallback_method": "A3",
+  "peak_high_noise_rejections_total": 43,
+  "all_v3_rows_read": 33898,
+  "subject_feature_rows_read": 5130,
+  "original_primary_tests_reproduced": 4,
+  "e04_r_cr1_reproduced": 144,
+  "e02_and_e04_same_template": true,
+  "e04_min_abs_r": 0.9065017627779068,
+  "e04_min_margin": 0.059403784774037405,
+  "archived_bootstrap_rows": 620
+}

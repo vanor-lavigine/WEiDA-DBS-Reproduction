@@ -1,0 +1,21 @@
+{
+  "draws": 2000,
+  "fully_refitted": 2000,
+  "failures": {
+    "ok": 2000
+  },
+  "full_composition_matches": 549,
+  "matches_by_state": [
+    1019,
+    1658,
+    712,
+    1450
+  ],
+  "historical_a3_state_matches": [
+    1019,
+    1658,
+    712,
+    1450
+  ],
+  "historical_state_counts_equal": true
+}

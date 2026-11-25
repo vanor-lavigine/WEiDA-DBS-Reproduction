@@ -1,0 +1,505 @@
+{
+  "version": "2026-11-25-a3-frozen",
+  "repository_base_commit": "42dd9f63d535f8e73cca8e3a5fe155c577ea4d79",
+  "source_revision": {
+    "v3_execution_archive": "fced337f621e5b7bc521a0b989f7d84adad3eaf0",
+    "v4_reliability_implementation": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+  },
+  "scope": {
+    "scans": 65,
+    "hc": 15,
+    "paired_pd": 25,
+    "k": 4,
+    "tr_seconds": 2.1,
+    "method": "A3",
+    "penalty": 0.04,
+    "n_permutations_per_test": 10000,
+    "n_complete_refits": 2000,
+    "fully_matched_refits": 549
+  },
+  "public_files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "23302dd90b8bb74b44d365fafef8df20f809b61cb347023951ecf60a88a29651"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "dc8c5a24d778f1fdda8b0f42fdcff713ef13cc529fa28cee3a9ef81c6561fb11"
+    },
+    {
+      "path": "configs/protocol.json",
+      "sha256": "e69f6cf6b59ac99a3c041c475b69b730068660e8dffa0bcd763c9982e4b0060f"
+    },
+    {
+      "path": "figures/Coverage_Comparison.png",
+      "sha256": "01323d164c5ce2e3dc92e9dd18c5aadef43d581d12ccdfe6e94fdf13acb8f74f"
+    },
+    {
+      "path": "figures/Duration_Comparison.png",
+      "sha256": "69ee2dbec3bdd380af6a973306e46f3c989797a69286974da860a7ce110dcc3c"
+    },
+    {
+      "path": "figures/Effect_Size_Forest.png",
+      "sha256": "1f9370ea30879a538763fc1959fc729d2c04aa21c2de57023ff40486eed154cd"
+    },
+    {
+      "path": "figures/GEV_Comparison.png",
+      "sha256": "0f06845fd95c88506f54482018b17afc8505f932d406638ff53ab0e7b5ec112f"
+    },
+    {
+      "path": "figures/Occurrence_Comparison.png",
+      "sha256": "ff27aa5ed4b5535bd6554425f088d5d415bde233fde3f78eaac6abd6f88a9f35"
+    },
+    {
+      "path": "figures/Significance_Summary.png",
+      "sha256": "75138d777fe645dd55f7253b2937263bb042dd82cf7bc58d3ea28f516bf0be13"
+    },
+    {
+      "path": "figures/State_Templates.png",
+      "sha256": "c5f3f47364486f8e3779d88941582d4f9a24d338090edaa90686e39dbc528743"
+    },
+    {
+      "path": "figures/Transition_Matrix.png",
+      "sha256": "464632f1449ed9b971eb1d81b55b637156330e00b398aed848a17f6d83309553"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ffe18213b5007118b93444fb736a8080df750582810ef6ddd90b948d0f715ec7"
+    },
+    {
+      "path": "reports/Microstate_Stability_Report.md",
+      "sha256": "7167906fafdacd299227f71db8cc8eebdd875d23054659907d9a0b9e1853a90f"
+    },
+    {
+      "path": "reports/Scientific_Interpretation.md",
+      "sha256": "1237412ff1135d00279a18f34c238531a846b9aa5fdcc5768b2bc4fd1f13786c"
+    },
+    {
+      "path": "reports/Statistical_Methods.md",
+      "sha256": "01b93960ee1222fa25e54331f58ac6dd396319e238d99bd2ea71cf5b9d758288"
+    },
+    {
+      "path": "reports/V4_Microstate_Statistical_Results.md",
+      "sha256": "7d29789d09b1e5a3b89ae3cdd119d7c2624de3a4d046e17272335bb55c7969bb"
+    },
+    {
+      "path": "results/All_Scalar_Results.csv",
+      "sha256": "1dee3d7b6c8b0de6f95636691886ebfe6a4ae00307d367421f27a96f0d746c04"
+    },
+    {
+      "path": "results/Analysis_Verification.json",
+      "sha256": "5ef33cbd0d161be55cb91659bca1fabda09309243038b9c804ea59f501d1f307"
+    },
+    {
+      "path": "results/Bootstrap_Results.csv",
+      "sha256": "c5762ad640ef2e4ffe0cf174dd830c869409ea278274f3c7cb159e3cc792c0d5"
+    },
+    {
+      "path": "results/Bootstrap_Verification.json",
+      "sha256": "445ddc05abaab08c87ce90d1c29482914d77c331e9d1f55f0a58eaee2158c4fe"
+    },
+    {
+      "path": "results/Coverage_ILR_Results.csv",
+      "sha256": "8b342ee70a0e9a6551015534cacd30bb704806bfdc25b2f66d0abf9678257bfe"
+    },
+    {
+      "path": "results/Coverage_Results.csv",
+      "sha256": "905941c05734d9eeb1989e36d09eb9547738b272ae5d0a4a3e9dba1d2c03bd71"
+    },
+    {
+      "path": "results/Duration_Results.csv",
+      "sha256": "a3079997615053b1c36ca1eb2f0fcf5dd120cd4c2408767b6f9efbe6c73120d8"
+    },
+    {
+      "path": "results/Exploratory_Global_Corrections.csv",
+      "sha256": "6d69a1033c82e1a6774e6aac38f8fc1bc5fbfd697f9dc9934531e9d40fc84f08"
+    },
+    {
+      "path": "results/Fallback_Method_Selection.csv",
+      "sha256": "924a7991f5c810ceeb4b08a710861d43ba640fda81e5ea636b4c5cfc353e3fb3"
+    },
+    {
+      "path": "results/FDR_Results.csv",
+      "sha256": "8d39f9eca61629612fee1d1a27a7439c03dd6148be1fa27f7750f3281f40b23b"
+    },
+    {
+      "path": "results/Final_Verification.json",
+      "sha256": "38d20490333ffe398374eafa25272212fd09f0008322701ccc03612519d66335"
+    },
+    {
+      "path": "results/Fold_Templates.csv",
+      "sha256": "d9eb66e84946e53cd110beee58998f24e82db8f9b7f2996dcdd112651b145527"
+    },
+    {
+      "path": "results/GEV_Results.csv",
+      "sha256": "8bb4cef1c9eb4ed7dbdaed6ea715c6fcb1ee393c6b44414553fd9d0554b72316"
+    },
+    {
+      "path": "results/HC_vs_OFF.csv",
+      "sha256": "51600b414e248dd0625fffd838c2d34446225dfd70a86078ec7e9f0672afbd55"
+    },
+    {
+      "path": "results/HC_vs_ON.csv",
+      "sha256": "82771e3a85ab4286295c8cbae6637199c16c52a7de3af3f70c871b9dac2ca8b5"
+    },
+    {
+      "path": "results/Historical_Audit_Verification.json",
+      "sha256": "efc02856f5c740452849294b71859f66f3ec415da3c80b6e38259b1a2e94e3b2"
+    },
+    {
+      "path": "results/Holm_Results.csv",
+      "sha256": "561d89933c951715d22c70cf558270c29b747fe19644c676ec18143c05fc3a16"
+    },
+    {
+      "path": "results/Occurrence_Results.csv",
+      "sha256": "e8b049837170c6cb3ae70b2684c4311a6a6deb7633dd386a722b35d4bbae08d6"
+    },
+    {
+      "path": "results/ON_vs_OFF.csv",
+      "sha256": "b8d294b86fee19e02f05600f31d8617feb34b665ef28a5d99f2e6aacf6da444e"
+    },
+    {
+      "path": "results/Permutation_Results.csv",
+      "sha256": "bdaede79c162c4265c421280b1723cc81e1c8fbf1ec288a4f8e7194ac255698e"
+    },
+    {
+      "path": "results/Reference_Templates.csv",
+      "sha256": "81fcca0a7454893069fef2b977b7e89b7a8d856b9d5f7a20de9f6ba3b92de5ff"
+    },
+    {
+      "path": "results/Reliability_Core_Calibration_Recount.csv",
+      "sha256": "835f72dcd57ab4f5090d2cee84071b9550b0adfe265aa9f4be2b9eda849959ff"
+    },
+    {
+      "path": "results/Reliability_Traditional_Family_Recount.csv",
+      "sha256": "aa8b348f4a71e93f45005e67519b5491120ce85d80778f5c163a13f92df66397"
+    },
+    {
+      "path": "results/Shared_PD_Direction_Results.csv",
+      "sha256": "74518f298de3f6e1c4c8cad0a13621bca926045786a9051d347d635c084ca631"
+    },
+    {
+      "path": "results/Spatial_Dispersion_Results.csv",
+      "sha256": "ba422863747e60bc5dd7edb24cb9b86c9884cb1e18221ca5390332fa73c61f66"
+    },
+    {
+      "path": "results/State_Matching.csv",
+      "sha256": "34de84ea6d12eba09c01462fdb3b5956ac58645ff3dac6d55b52704c89ce32ae"
+    },
+    {
+      "path": "results/Transition_Matrix_Descriptive.csv",
+      "sha256": "44904ea390c5a9c19f63b16400b7778fdf3e82478b4810f553e5cde5bbc4e28d"
+    },
+    {
+      "path": "results/Transition_Results.csv",
+      "sha256": "88d834be3aebab1669eda64d099cb250ff5ddf946526ae4bcdeabc5dc30b4703"
+    },
+    {
+      "path": "results/V3_Archive_Threshold_Counts.csv",
+      "sha256": "4b03eb9fa6c366a490cf4515f6d16645e7b6af1b8be1b6f7ab99ff15a55a5591"
+    },
+    {
+      "path": "results/V3_Bootstrap_Archive.csv",
+      "sha256": "00903d8f23a6c66da82e45aae1a9247610b805b280547b630d2e31e7b342d0ed"
+    },
+    {
+      "path": "results/V3_Peak_Null_Recount.csv",
+      "sha256": "078fbcb0b5ec1cf88c330cfb93c3ee4ed9aa831eccbca04c4e0a428f601df502"
+    },
+    {
+      "path": "results/V3_Primary_Reproduction.csv",
+      "sha256": "e8ec2350b11c53436fad259c33c169ca6dfd849573190a4a5da2428900140097"
+    },
+    {
+      "path": "results/V3_Reference_Comparisons.csv",
+      "sha256": "0be1afbe5a367db252e7cc3d7b873ae88075e50bba5019cdf74d8844609a344c"
+    },
+    {
+      "path": "scripts/audit_history.py",
+      "sha256": "fa7bc489918c02eb3056d9da4faf4e2c1de1b1cd7ea1c348e4867128c7151a45"
+    },
+    {
+      "path": "scripts/full_bootstrap.py",
+      "sha256": "8b5f11c245f14c1eee22bfa6d5fdc8112d1998f73ec69e0b125106dcc75fb863"
+    },
+    {
+      "path": "scripts/micro_figures.py",
+      "sha256": "85697094a744019c182bd8592245e1d880cce2f1924cc75d6c82c5272d781a36"
+    },
+    {
+      "path": "scripts/micro_inference.py",
+      "sha256": "132962b9de7c203b9bf129ede5a6007a011df6bdc1db1a7a8cf1dbeadc9d3562"
+    },
+    {
+      "path": "scripts/micro_inputs.py",
+      "sha256": "17847abac3dc4901b4f76791402bb9f7830826d98081bd7f85757ec683b92096"
+    },
+    {
+      "path": "scripts/verify.py",
+      "sha256": "4e269164d636d6201030a658bcf2071a0d83817247cb63a47d40fc38fc20a07a"
+    },
+    {
+      "path": "scripts/verify_freeze.py",
+      "sha256": "83ca037d026a255ba7c8563ce09f5372a1032f160fb0e0e6b894cb4744216e64"
+    },
+    {
+      "path": "scripts/write_reports.py",
+      "sha256": "ee23e43979135b2a49e3b171ff7b92c051d25b8fbdf9b6291fc1a4aefe30ff44"
+    },
+    {
+      "path": "workflow/environment.yml",
+      "sha256": "b9f074e148544ce10bd4c2f988c4f1f917bb0deb136aec1b24c56f5c47e232cd"
+    },
+    {
+      "path": "workflow/FROZEN_WORKFLOW.md",
+      "sha256": "0e1682d57e1bb2fb912d1e9c389391ab4c5d103e54ccf4fd3908d13aee1e5248"
+    },
+    {
+      "path": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/features_v3.py",
+      "sha256": "b700d608b3c58e3c3549f6a783dbd0640f6aa22ff605c77ef1765b1dc5b89589"
+    },
+    {
+      "path": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/fit_v3.py",
+      "sha256": "daa0dc830c87e03f80c01f43cf014e5335284214315a1d67140dda3794db0f3d"
+    },
+    {
+      "path": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/inference_core.py",
+      "sha256": "70d1f2c679b38186b979d46db5b2675d152ed1d7d2a6c7b592ba9bd03df60d40"
+    },
+    {
+      "path": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/inference_correspondence.py",
+      "sha256": "ad619671153b320414091460e3b1f77c66902d331a1437a301b8b73bf8ef25e0"
+    },
+    {
+      "path": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/models_v3.py",
+      "sha256": "8961549ce26d9d8734f3bce8de295d4623a2a988b2e205deff4895abcc4bd6d7"
+    },
+    {
+      "path": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/resample_fit.py",
+      "sha256": "daf619a2466688a126632a4f70fe3a143b1ccac68c649937cccbb6a6ebb8a4f0"
+    },
+    {
+      "path": "workflow/source/V4_BOLD_Microstate_Reliability/configs/inference.json",
+      "sha256": "e98a14036ea03ddfe23fedc0a62dbf2ec1d360d2a7e5cf482c82430442d5c8be"
+    },
+    {
+      "path": "workflow/source/V4_BOLD_Microstate_Reliability/configs/protocol.json",
+      "sha256": "4a1c828e35fc106c6431ddedb099950544552d572f28bb5da7904ff454d2900a"
+    },
+    {
+      "path": "workflow/source/V4_BOLD_Microstate_Reliability/configs/simulation_protocol.json",
+      "sha256": "b077137aac9c94fd7ed527b89e05da366d660e3ba50f24c29aeefcbb2b2793cc"
+    },
+    {
+      "path": "workflow/source/V4_BOLD_Microstate_Reliability/scripts/v4_bootstrap.py",
+      "sha256": "93248146679dddb4b77f6df3eaf18a504fae66c59afbc95409acc2aacaca33c2"
+    },
+    {
+      "path": "workflow/source/V4_BOLD_Microstate_Reliability/scripts/v4_inference.py",
+      "sha256": "57c884886625fe1365a89741dad45688b60248e7e05c0c9ec0f280b6a1fc6528"
+    },
+    {
+      "path": "workflow/source/V4_BOLD_Microstate_Reliability/scripts/v4_models.py",
+      "sha256": "1c949fa18c5a4fd30ffd7c862f2d0cabb2823639805e21bc552a5809d38bd3fe"
+    }
+  ],
+  "local_dependencies": [
+    {
+      "path": "WEiDA-DBS-V4/V3_BOLD_Microstate_Method_Optimization/scripts/features_v3.py",
+      "sha256": "b700d608b3c58e3c3549f6a783dbd0640f6aa22ff605c77ef1765b1dc5b89589",
+      "snapshot": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/features_v3.py",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V3_BOLD_Microstate_Method_Optimization/scripts/fit_v3.py",
+      "sha256": "daa0dc830c87e03f80c01f43cf014e5335284214315a1d67140dda3794db0f3d",
+      "snapshot": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/fit_v3.py",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V3_BOLD_Microstate_Method_Optimization/scripts/models_v3.py",
+      "sha256": "8961549ce26d9d8734f3bce8de295d4623a2a988b2e205deff4895abcc4bd6d7",
+      "snapshot": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/models_v3.py",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V3_BOLD_Microstate_Method_Optimization/scripts/resample_fit.py",
+      "sha256": "daf619a2466688a126632a4f70fe3a143b1ccac68c649937cccbb6a6ebb8a4f0",
+      "snapshot": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/resample_fit.py",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V3_BOLD_Microstate_Method_Optimization/scripts/inference_core.py",
+      "sha256": "70d1f2c679b38186b979d46db5b2675d152ed1d7d2a6c7b592ba9bd03df60d40",
+      "snapshot": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/inference_core.py",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V3_BOLD_Microstate_Method_Optimization/scripts/inference_correspondence.py",
+      "sha256": "ad619671153b320414091460e3b1f77c66902d331a1437a301b8b73bf8ef25e0",
+      "snapshot": "workflow/source/V3_BOLD_Microstate_Method_Optimization/scripts/inference_correspondence.py",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/scripts/v4_models.py",
+      "sha256": "1c949fa18c5a4fd30ffd7c862f2d0cabb2823639805e21bc552a5809d38bd3fe",
+      "snapshot": "workflow/source/V4_BOLD_Microstate_Reliability/scripts/v4_models.py",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/scripts/v4_bootstrap.py",
+      "sha256": "93248146679dddb4b77f6df3eaf18a504fae66c59afbc95409acc2aacaca33c2",
+      "snapshot": "workflow/source/V4_BOLD_Microstate_Reliability/scripts/v4_bootstrap.py",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/scripts/v4_inference.py",
+      "sha256": "57c884886625fe1365a89741dad45688b60248e7e05c0c9ec0f280b6a1fc6528",
+      "snapshot": "workflow/source/V4_BOLD_Microstate_Reliability/scripts/v4_inference.py",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/configs/protocol.json",
+      "sha256": "4a1c828e35fc106c6431ddedb099950544552d572f28bb5da7904ff454d2900a",
+      "snapshot": "workflow/source/V4_BOLD_Microstate_Reliability/configs/protocol.json",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/configs/inference.json",
+      "sha256": "e98a14036ea03ddfe23fedc0a62dbf2ec1d360d2a7e5cf482c82430442d5c8be",
+      "snapshot": "workflow/source/V4_BOLD_Microstate_Reliability/configs/inference.json",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/configs/simulation_protocol.json",
+      "sha256": "b077137aac9c94fd7ed527b89e05da366d660e3ba50f24c29aeefcbb2b2793cc",
+      "snapshot": "workflow/source/V4_BOLD_Microstate_Reliability/configs/simulation_protocol.json",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/experiments/bold_microstates_v1/core.py",
+      "sha256": "78a3ba48fccae10c56c539c2c7f44b2cf0b827cc28949fe5a43e6ce485b28e19",
+      "original_git_commit": "42dd9f63d535f8e73cca8e3a5fe155c577ea4d79"
+    },
+    {
+      "path": "WEiDA-DBS-V4/experiments/bold_microstates_v1/peak_states.py",
+      "sha256": "ee66bfe9cdb46953120546796e8bc2160968d2ca1fb5ab19cb0799dde3dda394",
+      "original_git_commit": "42dd9f63d535f8e73cca8e3a5fe155c577ea4d79"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_WEiDA_Statistical_Framework_Microstate/scripts/statistics_v4.py",
+      "sha256": "f941c53eb6d178e42b305b82f9fdfa351c02da733e07ff1179940e6a872894ee",
+      "original_git_commit": "42dd9f63d535f8e73cca8e3a5fe155c577ea4d79"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V3_BOLD_Microstate_Method_Optimization/scripts/input_data.py",
+      "sha256": "14d533667f29ed4b459155c15e4b9b0807c9a4e2c514a938a2b1df1f737f091d",
+      "original_git_commit": "0771606a7a6687fb9cd2816130c9924f79f47c0e",
+      "role": "authorized local archive loader"
+    }
+  ],
+  "local_archive_files": [
+    {
+      "path": "WEiDA_STN25_HC15_K4_20261117/input_manifest.csv",
+      "sha256": "a41ec20dbfb6b8086888d9e2051fe823b93937b36ee82a537f4a994899d39a5b"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V3_BOLD_Microstate_Method_Optimization/manifests/provenance_gate.json",
+      "sha256": "90ca09b13ca8b4349c2498db2b3e1efe48548d1ad111ac9ef4bd0a4543d310a5"
+    },
+    {
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/manifests/ROI_Axis.csv",
+      "sha256": "ee168015e6471d302ead5e2fb777137195008a7370023c10b6814d112b1ad8f9"
+    },
+    {
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/private/Subject_Level_Features.csv",
+      "sha256": "e11ad9d267bb90d460fd01a4d59d56e5355cd3377353838394dfbef95ce00124"
+    },
+    {
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/All_Methods_Comparison.csv",
+      "sha256": "94cd059dd866a84eccdd8c2d8cff6eb2ca2bc21ad3caba2dd5d7dd41aa960721"
+    },
+    {
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/Group_Templates.csv",
+      "sha256": "3e9cc0d3a8f8ed85fed4148a663e119e367effc6aa1733c15b8931e81226d804"
+    },
+    {
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/HC_vs_OFF_All_Results.csv",
+      "sha256": "7bfb1c66fb2844013c4de8499bfe370817a2bae6e5452fae2511c4871162d88d"
+    },
+    {
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/HC_vs_ON_All_Results.csv",
+      "sha256": "f0680b6360665a86a5cf1a87005ffbdd57dbc2a1410f4afd7d53b48adbd25ad5"
+    },
+    {
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/ON_vs_OFF_All_Results.csv",
+      "sha256": "ecd61d95576cb6b1de986710b5d00ebf9a587468bbbbecf5a06ab7dddb9f3708"
+    },
+    {
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/HC_Both_Conditions_Significant.csv",
+      "sha256": "a5f3e164c08b3f0fd706263de3e2b8071a11ad24ce30103ea8172268e1eb0a9e"
+    },
+    {
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/Supplement_Bootstrap_formal.csv",
+      "sha256": "7b69265a6e3df6e181ade745373c39e06686104b644f37f5db0d459b6cf2b392"
+    },
+    {
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/all_R_Bootstrap_formal.csv",
+      "sha256": "954638ff77178db8305973198442c7e6ee77390be32c25230efe7b71c56d54eb"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/private/V4_Maps.npz",
+      "sha256": "f63d41cd8d8e95dd5c481b5b2cf69cea051887d9ef128edf9251c73140c47a8f"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/private/V4_Scan_Metrics.csv",
+      "sha256": "c2051ddb4a3273e5524a87ef73e9f06c4b5df33e75d3121cece599d32458ae02"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/results/Calibration_Selection.json",
+      "sha256": "23c100a487463cf424e659d4e4ec8fd9151ed13311a0f9503819728030820cbe"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/results/Simulation_Core_Calibration.csv",
+      "sha256": "d1082b2b8e09f655330dd7a9490b19a6428c892cf70496e1bbb569a7886545f0"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/results/Disjoint_Reliability.csv",
+      "sha256": "41bf8d0c0371183e03952a6ee24bbc30f9a402d1dffe35397b057e2dd9755c7e"
+    },
+    {
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/results/V4_Bootstrap_Identifiability_formal.csv",
+      "sha256": "71664761b81bc8e23f52595f370574f2164c892b81eeaa8798b93c5c1dafa454"
+    }
+  ],
+  "local_archive_collections": [
+    {
+      "role": "A3 archived leave-out backfits",
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/private/frames/A3",
+      "glob": "*.npz",
+      "count": 65,
+      "sha256": "079dddfdf44aadbb005ece5d9ae9471162b1bbec1e851e8340b08d1e7406d355"
+    },
+    {
+      "role": "V4 formal synthetic cohorts",
+      "path": "WEiDA-DBS-V4/V4_BOLD_Microstate_Reliability/private/simulation/formal",
+      "glob": "scenario_*_cohort_*.json",
+      "count": 1200,
+      "sha256": "a59bfe56d5121a72c1e7b464394944fc5967b213af628cdd1fc82b6c0b1c6cb0"
+    },
+    {
+      "role": "V3 S0 simulation chunks",
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/private/simulation",
+      "glob": "S0_*.csv",
+      "count": 100,
+      "sha256": "c219486341455e1771ddaf2a46b5d13a3223e51f36768ac23bd2f2453b28efbf"
+    },
+    {
+      "role": "V3 S5 simulation chunks",
+      "path": "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/private/simulation",
+      "glob": "S5_*.csv",
+      "count": 100,
+      "sha256": "664f6603152357668ad69a0811b72efb57b585dfbfbb15e2aaba5ceb6127f4f5"
+    }
+  ]
+}

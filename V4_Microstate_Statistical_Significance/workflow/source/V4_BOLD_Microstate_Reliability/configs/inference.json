@@ -1,0 +1,25 @@
+{
+  "model": "V3 OLS with scan mean FD, subject-cluster CR1, t(G-1)",
+  "main_window": "common",
+  "primary_endpoints": ["coverage_ilr", "global_gev", "mean_margin"],
+  "primary_contrasts": ["C1", "C2"],
+  "paired_secondary_contrast": "C3",
+  "companion_endpoints": ["low_margin_fraction", "switching_rate"],
+  "state_metrics": ["coverage", "duration", "occurrence", "gev"],
+  "state_correspondence": {"min_abs_r": 0.6, "min_bidirectional_margin": 0.05},
+  "composition": {"pseudocount_frames": 0.5, "wild_bootstrap_draws": 9999, "wild_bootstrap_seed": 752261},
+  "inference_windows": {
+    "common": ["A0", "A1", "A2", "A3"],
+    "native": ["A0", "A1", "A2", "A3"],
+    "fd_censor": ["A0", "A1", "A2", "A3"],
+    "weight_uniform": ["A2", "A3"]
+  },
+  "bootstrap": {
+    "pilot_repetitions": 200,
+    "formal_repetitions": 2000,
+    "pilot_seed_base": 10833000,
+    "formal_seed_base": 10910000,
+    "if_no_calibrated_method": ["A0", "A3"]
+  },
+  "planning": {"d": [0.35, 0.4], "coverage_mahalanobis_d": [0.35, 0.4], "power": [0.8, 0.9], "alpha_family": 0.05, "tests": 6, "attrition": 0.15}
+}

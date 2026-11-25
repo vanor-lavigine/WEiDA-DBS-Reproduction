@@ -1,0 +1,21 @@
+{
+  "cohort": {
+    "HC": 15,
+    "ON": 25,
+    "OFF": 25,
+    "independent_participants": 40,
+    "scans": 65
+  },
+  "all_point_labels_replayed": true,
+  "frames_total": 12574,
+  "stable_state_flags": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "scalar_rows": 99,
+  "composition_rows": 4,
+  "shared_rows": 33,
+  "permutation_draws": 10000
+}

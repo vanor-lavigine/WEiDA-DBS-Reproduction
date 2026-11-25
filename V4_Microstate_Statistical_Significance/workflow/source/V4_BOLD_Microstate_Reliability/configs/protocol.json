@@ -1,0 +1,119 @@
+{
+  "cohort": {
+    "name": "105",
+    "counts": {
+      "HC": 15,
+      "ON": 25,
+      "OFF": 25
+    },
+    "participants": 40,
+    "atlas": "AAL78",
+    "TR": 2.1,
+    "band": "F1",
+    "normalization": "N0",
+    "k": 4,
+    "polarity": "insensitive"
+  },
+  "reference": {
+    "archived_report": "5dc5534983bfd61981c17e9318fe1c9f7ee260a7",
+    "v3_source": "cbfa951bc4d6d966a8b09f5c3bf0e2f980a23bec",
+    "local_v3_run": "fced337f621e5b7bc521a0b989f7d84adad3eaf0"
+  },
+  "algorithms": {
+    "A0": [
+      "G0",
+      "S0"
+    ],
+    "A1": [
+      "G1",
+      "S0"
+    ],
+    "A2": [
+      "G0",
+      "S1"
+    ],
+    "A3": [
+      "G1",
+      "S1"
+    ]
+  },
+  "fivefold_seed": 20261125,
+  "participant_weight": {
+    "HC": 1,
+    "ON": 0.5,
+    "OFF": 0.5
+  },
+  "g0": "V3 AAHC per-scan maps and the exact optimized four-map group objective; original local GFP magnitude affects AAHC, each resulting axis is a unit vector",
+  "g1": {
+    "objective": "sum of weighted squared spatial projections, maximand",
+    "peak_weights": "within-scan uniform, sum to scan weight",
+    "seed": 961407,
+    "n_init": 50,
+    "max_iter": 240,
+    "axis_tolerance": 0.00002,
+    "relative_objective_tolerance": 0.000001
+  },
+  "s1": {
+    "loss": "sum(w[t]*(1-r[t,z[t]]**2))+penalty*switches",
+    "weights": "per-scan GFP^2 / mean GFP^2 over all originally valid TR; uniform sensitivity",
+    "penalties": [
+      0,
+      0.02,
+      0.04,
+      0.08,
+      0.16,
+      0.32,
+      0.64,
+      1.28
+    ],
+    "stress_penalty": 8,
+    "lambda_scope": "one shared value frozen from independent development simulations; no retuning on real cohorts or in bootstrap"
+  },
+  "time_windows": {
+    "main": "intersection of historical S0 windows for G0 and G1 in each scan; retain observed boundary pieces for both rules",
+    "native": "original cropped S0 and all valid TR for S1",
+    "fd_censor": "main less FD>0.50 mm and 1 preceding and 2 following frames, heldout-only mask used for both rules; templates unchanged",
+    "edge": "remove first/last observed runs for each retained block; descriptive"
+  },
+  "identification": {
+    "min_abs_cosine": 0.6,
+    "min_row_and_column_gap": 0.05,
+    "within_v4": "all pairwise matches and cycles for each state; fold 0 naming only",
+    "legacy_v3": "all heldout folds must have reliable and same V3 R or historical naming; do not equate IDs"
+  },
+  "quality_validation": {
+    "disjoint": "two whole training folds per bank within each outer split, common outer heldout scans; all three unordered training partitions",
+    "preferred_rule": "see simulation_protocol.json; rank passing methods on disjoint label ARI then matched-map mean absolute r, with recovery loss reported",
+    "bootstrap_fallback": [
+      "A0",
+      "A3"
+    ]
+  },
+  "statistics": {
+    "model": "OLS condition + average FD, person clustered CR1 with finite-sample covariance factors and G-1 df",
+    "composition": "ILR, half-TR pseudocount; restricted participant wild bootstrap, 9999 draws; no template retraining under null",
+    "contrasts": [
+      "C1_ON_minus_HC",
+      "C2_OFF_minus_HC",
+      "C3_ON_minus_OFF"
+    ],
+    "core": [
+      "coverage_ilr",
+      "global_gev",
+      "mean_margin"
+    ],
+    "extra": [
+      "low_margin_fraction",
+      "switching_rate"
+    ],
+    "adjustment": "Holm 6 core slots per method, complete BH and Holm secondary families and across-method Holm",
+    "duration_no_episodes": "NA"
+  },
+  "bootstrap": {
+    "pilot": 200,
+    "formal": 2000,
+    "same_indices": true,
+    "unit": "stratified within original fold by HC/PD participants, patient visits together",
+    "no_unconditional_partial_ci": true
+  }
+}
