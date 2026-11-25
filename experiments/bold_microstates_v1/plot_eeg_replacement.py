@@ -121,6 +121,30 @@ def clinical_plot(clinical, out):
     plt.close(fig)
 
 
+def m4_on_plot(clinical, out):
+    labels = {"occurrence_s": "每分钟出现次数", "duration_s": "每次平均持续时间", "coverage": "时间占比"}
+    rows = clinical.query("band == 'weida_band' and state == 'M4' and contrast == 'on_score'")
+    rows = rows.set_index("metric", verify_integrity=True).loc[list(labels)]
+    fig, ax = plt.subplots(figsize=(8.5, 3.3))
+    fig.subplots_adjust(left=.22, right=.78, top=.77, bottom=.22)
+    fig.suptitle("开机时 M4 的三个指标与运动评分", x=.05, y=.98, ha="left", fontsize=16)
+    ax.axvline(0, color="#90999e", ls="--", lw=1)
+    ax.text(1.07, 1.04, "BH q（42 项）", transform=ax.transAxes, fontsize=10)
+    for j, (metric, row) in enumerate(rows.iterrows()):
+        color = "#116c74" if row.q_bh42 < .05 else "#53626b"
+        ax.errorbar(row.r, j, xerr=[[row.r-row.ci_low], [row.ci_high-row.r]],
+                    fmt="o", color=color, lw=2, capsize=4)
+        ax.text(1.07, j, f"{row.q_bh42:.4f}", transform=ax.get_yaxis_transform(),
+                va="center", color=color)
+    ax.set(xlim=(-1, 1), ylim=(2.48, -.56), xticks=[-1, -.5, 0, .5, 1],
+           yticks=range(3), yticklabels=list(labels.values()), xlabel="Pearson r")
+    ax.spines[["right", "top", "left"]].set_visible(False)
+    ax.tick_params(axis="y", length=0, pad=10)
+    fig.text(.05, .035, f"{int(rows.n.iloc[0])} 名患者。点为相关系数，横线为逐项 95% 置信区间。", fontsize=9)
+    fig.savefig(out / "m4_on_correlations.png", dpi=160)
+    plt.close(fig)
+
+
 def export(path, atlas, lut, template, mask):
     result = json.loads(path.read_text(encoding="utf8"))
     out = path.parent
@@ -150,6 +174,7 @@ def export(path, atlas, lut, template, mask):
     plt.rcParams["font.family"]=[cjk]
     paired_plot(p,out)
     clinical_plot(c,out)
+    m4_on_plot(c,out)
     anatomical_figures(result,out,atlas,lut,template,mask)
 
 

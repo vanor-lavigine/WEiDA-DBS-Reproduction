@@ -1,5 +1,9 @@
 # WEiDA-DBS Reproduction
 
+## 105 队列的运动评分与脑状态
+
+本分支整理了 25 名 STN-DBS 患者的 50 次真实 BOLD 扫描。关机时的总体持续时间未复现 EEG 论文的相关。开机时，M4 出现率与运动评分呈负相关（r = −0.641，BH q = 0.0232）。报告另列同一批患者的全脑相位同步结果，并说明控制关机起点后变化量关联如何改变。[阅读中文报告和图表](reports/bold_microstates_v1/eeg_replacement_105/README.md)
+
 ## 微状态方法迁移实验 v1
 
 新增独立实验：将 EEG 微状态的空间模板、全时点回填和时间指标框架迁移到已有 ROI-BOLD，检验与 STN-DBS 状态及运动严重程度的关系。该分支不重跑既有影像预处理。
@@ -11,7 +15,7 @@
 - [程序入口](experiments/bold_microstates_v1/run.py)
 - [开发验证记录](experiments/bold_microstates_v1/VALIDATION.md)
 
-当前完成的是程序与合成数据验证；真实队列状态提取、患者配对统计和临床关联等待服务器执行。BOLD 状态编号 M1–M4 不代表 EEG A–D。
+上述开发验证记录描述程序建立时的合成数据测试。105 真实队列的状态提取、配对统计和临床关联见本页开头的报告。BOLD 的 M1–M4 与 EEG 的 A–D 尚未建立一一对应关系。
 
 ## V100 预处理交接
 
