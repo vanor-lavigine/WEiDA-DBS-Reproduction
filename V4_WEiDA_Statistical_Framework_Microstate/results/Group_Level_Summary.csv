@@ -1,0 +1,259 @@
+﻿method,metric,family,unit,scope,state,condition,n,missing,mean,sd,median
+Microstate,coverage_1,Coverage,proportion,primary,M1,HC,15,0,0.22539682539682537,0.06257270902992705,0.2285714285714285
+Microstate,coverage_1,Coverage,proportion,primary,M1,OFF,25,0,0.27626338573706993,0.06705515183452133,0.2952380952380952
+Microstate,coverage_1,Coverage,proportion,primary,M1,ON,25,0,0.2532586010480747,0.08998978354579579,0.2619047619047619
+Microstate,coverage_2,Coverage,proportion,primary,M2,HC,15,0,0.2412698412698413,0.06812464677420615,0.2285714285714285
+Microstate,coverage_2,Coverage,proportion,primary,M2,OFF,25,0,0.26592845750740485,0.09550533216437651,0.2714285714285714
+Microstate,coverage_2,Coverage,proportion,primary,M2,ON,25,0,0.24656368193210296,0.05768115079172671,0.2476190476190476
+Microstate,coverage_3,Coverage,proportion,primary,M3,HC,15,0,0.29904761904761906,0.08691897190692409,0.2904761904761905
+Microstate,coverage_3,Coverage,proportion,primary,M3,OFF,25,0,0.21660150375939843,0.06152449506416942,0.1952380952380952
+Microstate,coverage_3,Coverage,proportion,primary,M3,ON,25,0,0.2717138300296195,0.08872369126055925,0.2714285714285714
+Microstate,coverage_4,Coverage,proportion,primary,M4,HC,15,0,0.2342857142857143,0.08063563482819751,0.2285714285714285
+Microstate,coverage_4,Coverage,proportion,primary,M4,OFF,25,0,0.24120665299612665,0.06430655240526749,0.238095238095238
+Microstate,coverage_4,Coverage,proportion,primary,M4,ON,25,0,0.22846388699020279,0.06637649446459652,0.2142857142857142
+Microstate,duration_1,Duration,s,primary,M1,HC,15,0,3.766904256308423,0.4682031444515269,3.80625
+Microstate,duration_1,Duration,s,primary,M1,OFF,25,0,4.421244507901563,0.6487394502345251,4.361538461538461
+Microstate,duration_1,Duration,s,primary,M1,ON,25,0,4.165990687201057,0.8219235748454968,4.2
+Microstate,duration_2,Duration,s,primary,M2,HC,15,0,4.099832902714687,0.83676518727587,3.99
+Microstate,duration_2,Duration,s,primary,M2,OFF,25,0,4.137347457615739,0.9539898889973742,4.116
+Microstate,duration_2,Duration,s,primary,M2,ON,25,0,4.179567200276004,0.5706332270970107,4.2
+Microstate,duration_3,Duration,s,primary,M3,HC,15,0,4.475751518105112,0.9613869613494432,4.13
+Microstate,duration_3,Duration,s,primary,M3,OFF,25,0,3.792296796752329,0.5777365202511189,3.733333333333333
+Microstate,duration_3,Duration,s,primary,M3,ON,25,0,4.303028150255395,0.918502988883868,4.269999999999999
+Microstate,duration_4,Duration,s,primary,M4,HC,15,0,3.8529186091686096,0.6686758758224317,3.733333333333333
+Microstate,duration_4,Duration,s,primary,M4,OFF,25,0,4.142479750664885,0.7085520090655599,3.888888888888889
+Microstate,duration_4,Duration,s,primary,M4,ON,25,0,4.052778424134034,0.4984994857795095,3.982758620689655
+Microstate,occurrence_1,Occurrence,episodes/s,primary,M1,HC,15,0,0.05910808767951618,0.011057985908585883,0.0566893424036281
+Microstate,occurrence_1,Occurrence,episodes/s,primary,M1,OFF,25,0,0.06205340190302591,0.01107241788358875,0.0634920634920634
+Microstate,occurrence_1,Occurrence,episodes/s,primary,M1,ON,25,0,0.05925332812550852,0.014295407798085056,0.0612244897959183
+Microstate,occurrence_2,Occurrence,episodes/s,primary,M2,HC,15,0,0.05850340136054418,0.010291887272480931,0.0566893424036281
+Microstate,occurrence_2,Occurrence,episodes/s,primary,M2,OFF,25,0,0.06277468563182843,0.010327938912201719,0.0634920634920634
+Microstate,occurrence_2,Occurrence,episodes/s,primary,M2,ON,25,0,0.05852510063036374,0.00845686704080001,0.0589569160997732
+Microstate,occurrence_3,Occurrence,episodes/s,primary,M3,HC,15,0,0.0663643235071806,0.011640492103585615,0.0657596371882086
+Microstate,occurrence_3,Occurrence,episodes/s,primary,M3,OFF,25,0,0.056788291074005307,0.011336637802312899,0.0566893424036281
+Microstate,occurrence_3,Occurrence,episodes/s,primary,M3,ON,25,0,0.062246525404420085,0.012373088985486266,0.0657596371882086
+Microstate,occurrence_4,Occurrence,episodes/s,primary,M4,HC,15,0,0.05986394557823123,0.013518782427747265,0.0612244897959183
+Microstate,occurrence_4,Occurrence,episodes/s,primary,M4,OFF,25,0,0.057970901279171906,0.010741576610330898,0.0589569160997732
+Microstate,occurrence_4,Occurrence,episodes/s,primary,M4,ON,25,0,0.05580444618038599,0.011806150710110815,0.0544217687074829
+Microstate,gev_1,GEV,proportion,primary,M1,HC,15,0,0.045008937103057076,0.017926430178609235,0.0433926890398163
+Microstate,gev_1,GEV,proportion,primary,M1,OFF,25,0,0.05142394541446696,0.028897896687270556,0.0456247821284894
+Microstate,gev_1,GEV,proportion,primary,M1,ON,25,0,0.0487589389325267,0.03451150115963488,0.045157999711868
+Microstate,gev_2,GEV,proportion,primary,M2,HC,15,0,0.04938424130064701,0.02905220304415934,0.0488267799507675
+Microstate,gev_2,GEV,proportion,primary,M2,OFF,25,0,0.044737994590321246,0.02660180870980891,0.0385867589655924
+Microstate,gev_2,GEV,proportion,primary,M2,ON,25,0,0.04374311079809842,0.019316056704769737,0.0405629834641143
+Microstate,gev_3,GEV,proportion,primary,M3,HC,15,0,0.06363630282568403,0.03409743344713046,0.063305272955984
+Microstate,gev_3,GEV,proportion,primary,M3,OFF,25,0,0.027547675229334226,0.018145608547107343,0.0235231417098489
+Microstate,gev_3,GEV,proportion,primary,M3,ON,25,0,0.041153093846426875,0.023613342787728708,0.031256735336217
+Microstate,gev_4,GEV,proportion,primary,M4,HC,15,0,0.04853373239598096,0.027530707991058726,0.0462549775727078
+Microstate,gev_4,GEV,proportion,primary,M4,OFF,25,0,0.04708473212200257,0.03245236816956435,0.035296455654909
+Microstate,gev_4,GEV,proportion,primary,M4,ON,25,0,0.04449817143085239,0.0214208507925208,0.0398564967004938
+Microstate,dispersion_1,Spatial Dispersion,unit-vector distance,primary,M1,HC,15,0,1.0972910734747587,0.04057737177005647,1.100642786019002
+Microstate,dispersion_1,Spatial Dispersion,unit-vector distance,primary,M1,OFF,25,0,1.1136286980998933,0.06251092862476153,1.1131601060452783
+Microstate,dispersion_1,Spatial Dispersion,unit-vector distance,primary,M1,ON,25,0,1.1224534820083358,0.06993346158492444,1.1233934020362695
+Microstate,dispersion_2,Spatial Dispersion,unit-vector distance,primary,M2,HC,15,0,1.098106576668889,0.05486325060565656,1.1036009743448973
+Microstate,dispersion_2,Spatial Dispersion,unit-vector distance,primary,M2,OFF,25,0,1.1309280797173724,0.04511855082889758,1.1368263358073354
+Microstate,dispersion_2,Spatial Dispersion,unit-vector distance,primary,M2,ON,25,0,1.1167367223040587,0.05386647187784359,1.1121557998986038
+Microstate,dispersion_3,Spatial Dispersion,unit-vector distance,primary,M3,HC,15,0,1.099542365030892,0.057676170024339696,1.0957559279937736
+Microstate,dispersion_3,Spatial Dispersion,unit-vector distance,primary,M3,OFF,25,0,1.1668471144269599,0.04867332343704047,1.178050290806505
+Microstate,dispersion_3,Spatial Dispersion,unit-vector distance,primary,M3,ON,25,0,1.1368777191289303,0.03896183812320011,1.1430140901158516
+Microstate,dispersion_4,Spatial Dispersion,unit-vector distance,primary,M4,HC,15,0,1.09785034940253,0.043224656925224765,1.1018912203559086
+Microstate,dispersion_4,Spatial Dispersion,unit-vector distance,primary,M4,OFF,25,0,1.1154028073397344,0.06622091132167983,1.106602958828976
+Microstate,dispersion_4,Spatial Dispersion,unit-vector distance,primary,M4,ON,25,0,1.1018971615901192,0.05635674654229948,1.10510733670976
+Microstate,transition_1_2,Transition Probability,proportion,primary,M1->M2,HC,15,0,0.31037923193522216,0.09589558182754825,0.3478260869565217
+Microstate,transition_1_2,Transition Probability,proportion,primary,M1->M2,OFF,25,0,0.4020035650300582,0.13617578126866983,0.4074074074074074
+Microstate,transition_1_2,Transition Probability,proportion,primary,M1->M2,ON,25,0,0.31707713150283856,0.09801289856400708,0.3181818181818182
+Microstate,transition_1_3,Transition Probability,proportion,primary,M1->M3,HC,15,0,0.3474049476191648,0.1417927703142174,0.3333333333333333
+Microstate,transition_1_3,Transition Probability,proportion,primary,M1->M3,OFF,25,0,0.2644106222155768,0.09539198815075071,0.2692307692307692
+Microstate,transition_1_3,Transition Probability,proportion,primary,M1->M3,ON,25,0,0.36108870728661246,0.11123645255579066,0.4
+Microstate,transition_1_4,Transition Probability,proportion,primary,M1->M4,HC,15,0,0.34221582044561305,0.1497077080934689,0.3478260869565217
+Microstate,transition_1_4,Transition Probability,proportion,primary,M1->M4,OFF,25,0,0.33358581275436494,0.09652102411991069,0.3333333333333333
+Microstate,transition_1_4,Transition Probability,proportion,primary,M1->M4,ON,25,0,0.3218341612105488,0.14473619097228035,0.3076923076923077
+Microstate,transition_2_1,Transition Probability,proportion,primary,M2->M1,HC,15,0,0.3396937213134034,0.10307799737348548,0.3548387096774194
+Microstate,transition_2_1,Transition Probability,proportion,primary,M2->M1,OFF,25,0,0.3712265826382978,0.11057963151775908,0.3703703703703703
+Microstate,transition_2_1,Transition Probability,proportion,primary,M2->M1,ON,25,0,0.3766880573853054,0.10656273294137908,0.391304347826087
+Microstate,transition_2_3,Transition Probability,proportion,primary,M2->M3,HC,15,0,0.38930823270888726,0.10727651359018409,0.3870967741935484
+Microstate,transition_2_3,Transition Probability,proportion,primary,M2->M3,OFF,25,0,0.32559849051420636,0.14650919024711506,0.2962962962962963
+Microstate,transition_2_3,Transition Probability,proportion,primary,M2->M3,ON,25,0,0.34091848327856444,0.09672596305855145,0.3333333333333333
+Microstate,transition_2_4,Transition Probability,proportion,primary,M2->M4,HC,15,0,0.2709980459777094,0.10271928541707313,0.2580645161290322
+Microstate,transition_2_4,Transition Probability,proportion,primary,M2->M4,OFF,25,0,0.30317492684749586,0.09334814130431887,0.2962962962962963
+Microstate,transition_2_4,Transition Probability,proportion,primary,M2->M4,ON,25,0,0.2823934593361299,0.08700774152266127,0.2727272727272727
+Microstate,transition_3_1,Transition Probability,proportion,primary,M3->M1,HC,15,0,0.28789835885725323,0.10139577258963925,0.2619047619047619
+Microstate,transition_3_1,Transition Probability,proportion,primary,M3->M1,OFF,25,0,0.34404479722777465,0.1313333104992157,0.32
+Microstate,transition_3_1,Transition Probability,proportion,primary,M3->M1,ON,25,0,0.2901370571240953,0.11812344092112276,0.3043478260869565
+Microstate,transition_3_2,Transition Probability,proportion,primary,M3->M2,HC,15,0,0.3448687075416519,0.11176417874006532,0.3076923076923077
+Microstate,transition_3_2,Transition Probability,proportion,primary,M3->M2,OFF,25,0,0.334025875858667,0.14265144024130194,0.36
+Microstate,transition_3_2,Transition Probability,proportion,primary,M3->M2,ON,25,0,0.38157164353422723,0.12300971012538776,0.3823529411764705
+Microstate,transition_3_4,Transition Probability,proportion,primary,M3->M4,HC,15,0,0.3672329336010949,0.13750455163628048,0.3793103448275862
+Microstate,transition_3_4,Transition Probability,proportion,primary,M3->M4,OFF,25,0,0.3219293269135584,0.08209319099148668,0.3333333333333333
+Microstate,transition_3_4,Transition Probability,proportion,primary,M3->M4,ON,25,0,0.3282912993416774,0.10482388723560107,0.3043478260869565
+Microstate,transition_4_1,Transition Probability,proportion,primary,M4->M1,HC,15,0,0.3433815076070632,0.0808144028605022,0.3181818181818182
+Microstate,transition_4_1,Transition Probability,proportion,primary,M4->M1,OFF,25,0,0.319997151559451,0.12759339946996398,0.2916666666666667
+Microstate,transition_4_1,Transition Probability,proportion,primary,M4->M1,ON,25,0,0.3330187430047471,0.1491827742957461,0.3636363636363636
+Microstate,transition_4_2,Transition Probability,proportion,primary,M4->M2,HC,15,0,0.28357170945201765,0.0885637928081334,0.2666666666666666
+Microstate,transition_4_2,Transition Probability,proportion,primary,M4->M2,OFF,25,0,0.33960930561563063,0.11262738762355667,0.32
+Microstate,transition_4_2,Transition Probability,proportion,primary,M4->M2,ON,25,0,0.2919574274690907,0.11043890555649932,0.2941176470588235
+Microstate,transition_4_3,Transition Probability,proportion,primary,M4->M3,HC,15,0,0.3730467829409191,0.09779477913474045,0.3448275862068966
+Microstate,transition_4_3,Transition Probability,proportion,primary,M4->M3,OFF,25,0,0.34039354282491835,0.11528484018956099,0.3333333333333333
+Microstate,transition_4_3,Transition Probability,proportion,primary,M4->M3,ON,25,0,0.3750238295261621,0.15132824190241725,0.3783783783783784
+Microstate,coverage_entropy,Overall metrics,normalized entropy,overall,,HC,15,0,0.9654156430707691,0.022373731959597676,0.9659916961746939
+Microstate,coverage_entropy,Overall metrics,normalized entropy,overall,,OFF,25,0,0.9673089273484288,0.034871711011059944,0.976417818145419
+Microstate,coverage_entropy,Overall metrics,normalized entropy,overall,,ON,25,0,0.9650970378246366,0.023898637417574465,0.9679666952925715
+Microstate,global_pooled_duration,Overall metrics,s,overall,,HC,15,0,4.122872367077137,0.3075001782535766,4.200000000000001
+Microstate,global_pooled_duration,Overall metrics,s,overall,,OFF,25,0,4.189994189106392,0.26855601022065023,4.160377358490568
+Microstate,global_pooled_duration,Overall metrics,s,overall,,ON,25,0,4.262597593574102,0.322030912728034,4.160377358490568
+Microstate,switching_rate,Overall metrics,switches/s,overall,,HC,15,0,0.2415721844293273,0.018558252087637252,0.2358276643990929
+Microstate,switching_rate,Overall metrics,switches/s,overall,,OFF,25,0,0.23731927220649018,0.015038469432124066,0.238095238095238
+Microstate,switching_rate,Overall metrics,switches/s,overall,,ON,25,0,0.23356095867374058,0.017035515284398832,0.238095238095238
+Microstate,global_occurrence,Overall metrics,episodes/s,overall,,HC,15,0,0.24383975812547237,0.018558252087637245,0.238095238095238
+Microstate,global_occurrence,Overall metrics,episodes/s,overall,,OFF,25,0,0.23958727988803172,0.015037705246800096,0.2403628117913832
+Microstate,global_occurrence,Overall metrics,episodes/s,overall,,ON,25,0,0.2358294003406785,0.017035877120145794,0.2403628117913832
+Microstate,total_gev,Overall metrics,proportion,overall,,HC,15,0,0.20656321362536909,0.03707614550496829,0.2057102177354587
+Microstate,total_gev,Overall metrics,proportion,overall,,OFF,25,0,0.170794347356125,0.04549894211664185,0.1736803234429606
+Microstate,total_gev,Overall metrics,proportion,overall,,ON,25,0,0.17815331500790438,0.04839938007539838,0.1845681653759545
+Microstate,global_dispersion,Overall metrics,unit-vector distance,overall,,HC,15,0,1.0915836994928345,0.038142191425615375,1.0898602871365606
+Microstate,global_dispersion,Overall metrics,unit-vector distance,overall,,OFF,25,0,1.12260383569947,0.045465578641251204,1.1172375115019373
+Microstate,global_dispersion,Overall metrics,unit-vector distance,overall,,ON,25,0,1.1134045603370344,0.04622977335735788,1.1044996390657844
+WEiDA,coverage_1,Coverage,proportion,primary,W1,HC,15,0,0.21936507936507935,0.09649622497264032,0.17142857142857146
+WEiDA,coverage_1,Coverage,proportion,primary,W1,OFF,25,0,0.31759671907040327,0.13206517731573317,0.3190476190476191
+WEiDA,coverage_1,Coverage,proportion,primary,W1,ON,25,0,0.25701435406698564,0.12441100982828567,0.24761904761904763
+WEiDA,coverage_2,Coverage,proportion,primary,W2,HC,15,0,0.3053968253968254,0.10959575670974178,0.28095238095238095
+WEiDA,coverage_2,Coverage,proportion,primary,W2,OFF,25,0,0.19851902483481434,0.10155574259739589,0.18571428571428572
+WEiDA,coverage_2,Coverage,proportion,primary,W2,ON,25,0,0.27056459330143545,0.12751483014642187,0.30000000000000004
+WEiDA,coverage_3,Coverage,proportion,primary,W3,HC,15,0,0.27015873015873015,0.1042577023644851,0.24761904761904763
+WEiDA,coverage_3,Coverage,proportion,primary,W3,OFF,25,0,0.23336249715197085,0.097864657936401,0.21904761904761907
+WEiDA,coverage_3,Coverage,proportion,primary,W3,ON,25,0,0.24180815675552517,0.11913994977604077,0.24285714285714288
+WEiDA,coverage_4,Coverage,proportion,primary,W4,HC,15,0,0.2050793650793651,0.09870339627509271,0.19523809523809527
+WEiDA,coverage_4,Coverage,proportion,primary,W4,OFF,25,0,0.2505217589428116,0.12548022238581916,0.2571428571428572
+WEiDA,coverage_4,Coverage,proportion,primary,W4,ON,25,0,0.23061289587605377,0.1067383809194647,0.25238095238095243
+WEiDA,duration_1,Duration,s,primary,W1,HC,15,0,8.134901412914571,3.1754729355832674,7.957894736842106
+WEiDA,duration_1,Duration,s,primary,W1,OFF,25,0,11.003191237812755,4.693682425560944,10.5
+WEiDA,duration_1,Duration,s,primary,W1,ON,25,0,9.487509571182173,3.671846890939045,9.545454545454545
+WEiDA,duration_2,Duration,s,primary,W2,HC,15,0,10.257535312640575,3.5623283559217005,8.621052631578948
+WEiDA,duration_2,Duration,s,primary,W2,OFF,25,0,7.499367311120252,3.185886447478677,7.592307692307691
+WEiDA,duration_2,Duration,s,primary,W2,ON,25,0,9.396908261346498,3.2946588325198296,9.511764705882355
+WEiDA,duration_3,Duration,s,primary,W3,HC,15,0,8.670008037026612,2.0050437833886336,8.925
+WEiDA,duration_3,Duration,s,primary,W3,OFF,25,0,8.497851707116414,2.576565149266376,7.875
+WEiDA,duration_3,Duration,s,primary,W3,ON,25,0,9.193639976689976,3.54447771274961,8.238461538461538
+WEiDA,duration_4,Duration,s,primary,W4,HC,15,0,8.433485042735043,3.4388963788747473,7.140000000000001
+WEiDA,duration_4,Duration,s,primary,W4,OFF,25,0,8.644286414514278,2.7126551994461376,8.12
+WEiDA,duration_4,Duration,s,primary,W4,ON,25,0,9.116606129164953,3.7987455817198716,8.884615384615385
+WEiDA,occurrence_1,Occurrence,episodes/s,primary,W1,HC,15,0,0.0273620559334845,0.007346112217732258,0.027210884353741496
+WEiDA,occurrence_1,Occurrence,episodes/s,primary,W1,OFF,25,0,0.029486703772418056,0.006531157512182126,0.02947845804988662
+WEiDA,occurrence_1,Occurrence,episodes/s,primary,W1,ON,25,0,0.026767785264025866,0.010121111588507018,0.027210884353741496
+WEiDA,occurrence_2,Occurrence,episodes/s,primary,W2,HC,15,0,0.030990173847316706,0.00945362117724254,0.031746031746031744
+WEiDA,occurrence_2,Occurrence,episodes/s,primary,W2,OFF,25,0,0.02594668489405332,0.009779065267519574,0.024943310657596373
+WEiDA,occurrence_2,Occurrence,episodes/s,primary,W2,ON,25,0,0.02794648960062494,0.007454666427597912,0.027210884353741496
+WEiDA,occurrence_3,Occurrence,episodes/s,primary,W3,HC,15,0,0.030839002267573693,0.00843237805171309,0.034013605442176874
+WEiDA,occurrence_3,Occurrence,episodes/s,primary,W3,OFF,25,0,0.027668738946934435,0.008656862549807893,0.027210884353741496
+WEiDA,occurrence_3,Occurrence,episodes/s,primary,W3,ON,25,0,0.02604129371046664,0.008461990150852904,0.02947845804988662
+WEiDA,occurrence_4,Occurrence,episodes/s,primary,W4,HC,15,0,0.02479213907785336,0.009328471196471759,0.022675736961451247
+WEiDA,occurrence_4,Occurrence,episodes/s,primary,W4,OFF,25,0,0.028123989627749032,0.010143207412443301,0.02947845804988662
+WEiDA,occurrence_4,Occurrence,episodes/s,primary,W4,ON,25,0,0.026405407458039036,0.011012841415092284,0.024943310657596373
+WEiDA,var_1,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W1,HC,15,0,0.005943760308713599,0.0003311206575101377,0.005908405808447996
+WEiDA,var_1,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W1,OFF,25,0,0.005958761618382558,0.000377841809966325,0.005974016079055788
+WEiDA,var_1,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W1,ON,25,0,0.00599087035603805,0.0005991322436078256,0.0059888720106970285
+WEiDA,var_2,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W2,HC,15,0,0.0058563507701784225,0.000357596042858819,0.005902114596431651
+WEiDA,var_2,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W2,OFF,24,1,0.006373075108625353,0.00032726299909338044,0.006396192367131881
+WEiDA,var_2,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W2,ON,25,0,0.0060992463201565116,0.0003803974634984643,0.006076503824750904
+WEiDA,var_3,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W3,HC,15,0,0.005937681562412268,0.0003617254590803801,0.005851867560288915
+WEiDA,var_3,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W3,OFF,25,0,0.006307100534402758,0.00027367101953879085,0.006288451547723405
+WEiDA,var_3,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W3,ON,25,0,0.006199744577786226,0.0003787197745041315,0.006133564251867521
+WEiDA,var_4,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W4,HC,15,0,0.006034270746407615,0.000298052773685185,0.006076412743328681
+WEiDA,var_4,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W4,OFF,25,0,0.006218878764591005,0.00035839500706877326,0.0062169873982423395
+WEiDA,var_4,Local Metastability (WEiDA VAR),WEiDA squared distance / ROI,primary,W4,ON,25,0,0.006217146719618598,0.0005217144757202201,0.006151965089398181
+WEiDA,transition_1_2,Transition Probability,proportion,primary,W1->W2,HC,15,0,0.37006677532993315,0.13325357692996656,0.36363636363636365
+WEiDA,transition_1_2,Transition Probability,proportion,primary,W1->W2,OFF,25,0,0.2933593936163596,0.14325694128660987,0.3333333333333333
+WEiDA,transition_1_2,Transition Probability,proportion,primary,W1->W2,ON,25,0,0.373518151439204,0.22672726538959487,0.36363636363636365
+WEiDA,transition_1_3,Transition Probability,proportion,primary,W1->W3,HC,15,0,0.3247916021600232,0.20581781179313022,0.2727272727272727
+WEiDA,transition_1_3,Transition Probability,proportion,primary,W1->W3,OFF,25,0,0.30416807272534824,0.13617998113507368,0.3076923076923077
+WEiDA,transition_1_3,Transition Probability,proportion,primary,W1->W3,ON,25,0,0.27160518721045035,0.18938828250422152,0.2222222222222222
+WEiDA,transition_1_4,Transition Probability,proportion,primary,W1->W4,HC,15,0,0.30514162251004356,0.17802719484718432,0.26666666666666666
+WEiDA,transition_1_4,Transition Probability,proportion,primary,W1->W4,OFF,25,0,0.40247253365829216,0.16783116462057365,0.4117647058823529
+WEiDA,transition_1_4,Transition Probability,proportion,primary,W1->W4,ON,25,0,0.3548766613503455,0.190255750373707,0.4
+WEiDA,transition_2_1,Transition Probability,proportion,primary,W2->W1,HC,15,0,0.2459458280510912,0.12513964034822803,0.2222222222222222
+WEiDA,transition_2_1,Transition Probability,proportion,primary,W2->W1,OFF,25,0,0.325020868020868,0.17367386029135254,0.2857142857142857
+WEiDA,transition_2_1,Transition Probability,proportion,primary,W2->W1,ON,25,0,0.34404389401448227,0.1574326494962434,0.3333333333333333
+WEiDA,transition_2_3,Transition Probability,proportion,primary,W2->W3,HC,15,0,0.49424623135149454,0.23173337771770477,0.46153846153846156
+WEiDA,transition_2_3,Transition Probability,proportion,primary,W2->W3,OFF,25,0,0.3785506715506715,0.20053940810692356,0.36363636363636365
+WEiDA,transition_2_3,Transition Probability,proportion,primary,W2->W3,ON,25,0,0.337100340835635,0.18015866672650224,0.3333333333333333
+WEiDA,transition_2_4,Transition Probability,proportion,primary,W2->W4,HC,15,0,0.2598079405974143,0.1650171729809904,0.3333333333333333
+WEiDA,transition_2_4,Transition Probability,proportion,primary,W2->W4,OFF,25,0,0.29642846042846044,0.18652650842740626,0.25
+WEiDA,transition_2_4,Transition Probability,proportion,primary,W2->W4,ON,25,0,0.3188557651498828,0.1666715784639615,0.25
+WEiDA,transition_3_1,Transition Probability,proportion,primary,W3->W1,HC,15,0,0.3323405662105353,0.15319283076927,0.36363636363636365
+WEiDA,transition_3_1,Transition Probability,proportion,primary,W3->W1,OFF,25,0,0.36115421180127066,0.14796042042823895,0.3333333333333333
+WEiDA,transition_3_1,Transition Probability,proportion,primary,W3->W1,ON,25,0,0.28784704184704185,0.15782933219327283,0.2857142857142857
+WEiDA,transition_3_2,Transition Probability,proportion,primary,W3->W2,HC,15,0,0.4213417567984132,0.17600072870066924,0.42105263157894735
+WEiDA,transition_3_2,Transition Probability,proportion,primary,W3->W2,OFF,25,0,0.3530808537867361,0.21739850592443283,0.36363636363636365
+WEiDA,transition_3_2,Transition Probability,proportion,primary,W3->W2,ON,25,0,0.42720929070929076,0.17553487266390366,0.46153846153846156
+WEiDA,transition_3_4,Transition Probability,proportion,primary,W3->W4,HC,15,0,0.2463176769910516,0.11929021037171017,0.25
+WEiDA,transition_3_4,Transition Probability,proportion,primary,W3->W4,OFF,25,0,0.28576493441199324,0.1715372345737464,0.3
+WEiDA,transition_3_4,Transition Probability,proportion,primary,W3->W4,ON,25,0,0.28494366744366745,0.14743997263987824,0.2857142857142857
+WEiDA,transition_4_1,Transition Probability,proportion,primary,W4->W1,HC,15,0,0.40578814431755617,0.20180040912891767,0.4
+WEiDA,transition_4_1,Transition Probability,proportion,primary,W4->W1,OFF,25,0,0.3657317948649218,0.14104671293671264,0.375
+WEiDA,transition_4_1,Transition Probability,proportion,primary,W4->W1,ON,25,0,0.344542846042846,0.17884275853329265,0.3076923076923077
+WEiDA,transition_4_2,Transition Probability,proportion,primary,W4->W2,HC,15,0,0.2866556537144772,0.1755556501730835,0.26666666666666666
+WEiDA,transition_4_2,Transition Probability,proportion,primary,W4->W2,OFF,25,0,0.27950251262325565,0.1992693609112337,0.21428571428571427
+WEiDA,transition_4_2,Transition Probability,proportion,primary,W4->W2,ON,25,0,0.2970547785547786,0.1473193244835159,0.2857142857142857
+WEiDA,transition_4_3,Transition Probability,proportion,primary,W4->W3,HC,15,0,0.30755620196796674,0.12533282864482614,0.3333333333333333
+WEiDA,transition_4_3,Transition Probability,proportion,primary,W4->W3,OFF,25,0,0.35476569251182255,0.19157071870690912,0.375
+WEiDA,transition_4_3,Transition Probability,proportion,primary,W4->W3,ON,25,0,0.3584023754023754,0.17191231844013813,0.35714285714285715
+WEiDA,coverage_entropy,Overall metrics,normalized entropy,overall,,HC,15,0,0.9335544370444376,0.04301343275979589,0.9489973621853917
+WEiDA,coverage_entropy,Overall metrics,normalized entropy,overall,,OFF,25,0,0.914834427860049,0.06506674616910962,0.9426386083029025
+WEiDA,coverage_entropy,Overall metrics,normalized entropy,overall,,ON,25,0,0.9157293629941663,0.06687839381340391,0.9380833657427979
+WEiDA,global_pooled_duration,Overall metrics,s,overall,,HC,15,0,8.917555037032646,1.1727036953087475,9.1875
+WEiDA,global_pooled_duration,Overall metrics,s,overall,,OFF,25,0,9.240435279217543,1.6226527177610968,8.82
+WEiDA,global_pooled_duration,Overall metrics,s,overall,,ON,25,0,9.638317289924265,1.671589512733702,9.8
+WEiDA,switching_rate,Overall metrics,switches/s,overall,,HC,15,0,0.11171579743008313,0.015125793883588062,0.10657596371882086
+WEiDA,switching_rate,Overall metrics,switches/s,overall,,OFF,25,0,0.10895810955961333,0.01820360394199547,0.1111111111111111
+WEiDA,switching_rate,Overall metrics,switches/s,overall,,ON,25,0,0.10489253436621858,0.020916199978899184,0.09977324263038549
+WEiDA,global_occurrence,Overall metrics,episodes/s,overall,,HC,15,0,0.11398337112622828,0.015125793883588062,0.10884353741496598
+WEiDA,global_occurrence,Overall metrics,episodes/s,overall,,OFF,25,0,0.11122611724115483,0.018204010231014034,0.11337868480725624
+WEiDA,global_occurrence,Overall metrics,episodes/s,overall,,ON,25,0,0.1071609760331565,0.020916196517731703,0.10204081632653061
+WEiDA,native_duration_1,WEiDA native Dwell Time,s,native,W1,HC,15,0,8.027287776550935,3.14715265047716,7.799999999999999
+WEiDA,native_duration_1,WEiDA native Dwell Time,s,native,W1,OFF,25,0,11.018747147589252,5.020270062998561,9.566666666666668
+WEiDA,native_duration_1,WEiDA native Dwell Time,s,native,W1,ON,25,0,9.36647942583732,3.745876695178483,9.545454545454545
+WEiDA,native_duration_2,WEiDA native Dwell Time,s,native,W2,HC,15,0,10.265636592166004,3.5505267562133658,9.163636363636364
+WEiDA,native_duration_2,WEiDA native Dwell Time,s,native,W2,OFF,25,0,7.48775836093731,3.250991008793168,7.420000000000001
+WEiDA,native_duration_2,WEiDA native Dwell Time,s,native,W2,ON,25,0,9.358730303030303,3.784430812107066,8.924999999999999
+WEiDA,native_duration_3,WEiDA native Dwell Time,s,native,W3,HC,15,0,8.645392652411228,2.036246189890044,8.4
+WEiDA,native_duration_3,WEiDA native Dwell Time,s,native,W3,OFF,25,0,8.61209203345674,2.72482819583651,7.875
+WEiDA,native_duration_3,WEiDA native Dwell Time,s,native,W3,ON,25,0,9.20122808857809,3.5356170102542874,8.4
+WEiDA,native_duration_4,WEiDA native Dwell Time,s,native,W4,HC,15,0,7.994611111111111,3.2620037156233805,6.859999999999999
+WEiDA,native_duration_4,WEiDA native Dwell Time,s,native,W4,OFF,25,0,8.480287612129873,2.4401275692640056,8.12
+WEiDA,native_duration_4,WEiDA native Dwell Time,s,native,W4,ON,25,0,8.93432564102564,3.3981356637597977,8.884615384615385
+WEiDA,native_transition_1_2,WEiDA native Transition Probability,proportion,native,W1->W2,HC,15,0,0.11452224330782158,0.0772553978467902,0.09803921568627451
+WEiDA,native_transition_1_2,WEiDA native Transition Probability,proportion,native,W1->W2,OFF,25,0,0.06023868824986794,0.032378730673079434,0.06
+WEiDA,native_transition_1_2,WEiDA native Transition Probability,proportion,native,W1->W2,ON,25,0,0.08707359715066165,0.05287291060204412,0.07692307692307693
+WEiDA,native_transition_1_3,WEiDA native Transition Probability,proportion,native,W1->W3,HC,15,0,0.0891750267420602,0.05522089221570772,0.08333333333333333
+WEiDA,native_transition_1_3,WEiDA native Transition Probability,proportion,native,W1->W3,OFF,25,0,0.07119082598346482,0.05076151488432739,0.06097560975609756
+WEiDA,native_transition_1_3,WEiDA native Transition Probability,proportion,native,W1->W3,ON,25,0,0.06899766339122262,0.06273649893170621,0.043478260869565216
+WEiDA,native_transition_1_4,WEiDA native Transition Probability,proportion,native,W1->W4,HC,15,0,0.08780049550452301,0.050879732856056584,0.08695652173913043
+WEiDA,native_transition_1_4,WEiDA native Transition Probability,proportion,native,W1->W4,OFF,25,0,0.08917612359378876,0.047164878306968416,0.0975609756097561
+WEiDA,native_transition_1_4,WEiDA native Transition Probability,proportion,native,W1->W4,ON,25,0,0.09649618359575893,0.07784050298999386,0.0847457627118644
+WEiDA,native_transition_2_1,WEiDA native Transition Probability,proportion,native,W2->W1,HC,15,0,0.05422564314050427,0.028853259948508334,0.05714285714285714
+WEiDA,native_transition_2_1,WEiDA native Transition Probability,proportion,native,W2->W1,OFF,25,0,0.10061089713830787,0.07972812272137425,0.08695652173913043
+WEiDA,native_transition_2_1,WEiDA native Transition Probability,proportion,native,W2->W1,ON,25,0,0.0853175456280308,0.05299875264140974,0.0821917808219178
+WEiDA,native_transition_2_3,WEiDA native Transition Probability,proportion,native,W2->W3,HC,15,0,0.11204711526207589,0.06381172919460253,0.10309278350515463
+WEiDA,native_transition_2_3,WEiDA native Transition Probability,proportion,native,W2->W3,OFF,25,0,0.1404111889516346,0.1864837170947463,0.10666666666666667
+WEiDA,native_transition_2_3,WEiDA native Transition Probability,proportion,native,W2->W3,ON,25,0,0.07936294670330998,0.0496962239732825,0.06896551724137931
+WEiDA,native_transition_2_4,WEiDA native Transition Probability,proportion,native,W2->W4,HC,15,0,0.057398781416669625,0.037614184725754,0.06
+WEiDA,native_transition_2_4,WEiDA native Transition Probability,proportion,native,W2->W4,OFF,25,0,0.08691327992230014,0.05534298647724089,0.08
+WEiDA,native_transition_2_4,WEiDA native Transition Probability,proportion,native,W2->W4,ON,25,0,0.08861467480717584,0.07970947302464602,0.05660377358490566
+WEiDA,native_transition_3_1,WEiDA native Transition Probability,proportion,native,W3->W1,HC,15,0,0.08071055184560597,0.037363174708365726,0.08333333333333333
+WEiDA,native_transition_3_1,WEiDA native Transition Probability,proportion,native,W3->W1,OFF,25,0,0.09591722386960039,0.04721881005804144,0.08333333333333333
+WEiDA,native_transition_3_1,WEiDA native Transition Probability,proportion,native,W3->W1,ON,25,0,0.06522761350280723,0.03265715537565224,0.0625
+WEiDA,native_transition_3_2,WEiDA native Transition Probability,proportion,native,W3->W2,HC,15,0,0.10636967890170315,0.04859826653481612,0.10416666666666667
+WEiDA,native_transition_3_2,WEiDA native Transition Probability,proportion,native,W3->W2,OFF,25,0,0.09401850842248981,0.06501799066647414,0.08108108108108109
+WEiDA,native_transition_3_2,WEiDA native Transition Probability,proportion,native,W3->W2,ON,25,0,0.11657774451647628,0.07747737983121902,0.10256410256410256
+WEiDA,native_transition_3_4,WEiDA native Transition Probability,proportion,native,W3->W4,HC,15,0,0.06588701462875676,0.04135711431344993,0.058823529411764705
+WEiDA,native_transition_3_4,WEiDA native Transition Probability,proportion,native,W3->W4,OFF,25,0,0.07521088263092399,0.04654947709680768,0.0784313725490196
+WEiDA,native_transition_3_4,WEiDA native Transition Probability,proportion,native,W3->W4,ON,25,0,0.0774135115265665,0.0553354006012124,0.05952380952380952
+WEiDA,native_transition_4_1,WEiDA native Transition Probability,proportion,native,W4->W1,HC,15,0,0.11383709211128386,0.07023519567133965,0.0967741935483871
+WEiDA,native_transition_4_1,WEiDA native Transition Probability,proportion,native,W4->W1,OFF,25,0,0.09508538916846768,0.05423210476488946,0.08433734939759036
+WEiDA,native_transition_4_1,WEiDA native Transition Probability,proportion,native,W4->W1,ON,25,0,0.09059392001533796,0.0634151427796552,0.07272727272727272
+WEiDA,native_transition_4_2,WEiDA native Transition Probability,proportion,native,W4->W2,HC,15,0,0.07445932928894829,0.046577054293138104,0.061224489795918366
+WEiDA,native_transition_4_2,WEiDA native Transition Probability,proportion,native,W4->W2,OFF,25,0,0.07850959535488113,0.07871193251692772,0.06666666666666667
+WEiDA,native_transition_4_2,WEiDA native Transition Probability,proportion,native,W4->W2,ON,25,0,0.0804428030587298,0.05607638128100538,0.06666666666666667
+WEiDA,native_transition_4_3,WEiDA native Transition Probability,proportion,native,W4->W3,HC,15,0,0.0864287716693983,0.061277811740281844,0.0625
+WEiDA,native_transition_4_3,WEiDA native Transition Probability,proportion,native,W4->W3,OFF,25,0,0.09127216843664207,0.05912047194460248,0.07692307692307693
+WEiDA,native_transition_4_3,WEiDA native Transition Probability,proportion,native,W4->W3,ON,25,0,0.10038339433772975,0.0692345607897402,0.08771929824561403

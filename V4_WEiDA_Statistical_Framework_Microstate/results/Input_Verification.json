@@ -1,0 +1,63 @@
+{
+  "config_sha256": "55b9d8a33de360a65ffbf8d518f9f882672b84347a9d7c8cec14fc00352a5b8d",
+  "protocol_sha256": "dd35a1968ab33c8daf496c0d36f60b725be05f5d1d45e5151eb5aad70b48f846",
+  "cohort": {
+    "participants": 40,
+    "HC": 15,
+    "PD": 25,
+    "ON": 25,
+    "OFF": 25,
+    "scans": 65,
+    "all_frozen_roi_file_hashes_verified": true,
+    "effective_frames": 13647,
+    "TR_seconds": 2.1,
+    "atlas": "AAL78"
+  },
+  "v3_state_correspondence": true,
+  "v3_group_summary_reproduced_rows": 93,
+  "v3_fd_reproduced_rows": 93,
+  "source_table_rows": {
+    "Group_Level_Summary": 4175,
+    "All_Methods_Comparison": 33898,
+    "HC_vs_ON_All_Results": 7840,
+    "HC_vs_OFF_All_Results": 8368,
+    "ON_vs_OFF_All_Results": 7252,
+    "Common_PD_Effect": 6988,
+    "HC_Both_Conditions_Significant": 3450,
+    "Subject_Level_Features": 5130
+  },
+  "weida_available": true,
+  "weida_unavailable_reason": null,
+  "weida_exact_scan_mapping_rows": 65,
+  "weida_centroid_reconstruction_max_error": 2.2898349882893854e-16,
+  "cross_method_state_match": false,
+  "permutations": 9999,
+  "bootstrap_draws": 9999,
+  "versions": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2"
+  },
+  "input_sha256": {
+    "WEiDA_STN25_HC15_K4_20261117/input_manifest.csv": "c1a4753623bf1163848808b71749a5135bcaf1fa4923c0a338458020aa509dbb",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/manifests/provenance_gate.json": "f6fe07245cb0180ada2d39d943c4c1aa30296473857c448945c53d21450155fb",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/manifests/ROI_Axis.csv": "9c8d5a12240456e60ffb4cd64d650d0b4aa9c505840c6eea63d2bb5b4e13328c",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/private/Subject_Level_Features.csv": "f7b0750a763e1eea0e86cebc28e3860c7ae9182d03bde06a503d92a04d48588f",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/Group_Templates.csv": "d2ccbd23c5a8d11abfe8a93b05488d1e193359137e0d285a13f0ba7a84118c82",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/Group_Level_Summary.csv": "50a7ae97f75cefd5785b4d29a3d18493cc7bf52687f55bdac98c6386fffc3e7a",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/All_Methods_Comparison.csv": "1d06d706303a1bedf9a30288684e765edd7dc27e3cee5edd8a8b4bc475d47e6a",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/HC_vs_ON_All_Results.csv": "437d8190df0fb3f91c1c6893b2beb722968352c0ebfbda5a2ccad79faf3b78d4",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/HC_vs_OFF_All_Results.csv": "f134e63420d5ea2cfab126b0a89dc8c849dc75e35cbc1b9611cec2ea0dde5c56",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/ON_vs_OFF_All_Results.csv": "cadd05daeca111cf74b16d017895afbbc575385efb6b08e009f7bb0d7cf7f212",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/Common_PD_Effect.csv": "ff2bcd5c7b8e4f083353da5d83a6238730e7cda029e0f0aa3d3be2cad139cfba",
+    "WEiDA-DBS-V3/V3_BOLD_Microstate_Method_Optimization/results/HC_Both_Conditions_Significant.csv": "53f1c757a5e156685a8eae4f9bae88386574058e46f96afd7d18cc595af24a9d",
+    "WEiDA_STN25_HC15_K4_20261117/author_k4.mat": "6579ecf2cfc06a88c97c9c2479bc635922900f06ccacb866974d8bbb5cac1906",
+    "WEiDA_STN25_HC15_K4_20261117/inputs.mat": "d10a5fd0aed8564d2066765727ce35ec161cbcb861e7e0c25df2c1e67828af61",
+    "WEiDA_STN25_HC15_K4_R2020b_20261117/inputs.mat": "d10a5fd0aed8564d2066765727ce35ec161cbcb861e7e0c25df2c1e67828af61",
+    "WEiDA_MATLAB版本与种子对照_20261119/R2025b/seed00.mat": "428cfeee2c1e1bcef59bef5b2d06055ca3169530877f7919aacadad19562e4c3",
+    "WEiDA_MATLAB版本与种子对照_20261119/R2025b/features.mat": "6ed1a70edd25008cf09f1cf613f35376ffdf9166df720eb6e7f04dc2d54b88a4",
+    "师姐论文/s41531-026-01354-3.pdf": "4da8a47694faa017c7c0c0b8c8aedb38837e2a83528e295dd554ea8d83d73010"
+  }
+}

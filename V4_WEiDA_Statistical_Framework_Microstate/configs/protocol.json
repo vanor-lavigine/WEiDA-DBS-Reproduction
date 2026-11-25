@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-25",
+  "K": 4,
+  "TR_seconds": 2.1,
+  "alpha": 0.05,
+  "normality_alpha": 0.05,
+  "seed": 20261125,
+  "permutations": 9999,
+  "bootstrap_draws": 9999,
+  "min_abs_spatial_r": 0.60,
+  "min_bidirectional_margin": 0.05,
+  "v3_method": "E04",
+  "v3_fit": "crossfit",
+  "v3_state_archive": "E04_R",
+  "weida_release": "R2025b",
+  "weida_seed": 0,
+  "contrasts": ["OFF-HC", "ON-HC", "ON-OFF"]
+}
