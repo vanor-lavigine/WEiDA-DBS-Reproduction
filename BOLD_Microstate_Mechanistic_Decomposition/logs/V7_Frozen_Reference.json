@@ -1,0 +1,10 @@
+{
+  "report_base": "0ad06338469b272ca591f65fe66588dc2d50dacf",
+  "motor_severity_reference": "b16855fc0afa27ad7e85b0543abb4a60292d9479",
+  "v6_release": "17d3d1261b223da37280238e615c3176adaef684",
+  "v5_release": "a803285ee8da7859fdcfba9e4003412c65f84430",
+  "v4_release": "2d66fb12b5883aa3a81f30c5cf9bd749d6ffaaad",
+  "v4_frame_collection_against_freeze_receipt": true,
+  "g1_private_maps_match_public_fold_templates": true,
+  "public_template_rows": 20
+}

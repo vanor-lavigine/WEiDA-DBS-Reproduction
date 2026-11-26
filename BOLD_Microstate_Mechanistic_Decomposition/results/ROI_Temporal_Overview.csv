@@ -1,0 +1,4 @@
+﻿condition,n_scans,median_scan_lag1_acf,median_scan_efold_seconds,mean_scan_fraction_efold_observed
+HC,15,0.7866006102709919,4.2,1.0
+OFF,25,0.7872879214424278,4.2,1.0
+ON,25,0.788918217485848,4.2,1.0

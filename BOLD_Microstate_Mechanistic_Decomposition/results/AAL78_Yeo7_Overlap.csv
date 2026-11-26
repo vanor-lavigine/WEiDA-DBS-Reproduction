@@ -1,0 +1,703 @@
+roi,roi_index,aal_voxel_label,hemisphere,region,category,parcel_voxels,overlap_voxels,fraction_of_parcel
+Precentral_L,1,2001,L,cortex,Visual,3526,0,0.0
+Precentral_L,1,2001,L,cortex,Somatomotor,3526,474,0.1344299489506523
+Precentral_L,1,2001,L,cortex,Dorsal Attention,3526,440,0.12478729438457176
+Precentral_L,1,2001,L,cortex,Ventral Attention,3526,54,0.015314804310833806
+Precentral_L,1,2001,L,cortex,Limbic,3526,0,0.0
+Precentral_L,1,2001,L,cortex,Frontoparietal,3526,167,0.04736245036868973
+Precentral_L,1,2001,L,cortex,Default,3526,21,0.005955757231990925
+Precentral_L,1,2001,L,cortex,Unmapped Cortex,3526,2370,0.6721497447532615
+Precentral_L,1,2001,L,cortex,Subcortical,3526,0,0.0
+Precentral_R,2,2002,R,cortex,Visual,3381,0,0.0
+Precentral_R,2,2002,R,cortex,Somatomotor,3381,522,0.1543921916592724
+Precentral_R,2,2002,R,cortex,Dorsal Attention,3381,241,0.07128068618751848
+Precentral_R,2,2002,R,cortex,Ventral Attention,3381,116,0.03430937592428276
+Precentral_R,2,2002,R,cortex,Limbic,3381,0,0.0
+Precentral_R,2,2002,R,cortex,Frontoparietal,3381,67,0.01981662230109435
+Precentral_R,2,2002,R,cortex,Default,3381,0,0.0
+Precentral_R,2,2002,R,cortex,Unmapped Cortex,3381,2435,0.720201123927832
+Precentral_R,2,2002,R,cortex,Subcortical,3381,0,0.0
+Frontal_Sup_L,3,2101,L,cortex,Visual,3599,0,0.0
+Frontal_Sup_L,3,2101,L,cortex,Somatomotor,3599,29,0.008057793831619895
+Frontal_Sup_L,3,2101,L,cortex,Dorsal Attention,3599,156,0.04334537371492081
+Frontal_Sup_L,3,2101,L,cortex,Ventral Attention,3599,82,0.02278410669630453
+Frontal_Sup_L,3,2101,L,cortex,Limbic,3599,1,0.0002778549597110308
+Frontal_Sup_L,3,2101,L,cortex,Frontoparietal,3599,178,0.04945818282856349
+Frontal_Sup_L,3,2101,L,cortex,Default,3599,872,0.24228952486801889
+Frontal_Sup_L,3,2101,L,cortex,Unmapped Cortex,3599,2281,0.6337871631008614
+Frontal_Sup_L,3,2101,L,cortex,Subcortical,3599,0,0.0
+Frontal_Sup_R,4,2102,R,cortex,Visual,4056,0,0.0
+Frontal_Sup_R,4,2102,R,cortex,Somatomotor,4056,148,0.03648915187376726
+Frontal_Sup_R,4,2102,R,cortex,Dorsal Attention,4056,175,0.04314595660749507
+Frontal_Sup_R,4,2102,R,cortex,Ventral Attention,4056,97,0.02391518737672584
+Frontal_Sup_R,4,2102,R,cortex,Limbic,4056,4,0.0009861932938856016
+Frontal_Sup_R,4,2102,R,cortex,Frontoparietal,4056,447,0.11020710059171597
+Frontal_Sup_R,4,2102,R,cortex,Default,4056,753,0.1856508875739645
+Frontal_Sup_R,4,2102,R,cortex,Unmapped Cortex,4056,2432,0.5996055226824457
+Frontal_Sup_R,4,2102,R,cortex,Subcortical,4056,0,0.0
+Frontal_Sup_Orb_L,5,2111,L,cortex,Visual,963,0,0.0
+Frontal_Sup_Orb_L,5,2111,L,cortex,Somatomotor,963,0,0.0
+Frontal_Sup_Orb_L,5,2111,L,cortex,Dorsal Attention,963,0,0.0
+Frontal_Sup_Orb_L,5,2111,L,cortex,Ventral Attention,963,0,0.0
+Frontal_Sup_Orb_L,5,2111,L,cortex,Limbic,963,331,0.34371754932502596
+Frontal_Sup_Orb_L,5,2111,L,cortex,Frontoparietal,963,47,0.04880581516095535
+Frontal_Sup_Orb_L,5,2111,L,cortex,Default,963,95,0.09865005192107996
+Frontal_Sup_Orb_L,5,2111,L,cortex,Unmapped Cortex,963,490,0.5088265835929388
+Frontal_Sup_Orb_L,5,2111,L,cortex,Subcortical,963,0,0.0
+Frontal_Sup_Orb_R,6,2112,R,cortex,Visual,997,0,0.0
+Frontal_Sup_Orb_R,6,2112,R,cortex,Somatomotor,997,0,0.0
+Frontal_Sup_Orb_R,6,2112,R,cortex,Dorsal Attention,997,0,0.0
+Frontal_Sup_Orb_R,6,2112,R,cortex,Ventral Attention,997,0,0.0
+Frontal_Sup_Orb_R,6,2112,R,cortex,Limbic,997,345,0.3460381143430291
+Frontal_Sup_Orb_R,6,2112,R,cortex,Frontoparietal,997,191,0.19157472417251756
+Frontal_Sup_Orb_R,6,2112,R,cortex,Default,997,5,0.0050150451354062184
+Frontal_Sup_Orb_R,6,2112,R,cortex,Unmapped Cortex,997,456,0.4573721163490471
+Frontal_Sup_Orb_R,6,2112,R,cortex,Subcortical,997,0,0.0
+Frontal_Mid_L,7,2201,L,cortex,Visual,4863,0,0.0
+Frontal_Mid_L,7,2201,L,cortex,Somatomotor,4863,0,0.0
+Frontal_Mid_L,7,2201,L,cortex,Dorsal Attention,4863,116,0.0238535883199671
+Frontal_Mid_L,7,2201,L,cortex,Ventral Attention,4863,301,0.06189594900267325
+Frontal_Mid_L,7,2201,L,cortex,Limbic,4863,0,0.0
+Frontal_Mid_L,7,2201,L,cortex,Frontoparietal,4863,916,0.1883610939749126
+Frontal_Mid_L,7,2201,L,cortex,Default,4863,574,0.1180341353074234
+Frontal_Mid_L,7,2201,L,cortex,Unmapped Cortex,4863,2956,0.6078552333950237
+Frontal_Mid_L,7,2201,L,cortex,Subcortical,4863,0,0.0
+Frontal_Mid_R,8,2202,R,cortex,Visual,5104,0,0.0
+Frontal_Mid_R,8,2202,R,cortex,Somatomotor,5104,3,0.0005877742946708464
+Frontal_Mid_R,8,2202,R,cortex,Dorsal Attention,5104,76,0.014890282131661442
+Frontal_Mid_R,8,2202,R,cortex,Ventral Attention,5104,225,0.04408307210031348
+Frontal_Mid_R,8,2202,R,cortex,Limbic,5104,0,0.0
+Frontal_Mid_R,8,2202,R,cortex,Frontoparietal,5104,1674,0.32797805642633227
+Frontal_Mid_R,8,2202,R,cortex,Default,5104,170,0.03330721003134796
+Frontal_Mid_R,8,2202,R,cortex,Unmapped Cortex,5104,2956,0.579153605015674
+Frontal_Mid_R,8,2202,R,cortex,Subcortical,5104,0,0.0
+Frontal_Mid_Orb_L,9,2211,L,cortex,Visual,888,0,0.0
+Frontal_Mid_Orb_L,9,2211,L,cortex,Somatomotor,888,0,0.0
+Frontal_Mid_Orb_L,9,2211,L,cortex,Dorsal Attention,888,0,0.0
+Frontal_Mid_Orb_L,9,2211,L,cortex,Ventral Attention,888,4,0.0045045045045045045
+Frontal_Mid_Orb_L,9,2211,L,cortex,Limbic,888,153,0.17229729729729729
+Frontal_Mid_Orb_L,9,2211,L,cortex,Frontoparietal,888,261,0.2939189189189189
+Frontal_Mid_Orb_L,9,2211,L,cortex,Default,888,80,0.09009009009009009
+Frontal_Mid_Orb_L,9,2211,L,cortex,Unmapped Cortex,888,390,0.4391891891891892
+Frontal_Mid_Orb_L,9,2211,L,cortex,Subcortical,888,0,0.0
+Frontal_Mid_Orb_R,10,2212,R,cortex,Visual,1015,0,0.0
+Frontal_Mid_Orb_R,10,2212,R,cortex,Somatomotor,1015,0,0.0
+Frontal_Mid_Orb_R,10,2212,R,cortex,Dorsal Attention,1015,0,0.0
+Frontal_Mid_Orb_R,10,2212,R,cortex,Ventral Attention,1015,0,0.0
+Frontal_Mid_Orb_R,10,2212,R,cortex,Limbic,1015,101,0.09950738916256158
+Frontal_Mid_Orb_R,10,2212,R,cortex,Frontoparietal,1015,394,0.38817733990147785
+Frontal_Mid_Orb_R,10,2212,R,cortex,Default,1015,22,0.02167487684729064
+Frontal_Mid_Orb_R,10,2212,R,cortex,Unmapped Cortex,1015,498,0.49064039408866994
+Frontal_Mid_Orb_R,10,2212,R,cortex,Subcortical,1015,0,0.0
+Frontal_Inf_Oper_L,11,2301,L,cortex,Visual,1038,0,0.0
+Frontal_Inf_Oper_L,11,2301,L,cortex,Somatomotor,1038,0,0.0
+Frontal_Inf_Oper_L,11,2301,L,cortex,Dorsal Attention,1038,35,0.03371868978805395
+Frontal_Inf_Oper_L,11,2301,L,cortex,Ventral Attention,1038,151,0.14547206165703275
+Frontal_Inf_Oper_L,11,2301,L,cortex,Limbic,1038,0,0.0
+Frontal_Inf_Oper_L,11,2301,L,cortex,Frontoparietal,1038,169,0.1628131021194605
+Frontal_Inf_Oper_L,11,2301,L,cortex,Default,1038,88,0.08477842003853564
+Frontal_Inf_Oper_L,11,2301,L,cortex,Unmapped Cortex,1038,595,0.5732177263969171
+Frontal_Inf_Oper_L,11,2301,L,cortex,Subcortical,1038,0,0.0
+Frontal_Inf_Oper_R,12,2302,R,cortex,Visual,1399,0,0.0
+Frontal_Inf_Oper_R,12,2302,R,cortex,Somatomotor,1399,3,0.002144388849177984
+Frontal_Inf_Oper_R,12,2302,R,cortex,Dorsal Attention,1399,168,0.12008577555396711
+Frontal_Inf_Oper_R,12,2302,R,cortex,Ventral Attention,1399,175,0.12508934953538242
+Frontal_Inf_Oper_R,12,2302,R,cortex,Limbic,1399,0,0.0
+Frontal_Inf_Oper_R,12,2302,R,cortex,Frontoparietal,1399,244,0.17441029306647604
+Frontal_Inf_Oper_R,12,2302,R,cortex,Default,1399,11,0.007862759113652609
+Frontal_Inf_Oper_R,12,2302,R,cortex,Unmapped Cortex,1399,798,0.5704074338813439
+Frontal_Inf_Oper_R,12,2302,R,cortex,Subcortical,1399,0,0.0
+Frontal_Inf_Tri_L,13,2311,L,cortex,Visual,2529,0,0.0
+Frontal_Inf_Tri_L,13,2311,L,cortex,Somatomotor,2529,0,0.0
+Frontal_Inf_Tri_L,13,2311,L,cortex,Dorsal Attention,2529,0,0.0
+Frontal_Inf_Tri_L,13,2311,L,cortex,Ventral Attention,2529,89,0.03519177540529854
+Frontal_Inf_Tri_L,13,2311,L,cortex,Limbic,2529,0,0.0
+Frontal_Inf_Tri_L,13,2311,L,cortex,Frontoparietal,2529,638,0.25227362593910635
+Frontal_Inf_Tri_L,13,2311,L,cortex,Default,2529,393,0.1553973902728351
+Frontal_Inf_Tri_L,13,2311,L,cortex,Unmapped Cortex,2529,1409,0.5571372083827599
+Frontal_Inf_Tri_L,13,2311,L,cortex,Subcortical,2529,0,0.0
+Frontal_Inf_Tri_R,14,2312,R,cortex,Visual,2151,0,0.0
+Frontal_Inf_Tri_R,14,2312,R,cortex,Somatomotor,2151,0,0.0
+Frontal_Inf_Tri_R,14,2312,R,cortex,Dorsal Attention,2151,21,0.009762900976290097
+Frontal_Inf_Tri_R,14,2312,R,cortex,Ventral Attention,2151,149,0.06927010692701069
+Frontal_Inf_Tri_R,14,2312,R,cortex,Limbic,2151,0,0.0
+Frontal_Inf_Tri_R,14,2312,R,cortex,Frontoparietal,2151,418,0.19432821943282194
+Frontal_Inf_Tri_R,14,2312,R,cortex,Default,2151,149,0.06927010692701069
+Frontal_Inf_Tri_R,14,2312,R,cortex,Unmapped Cortex,2151,1414,0.6573686657368666
+Frontal_Inf_Tri_R,14,2312,R,cortex,Subcortical,2151,0,0.0
+Frontal_Inf_Orb_L,15,2321,L,cortex,Visual,1690,0,0.0
+Frontal_Inf_Orb_L,15,2321,L,cortex,Somatomotor,1690,0,0.0
+Frontal_Inf_Orb_L,15,2321,L,cortex,Dorsal Attention,1690,0,0.0
+Frontal_Inf_Orb_L,15,2321,L,cortex,Ventral Attention,1690,7,0.004142011834319527
+Frontal_Inf_Orb_L,15,2321,L,cortex,Limbic,1690,234,0.13846153846153847
+Frontal_Inf_Orb_L,15,2321,L,cortex,Frontoparietal,1690,78,0.046153846153846156
+Frontal_Inf_Orb_L,15,2321,L,cortex,Default,1690,587,0.3473372781065089
+Frontal_Inf_Orb_L,15,2321,L,cortex,Unmapped Cortex,1690,784,0.463905325443787
+Frontal_Inf_Orb_L,15,2321,L,cortex,Subcortical,1690,0,0.0
+Frontal_Inf_Orb_R,16,2322,R,cortex,Visual,1707,0,0.0
+Frontal_Inf_Orb_R,16,2322,R,cortex,Somatomotor,1707,2,0.0011716461628588166
+Frontal_Inf_Orb_R,16,2322,R,cortex,Dorsal Attention,1707,0,0.0
+Frontal_Inf_Orb_R,16,2322,R,cortex,Ventral Attention,1707,26,0.015231400117164616
+Frontal_Inf_Orb_R,16,2322,R,cortex,Limbic,1707,165,0.09666080843585237
+Frontal_Inf_Orb_R,16,2322,R,cortex,Frontoparietal,1707,149,0.08728763913298183
+Frontal_Inf_Orb_R,16,2322,R,cortex,Default,1707,393,0.23022847100175747
+Frontal_Inf_Orb_R,16,2322,R,cortex,Unmapped Cortex,1707,972,0.5694200351493849
+Frontal_Inf_Orb_R,16,2322,R,cortex,Subcortical,1707,0,0.0
+Rolandic_Oper_L,17,2331,L,cortex,Visual,990,0,0.0
+Rolandic_Oper_L,17,2331,L,cortex,Somatomotor,990,340,0.3434343434343434
+Rolandic_Oper_L,17,2331,L,cortex,Dorsal Attention,990,0,0.0
+Rolandic_Oper_L,17,2331,L,cortex,Ventral Attention,990,152,0.15353535353535352
+Rolandic_Oper_L,17,2331,L,cortex,Limbic,990,0,0.0
+Rolandic_Oper_L,17,2331,L,cortex,Frontoparietal,990,0,0.0
+Rolandic_Oper_L,17,2331,L,cortex,Default,990,0,0.0
+Rolandic_Oper_L,17,2331,L,cortex,Unmapped Cortex,990,498,0.503030303030303
+Rolandic_Oper_L,17,2331,L,cortex,Subcortical,990,0,0.0
+Rolandic_Oper_R,18,2332,R,cortex,Visual,1331,0,0.0
+Rolandic_Oper_R,18,2332,R,cortex,Somatomotor,1331,426,0.32006010518407213
+Rolandic_Oper_R,18,2332,R,cortex,Dorsal Attention,1331,0,0.0
+Rolandic_Oper_R,18,2332,R,cortex,Ventral Attention,1331,204,0.15326821938392185
+Rolandic_Oper_R,18,2332,R,cortex,Limbic,1331,0,0.0
+Rolandic_Oper_R,18,2332,R,cortex,Frontoparietal,1331,0,0.0
+Rolandic_Oper_R,18,2332,R,cortex,Default,1331,0,0.0
+Rolandic_Oper_R,18,2332,R,cortex,Unmapped Cortex,1331,701,0.526671675432006
+Rolandic_Oper_R,18,2332,R,cortex,Subcortical,1331,0,0.0
+Supp_Motor_Area_L,19,2401,L,cortex,Visual,2147,0,0.0
+Supp_Motor_Area_L,19,2401,L,cortex,Somatomotor,2147,238,0.11085235211923615
+Supp_Motor_Area_L,19,2401,L,cortex,Dorsal Attention,2147,19,0.008849557522123894
+Supp_Motor_Area_L,19,2401,L,cortex,Ventral Attention,2147,333,0.15510013972985562
+Supp_Motor_Area_L,19,2401,L,cortex,Limbic,2147,0,0.0
+Supp_Motor_Area_L,19,2401,L,cortex,Frontoparietal,2147,106,0.04937121564974383
+Supp_Motor_Area_L,19,2401,L,cortex,Default,2147,179,0.08337214718211458
+Supp_Motor_Area_L,19,2401,L,cortex,Unmapped Cortex,2147,1272,0.592454587796926
+Supp_Motor_Area_L,19,2401,L,cortex,Subcortical,2147,0,0.0
+Supp_Motor_Area_R,20,2402,R,cortex,Visual,2371,0,0.0
+Supp_Motor_Area_R,20,2402,R,cortex,Somatomotor,2371,383,0.16153521720792915
+Supp_Motor_Area_R,20,2402,R,cortex,Dorsal Attention,2371,0,0.0
+Supp_Motor_Area_R,20,2402,R,cortex,Ventral Attention,2371,325,0.13707296499367355
+Supp_Motor_Area_R,20,2402,R,cortex,Limbic,2371,0,0.0
+Supp_Motor_Area_R,20,2402,R,cortex,Frontoparietal,2371,94,0.0396457191058625
+Supp_Motor_Area_R,20,2402,R,cortex,Default,2371,67,0.02825811893715732
+Supp_Motor_Area_R,20,2402,R,cortex,Unmapped Cortex,2371,1502,0.6334879797553775
+Supp_Motor_Area_R,20,2402,R,cortex,Subcortical,2371,0,0.0
+Olfactory_L,21,2501,L,cortex,Visual,280,0,0.0
+Olfactory_L,21,2501,L,cortex,Somatomotor,280,0,0.0
+Olfactory_L,21,2501,L,cortex,Dorsal Attention,280,0,0.0
+Olfactory_L,21,2501,L,cortex,Ventral Attention,280,0,0.0
+Olfactory_L,21,2501,L,cortex,Limbic,280,88,0.3142857142857143
+Olfactory_L,21,2501,L,cortex,Frontoparietal,280,0,0.0
+Olfactory_L,21,2501,L,cortex,Default,280,7,0.025
+Olfactory_L,21,2501,L,cortex,Unmapped Cortex,280,185,0.6607142857142857
+Olfactory_L,21,2501,L,cortex,Subcortical,280,0,0.0
+Olfactory_R,22,2502,R,cortex,Visual,289,0,0.0
+Olfactory_R,22,2502,R,cortex,Somatomotor,289,0,0.0
+Olfactory_R,22,2502,R,cortex,Dorsal Attention,289,0,0.0
+Olfactory_R,22,2502,R,cortex,Ventral Attention,289,0,0.0
+Olfactory_R,22,2502,R,cortex,Limbic,289,94,0.32525951557093424
+Olfactory_R,22,2502,R,cortex,Frontoparietal,289,0,0.0
+Olfactory_R,22,2502,R,cortex,Default,289,7,0.02422145328719723
+Olfactory_R,22,2502,R,cortex,Unmapped Cortex,289,188,0.6505190311418685
+Olfactory_R,22,2502,R,cortex,Subcortical,289,0,0.0
+Frontal_Sup_Medial_L,23,2601,L,cortex,Visual,2992,0,0.0
+Frontal_Sup_Medial_L,23,2601,L,cortex,Somatomotor,2992,0,0.0
+Frontal_Sup_Medial_L,23,2601,L,cortex,Dorsal Attention,2992,0,0.0
+Frontal_Sup_Medial_L,23,2601,L,cortex,Ventral Attention,2992,15,0.005013368983957219
+Frontal_Sup_Medial_L,23,2601,L,cortex,Limbic,2992,0,0.0
+Frontal_Sup_Medial_L,23,2601,L,cortex,Frontoparietal,2992,175,0.05848930481283422
+Frontal_Sup_Medial_L,23,2601,L,cortex,Default,2992,1114,0.37232620320855614
+Frontal_Sup_Medial_L,23,2601,L,cortex,Unmapped Cortex,2992,1688,0.5641711229946524
+Frontal_Sup_Medial_L,23,2601,L,cortex,Subcortical,2992,0,0.0
+Frontal_Sup_Medial_R,24,2602,R,cortex,Visual,2134,0,0.0
+Frontal_Sup_Medial_R,24,2602,R,cortex,Somatomotor,2134,0,0.0
+Frontal_Sup_Medial_R,24,2602,R,cortex,Dorsal Attention,2134,0,0.0
+Frontal_Sup_Medial_R,24,2602,R,cortex,Ventral Attention,2134,1,0.00046860356138706655
+Frontal_Sup_Medial_R,24,2602,R,cortex,Limbic,2134,0,0.0
+Frontal_Sup_Medial_R,24,2602,R,cortex,Frontoparietal,2134,151,0.07075913776944705
+Frontal_Sup_Medial_R,24,2602,R,cortex,Default,2134,891,0.4175257731958763
+Frontal_Sup_Medial_R,24,2602,R,cortex,Unmapped Cortex,2134,1091,0.5112464854732895
+Frontal_Sup_Medial_R,24,2602,R,cortex,Subcortical,2134,0,0.0
+Frontal_Med_Orb_L,25,2611,L,cortex,Visual,719,0,0.0
+Frontal_Med_Orb_L,25,2611,L,cortex,Somatomotor,719,0,0.0
+Frontal_Med_Orb_L,25,2611,L,cortex,Dorsal Attention,719,0,0.0
+Frontal_Med_Orb_L,25,2611,L,cortex,Ventral Attention,719,0,0.0
+Frontal_Med_Orb_L,25,2611,L,cortex,Limbic,719,88,0.12239221140472879
+Frontal_Med_Orb_L,25,2611,L,cortex,Frontoparietal,719,0,0.0
+Frontal_Med_Orb_L,25,2611,L,cortex,Default,719,242,0.33657858136300417
+Frontal_Med_Orb_L,25,2611,L,cortex,Unmapped Cortex,719,389,0.541029207232267
+Frontal_Med_Orb_L,25,2611,L,cortex,Subcortical,719,0,0.0
+Frontal_Med_Orb_R,26,2612,R,cortex,Visual,856,0,0.0
+Frontal_Med_Orb_R,26,2612,R,cortex,Somatomotor,856,0,0.0
+Frontal_Med_Orb_R,26,2612,R,cortex,Dorsal Attention,856,0,0.0
+Frontal_Med_Orb_R,26,2612,R,cortex,Ventral Attention,856,0,0.0
+Frontal_Med_Orb_R,26,2612,R,cortex,Limbic,856,116,0.13551401869158877
+Frontal_Med_Orb_R,26,2612,R,cortex,Frontoparietal,856,0,0.0
+Frontal_Med_Orb_R,26,2612,R,cortex,Default,856,243,0.2838785046728972
+Frontal_Med_Orb_R,26,2612,R,cortex,Unmapped Cortex,856,497,0.580607476635514
+Frontal_Med_Orb_R,26,2612,R,cortex,Subcortical,856,0,0.0
+Rectus_L,27,2701,L,cortex,Visual,852,0,0.0
+Rectus_L,27,2701,L,cortex,Somatomotor,852,0,0.0
+Rectus_L,27,2701,L,cortex,Dorsal Attention,852,0,0.0
+Rectus_L,27,2701,L,cortex,Ventral Attention,852,0,0.0
+Rectus_L,27,2701,L,cortex,Limbic,852,361,0.42370892018779344
+Rectus_L,27,2701,L,cortex,Frontoparietal,852,0,0.0
+Rectus_L,27,2701,L,cortex,Default,852,32,0.03755868544600939
+Rectus_L,27,2701,L,cortex,Unmapped Cortex,852,459,0.5387323943661971
+Rectus_L,27,2701,L,cortex,Subcortical,852,0,0.0
+Rectus_R,28,2702,R,cortex,Visual,745,0,0.0
+Rectus_R,28,2702,R,cortex,Somatomotor,745,0,0.0
+Rectus_R,28,2702,R,cortex,Dorsal Attention,745,0,0.0
+Rectus_R,28,2702,R,cortex,Ventral Attention,745,0,0.0
+Rectus_R,28,2702,R,cortex,Limbic,745,310,0.4161073825503356
+Rectus_R,28,2702,R,cortex,Frontoparietal,745,0,0.0
+Rectus_R,28,2702,R,cortex,Default,745,39,0.052348993288590606
+Rectus_R,28,2702,R,cortex,Unmapped Cortex,745,396,0.5315436241610738
+Rectus_R,28,2702,R,cortex,Subcortical,745,0,0.0
+Insula_L,29,3001,L,cortex,Visual,1858,0,0.0
+Insula_L,29,3001,L,cortex,Somatomotor,1858,151,0.08127018299246501
+Insula_L,29,3001,L,cortex,Dorsal Attention,1858,0,0.0
+Insula_L,29,3001,L,cortex,Ventral Attention,1858,685,0.36867599569429493
+Insula_L,29,3001,L,cortex,Limbic,1858,10,0.005382131324004306
+Insula_L,29,3001,L,cortex,Frontoparietal,1858,109,0.05866523143164693
+Insula_L,29,3001,L,cortex,Default,1858,53,0.02852529601722282
+Insula_L,29,3001,L,cortex,Unmapped Cortex,1858,850,0.45748116254036597
+Insula_L,29,3001,L,cortex,Subcortical,1858,0,0.0
+Insula_R,30,3002,R,cortex,Visual,1770,0,0.0
+Insula_R,30,3002,R,cortex,Somatomotor,1770,222,0.12542372881355932
+Insula_R,30,3002,R,cortex,Dorsal Attention,1770,0,0.0
+Insula_R,30,3002,R,cortex,Ventral Attention,1770,642,0.36271186440677966
+Insula_R,30,3002,R,cortex,Limbic,1770,10,0.005649717514124294
+Insula_R,30,3002,R,cortex,Frontoparietal,1770,59,0.03333333333333333
+Insula_R,30,3002,R,cortex,Default,1770,62,0.03502824858757062
+Insula_R,30,3002,R,cortex,Unmapped Cortex,1770,775,0.4378531073446328
+Insula_R,30,3002,R,cortex,Subcortical,1770,0,0.0
+Cingulum_Ant_L,31,4001,L,cortex,Visual,1400,0,0.0
+Cingulum_Ant_L,31,4001,L,cortex,Somatomotor,1400,0,0.0
+Cingulum_Ant_L,31,4001,L,cortex,Dorsal Attention,1400,0,0.0
+Cingulum_Ant_L,31,4001,L,cortex,Ventral Attention,1400,95,0.06785714285714285
+Cingulum_Ant_L,31,4001,L,cortex,Limbic,1400,13,0.009285714285714286
+Cingulum_Ant_L,31,4001,L,cortex,Frontoparietal,1400,118,0.08428571428571428
+Cingulum_Ant_L,31,4001,L,cortex,Default,1400,498,0.3557142857142857
+Cingulum_Ant_L,31,4001,L,cortex,Unmapped Cortex,1400,676,0.4828571428571429
+Cingulum_Ant_L,31,4001,L,cortex,Subcortical,1400,0,0.0
+Cingulum_Ant_R,32,4002,R,cortex,Visual,1313,0,0.0
+Cingulum_Ant_R,32,4002,R,cortex,Somatomotor,1313,0,0.0
+Cingulum_Ant_R,32,4002,R,cortex,Dorsal Attention,1313,0,0.0
+Cingulum_Ant_R,32,4002,R,cortex,Ventral Attention,1313,74,0.05635948210205636
+Cingulum_Ant_R,32,4002,R,cortex,Limbic,1313,2,0.0015232292460015233
+Cingulum_Ant_R,32,4002,R,cortex,Frontoparietal,1313,138,0.1051028179741051
+Cingulum_Ant_R,32,4002,R,cortex,Default,1313,500,0.38080731150038083
+Cingulum_Ant_R,32,4002,R,cortex,Unmapped Cortex,1313,599,0.4562071591774562
+Cingulum_Ant_R,32,4002,R,cortex,Subcortical,1313,0,0.0
+Cingulum_Mid_L,33,4011,L,cortex,Visual,1941,0,0.0
+Cingulum_Mid_L,33,4011,L,cortex,Somatomotor,1941,193,0.0994332818134982
+Cingulum_Mid_L,33,4011,L,cortex,Dorsal Attention,1941,0,0.0
+Cingulum_Mid_L,33,4011,L,cortex,Ventral Attention,1941,358,0.18444100978876868
+Cingulum_Mid_L,33,4011,L,cortex,Limbic,1941,0,0.0
+Cingulum_Mid_L,33,4011,L,cortex,Frontoparietal,1941,50,0.02575991756826378
+Cingulum_Mid_L,33,4011,L,cortex,Default,1941,244,0.12570839773312725
+Cingulum_Mid_L,33,4011,L,cortex,Unmapped Cortex,1941,1096,0.5646573930963421
+Cingulum_Mid_L,33,4011,L,cortex,Subcortical,1941,0,0.0
+Cingulum_Mid_R,34,4012,R,cortex,Visual,2203,0,0.0
+Cingulum_Mid_R,34,4012,R,cortex,Somatomotor,2203,194,0.08806173399909215
+Cingulum_Mid_R,34,4012,R,cortex,Dorsal Attention,2203,5,0.0022696323195642307
+Cingulum_Mid_R,34,4012,R,cortex,Ventral Attention,2203,531,0.2410349523377213
+Cingulum_Mid_R,34,4012,R,cortex,Limbic,2203,0,0.0
+Cingulum_Mid_R,34,4012,R,cortex,Frontoparietal,2203,223,0.10122560145256468
+Cingulum_Mid_R,34,4012,R,cortex,Default,2203,225,0.10213345438039037
+Cingulum_Mid_R,34,4012,R,cortex,Unmapped Cortex,2203,1025,0.4652746255106673
+Cingulum_Mid_R,34,4012,R,cortex,Subcortical,2203,0,0.0
+Cingulum_Post_L,35,4021,L,cortex,Visual,463,0,0.0
+Cingulum_Post_L,35,4021,L,cortex,Somatomotor,463,0,0.0
+Cingulum_Post_L,35,4021,L,cortex,Dorsal Attention,463,0,0.0
+Cingulum_Post_L,35,4021,L,cortex,Ventral Attention,463,0,0.0
+Cingulum_Post_L,35,4021,L,cortex,Limbic,463,0,0.0
+Cingulum_Post_L,35,4021,L,cortex,Frontoparietal,463,3,0.0064794816414686825
+Cingulum_Post_L,35,4021,L,cortex,Default,463,161,0.34773218142548595
+Cingulum_Post_L,35,4021,L,cortex,Unmapped Cortex,463,299,0.6457883369330454
+Cingulum_Post_L,35,4021,L,cortex,Subcortical,463,0,0.0
+Cingulum_Post_R,36,4022,R,cortex,Visual,335,0,0.0
+Cingulum_Post_R,36,4022,R,cortex,Somatomotor,335,0,0.0
+Cingulum_Post_R,36,4022,R,cortex,Dorsal Attention,335,0,0.0
+Cingulum_Post_R,36,4022,R,cortex,Ventral Attention,335,0,0.0
+Cingulum_Post_R,36,4022,R,cortex,Limbic,335,0,0.0
+Cingulum_Post_R,36,4022,R,cortex,Frontoparietal,335,5,0.014925373134328358
+Cingulum_Post_R,36,4022,R,cortex,Default,335,84,0.2507462686567164
+Cingulum_Post_R,36,4022,R,cortex,Unmapped Cortex,335,246,0.7343283582089553
+Cingulum_Post_R,36,4022,R,cortex,Subcortical,335,0,0.0
+ParaHippocampal_L,37,4111,L,cortex,Visual,978,54,0.05521472392638037
+ParaHippocampal_L,37,4111,L,cortex,Somatomotor,978,0,0.0
+ParaHippocampal_L,37,4111,L,cortex,Dorsal Attention,978,0,0.0
+ParaHippocampal_L,37,4111,L,cortex,Ventral Attention,978,0,0.0
+ParaHippocampal_L,37,4111,L,cortex,Limbic,978,206,0.21063394683026584
+ParaHippocampal_L,37,4111,L,cortex,Frontoparietal,978,0,0.0
+ParaHippocampal_L,37,4111,L,cortex,Default,978,58,0.05930470347648262
+ParaHippocampal_L,37,4111,L,cortex,Unmapped Cortex,978,660,0.6748466257668712
+ParaHippocampal_L,37,4111,L,cortex,Subcortical,978,0,0.0
+ParaHippocampal_R,38,4112,R,cortex,Visual,1132,134,0.11837455830388692
+ParaHippocampal_R,38,4112,R,cortex,Somatomotor,1132,0,0.0
+ParaHippocampal_R,38,4112,R,cortex,Dorsal Attention,1132,0,0.0
+ParaHippocampal_R,38,4112,R,cortex,Ventral Attention,1132,0,0.0
+ParaHippocampal_R,38,4112,R,cortex,Limbic,1132,284,0.2508833922261484
+ParaHippocampal_R,38,4112,R,cortex,Frontoparietal,1132,0,0.0
+ParaHippocampal_R,38,4112,R,cortex,Default,1132,20,0.0176678445229682
+ParaHippocampal_R,38,4112,R,cortex,Unmapped Cortex,1132,694,0.6130742049469965
+ParaHippocampal_R,38,4112,R,cortex,Subcortical,1132,0,0.0
+Calcarine_L,39,5001,L,cortex,Visual,2258,606,0.2683790965456156
+Calcarine_L,39,5001,L,cortex,Somatomotor,2258,0,0.0
+Calcarine_L,39,5001,L,cortex,Dorsal Attention,2258,0,0.0
+Calcarine_L,39,5001,L,cortex,Ventral Attention,2258,0,0.0
+Calcarine_L,39,5001,L,cortex,Limbic,2258,0,0.0
+Calcarine_L,39,5001,L,cortex,Frontoparietal,2258,0,0.0
+Calcarine_L,39,5001,L,cortex,Default,2258,97,0.04295837023914969
+Calcarine_L,39,5001,L,cortex,Unmapped Cortex,2258,1555,0.6886625332152347
+Calcarine_L,39,5001,L,cortex,Subcortical,2258,0,0.0
+Calcarine_R,40,5002,R,cortex,Visual,1861,414,0.22246104245029555
+Calcarine_R,40,5002,R,cortex,Somatomotor,1861,0,0.0
+Calcarine_R,40,5002,R,cortex,Dorsal Attention,1861,0,0.0
+Calcarine_R,40,5002,R,cortex,Ventral Attention,1861,0,0.0
+Calcarine_R,40,5002,R,cortex,Limbic,1861,0,0.0
+Calcarine_R,40,5002,R,cortex,Frontoparietal,1861,0,0.0
+Calcarine_R,40,5002,R,cortex,Default,1861,45,0.02418054809242343
+Calcarine_R,40,5002,R,cortex,Unmapped Cortex,1861,1402,0.753358409457281
+Calcarine_R,40,5002,R,cortex,Subcortical,1861,0,0.0
+Cuneus_L,41,5011,L,cortex,Visual,1526,320,0.20969855832241152
+Cuneus_L,41,5011,L,cortex,Somatomotor,1526,0,0.0
+Cuneus_L,41,5011,L,cortex,Dorsal Attention,1526,0,0.0
+Cuneus_L,41,5011,L,cortex,Ventral Attention,1526,0,0.0
+Cuneus_L,41,5011,L,cortex,Limbic,1526,0,0.0
+Cuneus_L,41,5011,L,cortex,Frontoparietal,1526,7,0.0045871559633027525
+Cuneus_L,41,5011,L,cortex,Default,1526,98,0.06422018348623854
+Cuneus_L,41,5011,L,cortex,Unmapped Cortex,1526,1101,0.7214941022280472
+Cuneus_L,41,5011,L,cortex,Subcortical,1526,0,0.0
+Cuneus_R,42,5012,R,cortex,Visual,1424,298,0.20926966292134833
+Cuneus_R,42,5012,R,cortex,Somatomotor,1424,0,0.0
+Cuneus_R,42,5012,R,cortex,Dorsal Attention,1424,2,0.0014044943820224719
+Cuneus_R,42,5012,R,cortex,Ventral Attention,1424,0,0.0
+Cuneus_R,42,5012,R,cortex,Limbic,1424,0,0.0
+Cuneus_R,42,5012,R,cortex,Frontoparietal,1424,28,0.019662921348314606
+Cuneus_R,42,5012,R,cortex,Default,1424,13,0.009129213483146067
+Cuneus_R,42,5012,R,cortex,Unmapped Cortex,1424,1083,0.7605337078651685
+Cuneus_R,42,5012,R,cortex,Subcortical,1424,0,0.0
+Lingual_L,43,5021,L,cortex,Visual,2095,647,0.3088305489260143
+Lingual_L,43,5021,L,cortex,Somatomotor,2095,0,0.0
+Lingual_L,43,5021,L,cortex,Dorsal Attention,2095,0,0.0
+Lingual_L,43,5021,L,cortex,Ventral Attention,2095,0,0.0
+Lingual_L,43,5021,L,cortex,Limbic,2095,0,0.0
+Lingual_L,43,5021,L,cortex,Frontoparietal,2095,0,0.0
+Lingual_L,43,5021,L,cortex,Default,2095,1,0.00047732696897374703
+Lingual_L,43,5021,L,cortex,Unmapped Cortex,2095,1447,0.6906921241050119
+Lingual_L,43,5021,L,cortex,Subcortical,2095,0,0.0
+Lingual_R,44,5022,R,cortex,Visual,2300,671,0.2917391304347826
+Lingual_R,44,5022,R,cortex,Somatomotor,2300,0,0.0
+Lingual_R,44,5022,R,cortex,Dorsal Attention,2300,0,0.0
+Lingual_R,44,5022,R,cortex,Ventral Attention,2300,0,0.0
+Lingual_R,44,5022,R,cortex,Limbic,2300,0,0.0
+Lingual_R,44,5022,R,cortex,Frontoparietal,2300,0,0.0
+Lingual_R,44,5022,R,cortex,Default,2300,8,0.0034782608695652175
+Lingual_R,44,5022,R,cortex,Unmapped Cortex,2300,1621,0.7047826086956521
+Lingual_R,44,5022,R,cortex,Subcortical,2300,0,0.0
+Occipital_Sup_L,45,5101,L,cortex,Visual,1366,302,0.22108345534407028
+Occipital_Sup_L,45,5101,L,cortex,Somatomotor,1366,0,0.0
+Occipital_Sup_L,45,5101,L,cortex,Dorsal Attention,1366,29,0.0212298682284041
+Occipital_Sup_L,45,5101,L,cortex,Ventral Attention,1366,0,0.0
+Occipital_Sup_L,45,5101,L,cortex,Limbic,1366,0,0.0
+Occipital_Sup_L,45,5101,L,cortex,Frontoparietal,1366,4,0.0029282576866764276
+Occipital_Sup_L,45,5101,L,cortex,Default,1366,6,0.004392386530014641
+Occipital_Sup_L,45,5101,L,cortex,Unmapped Cortex,1366,1025,0.7503660322108345
+Occipital_Sup_L,45,5101,L,cortex,Subcortical,1366,0,0.0
+Occipital_Sup_R,46,5102,R,cortex,Visual,1413,243,0.17197452229299362
+Occipital_Sup_R,46,5102,R,cortex,Somatomotor,1413,0,0.0
+Occipital_Sup_R,46,5102,R,cortex,Dorsal Attention,1413,76,0.0537862703467799
+Occipital_Sup_R,46,5102,R,cortex,Ventral Attention,1413,0,0.0
+Occipital_Sup_R,46,5102,R,cortex,Limbic,1413,0,0.0
+Occipital_Sup_R,46,5102,R,cortex,Frontoparietal,1413,19,0.013446567586694975
+Occipital_Sup_R,46,5102,R,cortex,Default,1413,0,0.0
+Occipital_Sup_R,46,5102,R,cortex,Unmapped Cortex,1413,1075,0.7607926397735315
+Occipital_Sup_R,46,5102,R,cortex,Subcortical,1413,0,0.0
+Occipital_Mid_L,47,5201,L,cortex,Visual,3270,737,0.2253822629969419
+Occipital_Mid_L,47,5201,L,cortex,Somatomotor,3270,0,0.0
+Occipital_Mid_L,47,5201,L,cortex,Dorsal Attention,3270,228,0.06972477064220184
+Occipital_Mid_L,47,5201,L,cortex,Ventral Attention,3270,0,0.0
+Occipital_Mid_L,47,5201,L,cortex,Limbic,3270,0,0.0
+Occipital_Mid_L,47,5201,L,cortex,Frontoparietal,3270,19,0.005810397553516819
+Occipital_Mid_L,47,5201,L,cortex,Default,3270,118,0.036085626911314984
+Occipital_Mid_L,47,5201,L,cortex,Unmapped Cortex,3270,2168,0.6629969418960244
+Occipital_Mid_L,47,5201,L,cortex,Subcortical,3270,0,0.0
+Occipital_Mid_R,48,5202,R,cortex,Visual,2098,481,0.22926596758817921
+Occipital_Mid_R,48,5202,R,cortex,Somatomotor,2098,0,0.0
+Occipital_Mid_R,48,5202,R,cortex,Dorsal Attention,2098,161,0.0767397521448999
+Occipital_Mid_R,48,5202,R,cortex,Ventral Attention,2098,0,0.0
+Occipital_Mid_R,48,5202,R,cortex,Limbic,2098,0,0.0
+Occipital_Mid_R,48,5202,R,cortex,Frontoparietal,2098,10,0.004766444232602479
+Occipital_Mid_R,48,5202,R,cortex,Default,2098,39,0.018589132507149667
+Occipital_Mid_R,48,5202,R,cortex,Unmapped Cortex,2098,1407,0.6706387035271687
+Occipital_Mid_R,48,5202,R,cortex,Subcortical,2098,0,0.0
+Occipital_Inf_L,49,5301,L,cortex,Visual,941,103,0.10945802337938364
+Occipital_Inf_L,49,5301,L,cortex,Somatomotor,941,0,0.0
+Occipital_Inf_L,49,5301,L,cortex,Dorsal Attention,941,82,0.0871413390010627
+Occipital_Inf_L,49,5301,L,cortex,Ventral Attention,941,0,0.0
+Occipital_Inf_L,49,5301,L,cortex,Limbic,941,0,0.0
+Occipital_Inf_L,49,5301,L,cortex,Frontoparietal,941,1,0.0010626992561105207
+Occipital_Inf_L,49,5301,L,cortex,Default,941,0,0.0
+Occipital_Inf_L,49,5301,L,cortex,Unmapped Cortex,941,755,0.8023379383634431
+Occipital_Inf_L,49,5301,L,cortex,Subcortical,941,0,0.0
+Occipital_Inf_R,50,5302,R,cortex,Visual,989,240,0.24266936299292213
+Occipital_Inf_R,50,5302,R,cortex,Somatomotor,989,0,0.0
+Occipital_Inf_R,50,5302,R,cortex,Dorsal Attention,989,0,0.0
+Occipital_Inf_R,50,5302,R,cortex,Ventral Attention,989,0,0.0
+Occipital_Inf_R,50,5302,R,cortex,Limbic,989,0,0.0
+Occipital_Inf_R,50,5302,R,cortex,Frontoparietal,989,0,0.0
+Occipital_Inf_R,50,5302,R,cortex,Default,989,0,0.0
+Occipital_Inf_R,50,5302,R,cortex,Unmapped Cortex,989,749,0.7573306370070778
+Occipital_Inf_R,50,5302,R,cortex,Subcortical,989,0,0.0
+Fusiform_L,51,5401,L,cortex,Visual,2310,551,0.23852813852813853
+Fusiform_L,51,5401,L,cortex,Somatomotor,2310,0,0.0
+Fusiform_L,51,5401,L,cortex,Dorsal Attention,2310,122,0.05281385281385281
+Fusiform_L,51,5401,L,cortex,Ventral Attention,2310,0,0.0
+Fusiform_L,51,5401,L,cortex,Limbic,2310,393,0.17012987012987013
+Fusiform_L,51,5401,L,cortex,Frontoparietal,2310,0,0.0
+Fusiform_L,51,5401,L,cortex,Default,2310,28,0.012121212121212121
+Fusiform_L,51,5401,L,cortex,Unmapped Cortex,2310,1216,0.5264069264069264
+Fusiform_L,51,5401,L,cortex,Subcortical,2310,0,0.0
+Fusiform_R,52,5402,R,cortex,Visual,2518,803,0.31890389197776015
+Fusiform_R,52,5402,R,cortex,Somatomotor,2518,0,0.0
+Fusiform_R,52,5402,R,cortex,Dorsal Attention,2518,36,0.014297061159650517
+Fusiform_R,52,5402,R,cortex,Ventral Attention,2518,0,0.0
+Fusiform_R,52,5402,R,cortex,Limbic,2518,457,0.18149324861000793
+Fusiform_R,52,5402,R,cortex,Frontoparietal,2518,0,0.0
+Fusiform_R,52,5402,R,cortex,Default,2518,3,0.0011914217633042098
+Fusiform_R,52,5402,R,cortex,Unmapped Cortex,2518,1219,0.4841143764892772
+Fusiform_R,52,5402,R,cortex,Subcortical,2518,0,0.0
+Postcentral_L,53,6001,L,cortex,Visual,3892,0,0.0
+Postcentral_L,53,6001,L,cortex,Somatomotor,3892,1060,0.2723535457348407
+Postcentral_L,53,6001,L,cortex,Dorsal Attention,3892,76,0.019527235354573486
+Postcentral_L,53,6001,L,cortex,Ventral Attention,3892,73,0.018756423432682426
+Postcentral_L,53,6001,L,cortex,Limbic,3892,0,0.0
+Postcentral_L,53,6001,L,cortex,Frontoparietal,3892,0,0.0
+Postcentral_L,53,6001,L,cortex,Default,3892,0,0.0
+Postcentral_L,53,6001,L,cortex,Unmapped Cortex,3892,2683,0.6893627954779034
+Postcentral_L,53,6001,L,cortex,Subcortical,3892,0,0.0
+Postcentral_R,54,6002,R,cortex,Visual,3823,0,0.0
+Postcentral_R,54,6002,R,cortex,Somatomotor,3823,812,0.21239863981166623
+Postcentral_R,54,6002,R,cortex,Dorsal Attention,3823,326,0.08527334554015172
+Postcentral_R,54,6002,R,cortex,Ventral Attention,3823,37,0.009678263144127649
+Postcentral_R,54,6002,R,cortex,Limbic,3823,0,0.0
+Postcentral_R,54,6002,R,cortex,Frontoparietal,3823,1,0.0002615746795710175
+Postcentral_R,54,6002,R,cortex,Default,3823,0,0.0
+Postcentral_R,54,6002,R,cortex,Unmapped Cortex,3823,2647,0.6923881768244834
+Postcentral_R,54,6002,R,cortex,Subcortical,3823,0,0.0
+Parietal_Sup_L,55,6101,L,cortex,Visual,2065,19,0.009200968523002421
+Parietal_Sup_L,55,6101,L,cortex,Somatomotor,2065,99,0.04794188861985472
+Parietal_Sup_L,55,6101,L,cortex,Dorsal Attention,2065,424,0.20532687651331719
+Parietal_Sup_L,55,6101,L,cortex,Ventral Attention,2065,0,0.0
+Parietal_Sup_L,55,6101,L,cortex,Limbic,2065,0,0.0
+Parietal_Sup_L,55,6101,L,cortex,Frontoparietal,2065,72,0.03486682808716707
+Parietal_Sup_L,55,6101,L,cortex,Default,2065,5,0.002421307506053269
+Parietal_Sup_L,55,6101,L,cortex,Unmapped Cortex,2065,1446,0.7002421307506054
+Parietal_Sup_L,55,6101,L,cortex,Subcortical,2065,0,0.0
+Parietal_Sup_R,56,6102,R,cortex,Visual,2222,34,0.0153015301530153
+Parietal_Sup_R,56,6102,R,cortex,Somatomotor,2222,11,0.0049504950495049506
+Parietal_Sup_R,56,6102,R,cortex,Dorsal Attention,2222,550,0.24752475247524752
+Parietal_Sup_R,56,6102,R,cortex,Ventral Attention,2222,2,0.0009000900090009
+Parietal_Sup_R,56,6102,R,cortex,Limbic,2222,0,0.0
+Parietal_Sup_R,56,6102,R,cortex,Frontoparietal,2222,33,0.01485148514851485
+Parietal_Sup_R,56,6102,R,cortex,Default,2222,0,0.0
+Parietal_Sup_R,56,6102,R,cortex,Unmapped Cortex,2222,1592,0.7164716471647165
+Parietal_Sup_R,56,6102,R,cortex,Subcortical,2222,0,0.0
+Parietal_Inf_L,57,6201,L,cortex,Visual,2447,0,0.0
+Parietal_Inf_L,57,6201,L,cortex,Somatomotor,2447,25,0.01021659174499387
+Parietal_Inf_L,57,6201,L,cortex,Dorsal Attention,2447,394,0.1610134859011034
+Parietal_Inf_L,57,6201,L,cortex,Ventral Attention,2447,23,0.00939926440539436
+Parietal_Inf_L,57,6201,L,cortex,Limbic,2447,0,0.0
+Parietal_Inf_L,57,6201,L,cortex,Frontoparietal,2447,476,0.1945239068246833
+Parietal_Inf_L,57,6201,L,cortex,Default,2447,132,0.05394360441356763
+Parietal_Inf_L,57,6201,L,cortex,Unmapped Cortex,2447,1397,0.5709031467102574
+Parietal_Inf_L,57,6201,L,cortex,Subcortical,2447,0,0.0
+Parietal_Inf_R,58,6202,R,cortex,Visual,1345,0,0.0
+Parietal_Inf_R,58,6202,R,cortex,Somatomotor,1345,0,0.0
+Parietal_Inf_R,58,6202,R,cortex,Dorsal Attention,1345,136,0.10111524163568773
+Parietal_Inf_R,58,6202,R,cortex,Ventral Attention,1345,0,0.0
+Parietal_Inf_R,58,6202,R,cortex,Limbic,1345,0,0.0
+Parietal_Inf_R,58,6202,R,cortex,Frontoparietal,1345,394,0.2929368029739777
+Parietal_Inf_R,58,6202,R,cortex,Default,1345,79,0.058736059479553904
+Parietal_Inf_R,58,6202,R,cortex,Unmapped Cortex,1345,736,0.5472118959107807
+Parietal_Inf_R,58,6202,R,cortex,Subcortical,1345,0,0.0
+SupraMarginal_L,59,6211,L,cortex,Visual,1256,0,0.0
+SupraMarginal_L,59,6211,L,cortex,Somatomotor,1256,23,0.018312101910828025
+SupraMarginal_L,59,6211,L,cortex,Dorsal Attention,1256,41,0.03264331210191083
+SupraMarginal_L,59,6211,L,cortex,Ventral Attention,1256,356,0.28343949044585987
+SupraMarginal_L,59,6211,L,cortex,Limbic,1256,0,0.0
+SupraMarginal_L,59,6211,L,cortex,Frontoparietal,1256,0,0.0
+SupraMarginal_L,59,6211,L,cortex,Default,1256,45,0.035828025477707005
+SupraMarginal_L,59,6211,L,cortex,Unmapped Cortex,1256,791,0.6297770700636943
+SupraMarginal_L,59,6211,L,cortex,Subcortical,1256,0,0.0
+SupraMarginal_R,60,6212,R,cortex,Visual,1974,0,0.0
+SupraMarginal_R,60,6212,R,cortex,Somatomotor,1974,16,0.008105369807497468
+SupraMarginal_R,60,6212,R,cortex,Dorsal Attention,1974,71,0.03596757852077001
+SupraMarginal_R,60,6212,R,cortex,Ventral Attention,1974,481,0.24366767983789261
+SupraMarginal_R,60,6212,R,cortex,Limbic,1974,0,0.0
+SupraMarginal_R,60,6212,R,cortex,Frontoparietal,1974,191,0.09675785207700101
+SupraMarginal_R,60,6212,R,cortex,Default,1974,109,0.05521783181357649
+SupraMarginal_R,60,6212,R,cortex,Unmapped Cortex,1974,1106,0.5602836879432624
+SupraMarginal_R,60,6212,R,cortex,Subcortical,1974,0,0.0
+Angular_L,61,6221,L,cortex,Visual,1173,0,0.0
+Angular_L,61,6221,L,cortex,Somatomotor,1173,0,0.0
+Angular_L,61,6221,L,cortex,Dorsal Attention,1173,4,0.0034100596760443308
+Angular_L,61,6221,L,cortex,Ventral Attention,1173,0,0.0
+Angular_L,61,6221,L,cortex,Limbic,1173,0,0.0
+Angular_L,61,6221,L,cortex,Frontoparietal,1173,22,0.01875532821824382
+Angular_L,61,6221,L,cortex,Default,1173,395,0.33674339300937767
+Angular_L,61,6221,L,cortex,Unmapped Cortex,1173,752,0.6410912190963342
+Angular_L,61,6221,L,cortex,Subcortical,1173,0,0.0
+Angular_R,62,6222,R,cortex,Visual,1752,0,0.0
+Angular_R,62,6222,R,cortex,Somatomotor,1752,0,0.0
+Angular_R,62,6222,R,cortex,Dorsal Attention,1752,50,0.028538812785388126
+Angular_R,62,6222,R,cortex,Ventral Attention,1752,0,0.0
+Angular_R,62,6222,R,cortex,Limbic,1752,0,0.0
+Angular_R,62,6222,R,cortex,Frontoparietal,1752,150,0.08561643835616438
+Angular_R,62,6222,R,cortex,Default,1752,461,0.2631278538812785
+Angular_R,62,6222,R,cortex,Unmapped Cortex,1752,1091,0.622716894977169
+Angular_R,62,6222,R,cortex,Subcortical,1752,0,0.0
+Precuneus_L,63,6301,L,cortex,Visual,3528,29,0.008219954648526076
+Precuneus_L,63,6301,L,cortex,Somatomotor,3528,114,0.03231292517006803
+Precuneus_L,63,6301,L,cortex,Dorsal Attention,3528,347,0.09835600907029478
+Precuneus_L,63,6301,L,cortex,Ventral Attention,3528,100,0.02834467120181406
+Precuneus_L,63,6301,L,cortex,Limbic,3528,0,0.0
+Precuneus_L,63,6301,L,cortex,Frontoparietal,3528,154,0.04365079365079365
+Precuneus_L,63,6301,L,cortex,Default,3528,529,0.14994331065759636
+Precuneus_L,63,6301,L,cortex,Unmapped Cortex,3528,2255,0.639172335600907
+Precuneus_L,63,6301,L,cortex,Subcortical,3528,0,0.0
+Precuneus_R,64,6302,R,cortex,Visual,3265,80,0.02450229709035222
+Precuneus_R,64,6302,R,cortex,Somatomotor,3265,11,0.0033690658499234303
+Precuneus_R,64,6302,R,cortex,Dorsal Attention,3265,369,0.11301684532924962
+Precuneus_R,64,6302,R,cortex,Ventral Attention,3265,64,0.019601837672281776
+Precuneus_R,64,6302,R,cortex,Limbic,3265,0,0.0
+Precuneus_R,64,6302,R,cortex,Frontoparietal,3265,223,0.06830015313935682
+Precuneus_R,64,6302,R,cortex,Default,3265,476,0.1457886676875957
+Precuneus_R,64,6302,R,cortex,Unmapped Cortex,3265,2042,0.6254211332312404
+Precuneus_R,64,6302,R,cortex,Subcortical,3265,0,0.0
+Paracentral_Lobule_L,65,6401,L,cortex,Visual,1349,0,0.0
+Paracentral_Lobule_L,65,6401,L,cortex,Somatomotor,1349,324,0.24017790956263899
+Paracentral_Lobule_L,65,6401,L,cortex,Dorsal Attention,1349,0,0.0
+Paracentral_Lobule_L,65,6401,L,cortex,Ventral Attention,1349,1,0.0007412898443291327
+Paracentral_Lobule_L,65,6401,L,cortex,Limbic,1349,0,0.0
+Paracentral_Lobule_L,65,6401,L,cortex,Frontoparietal,1349,0,0.0
+Paracentral_Lobule_L,65,6401,L,cortex,Default,1349,0,0.0
+Paracentral_Lobule_L,65,6401,L,cortex,Unmapped Cortex,1349,1024,0.7590808005930318
+Paracentral_Lobule_L,65,6401,L,cortex,Subcortical,1349,0,0.0
+Paracentral_Lobule_R,66,6402,R,cortex,Visual,836,0,0.0
+Paracentral_Lobule_R,66,6402,R,cortex,Somatomotor,836,180,0.215311004784689
+Paracentral_Lobule_R,66,6402,R,cortex,Dorsal Attention,836,0,0.0
+Paracentral_Lobule_R,66,6402,R,cortex,Ventral Attention,836,29,0.034688995215311005
+Paracentral_Lobule_R,66,6402,R,cortex,Limbic,836,0,0.0
+Paracentral_Lobule_R,66,6402,R,cortex,Frontoparietal,836,0,0.0
+Paracentral_Lobule_R,66,6402,R,cortex,Default,836,0,0.0
+Paracentral_Lobule_R,66,6402,R,cortex,Unmapped Cortex,836,627,0.75
+Paracentral_Lobule_R,66,6402,R,cortex,Subcortical,836,0,0.0
+Heschl_L,67,8101,L,cortex,Visual,225,0,0.0
+Heschl_L,67,8101,L,cortex,Somatomotor,225,99,0.44
+Heschl_L,67,8101,L,cortex,Dorsal Attention,225,0,0.0
+Heschl_L,67,8101,L,cortex,Ventral Attention,225,0,0.0
+Heschl_L,67,8101,L,cortex,Limbic,225,0,0.0
+Heschl_L,67,8101,L,cortex,Frontoparietal,225,0,0.0
+Heschl_L,67,8101,L,cortex,Default,225,0,0.0
+Heschl_L,67,8101,L,cortex,Unmapped Cortex,225,126,0.56
+Heschl_L,67,8101,L,cortex,Subcortical,225,0,0.0
+Heschl_R,68,8102,R,cortex,Visual,249,0,0.0
+Heschl_R,68,8102,R,cortex,Somatomotor,249,112,0.4497991967871486
+Heschl_R,68,8102,R,cortex,Dorsal Attention,249,0,0.0
+Heschl_R,68,8102,R,cortex,Ventral Attention,249,0,0.0
+Heschl_R,68,8102,R,cortex,Limbic,249,0,0.0
+Heschl_R,68,8102,R,cortex,Frontoparietal,249,0,0.0
+Heschl_R,68,8102,R,cortex,Default,249,0,0.0
+Heschl_R,68,8102,R,cortex,Unmapped Cortex,249,137,0.5502008032128514
+Heschl_R,68,8102,R,cortex,Subcortical,249,0,0.0
+Temporal_Sup_L,69,8111,L,cortex,Visual,2296,0,0.0
+Temporal_Sup_L,69,8111,L,cortex,Somatomotor,2296,736,0.3205574912891986
+Temporal_Sup_L,69,8111,L,cortex,Dorsal Attention,2296,0,0.0
+Temporal_Sup_L,69,8111,L,cortex,Ventral Attention,2296,194,0.08449477351916376
+Temporal_Sup_L,69,8111,L,cortex,Limbic,2296,5,0.0021777003484320556
+Temporal_Sup_L,69,8111,L,cortex,Frontoparietal,2296,0,0.0
+Temporal_Sup_L,69,8111,L,cortex,Default,2296,123,0.05357142857142857
+Temporal_Sup_L,69,8111,L,cortex,Unmapped Cortex,2296,1238,0.539198606271777
+Temporal_Sup_L,69,8111,L,cortex,Subcortical,2296,0,0.0
+Temporal_Sup_R,70,8112,R,cortex,Visual,3141,0,0.0
+Temporal_Sup_R,70,8112,R,cortex,Somatomotor,3141,893,0.2843043616682585
+Temporal_Sup_R,70,8112,R,cortex,Dorsal Attention,3141,0,0.0
+Temporal_Sup_R,70,8112,R,cortex,Ventral Attention,3141,198,0.06303724928366762
+Temporal_Sup_R,70,8112,R,cortex,Limbic,3141,0,0.0
+Temporal_Sup_R,70,8112,R,cortex,Frontoparietal,3141,2,0.0006367398917542184
+Temporal_Sup_R,70,8112,R,cortex,Default,3141,271,0.08627825533269659
+Temporal_Sup_R,70,8112,R,cortex,Unmapped Cortex,3141,1777,0.565743393823623
+Temporal_Sup_R,70,8112,R,cortex,Subcortical,3141,0,0.0
+Temporal_Pole_Sup_L,71,8121,L,cortex,Visual,1285,0,0.0
+Temporal_Pole_Sup_L,71,8121,L,cortex,Somatomotor,1285,49,0.03813229571984436
+Temporal_Pole_Sup_L,71,8121,L,cortex,Dorsal Attention,1285,0,0.0
+Temporal_Pole_Sup_L,71,8121,L,cortex,Ventral Attention,1285,50,0.038910505836575876
+Temporal_Pole_Sup_L,71,8121,L,cortex,Limbic,1285,379,0.29494163424124514
+Temporal_Pole_Sup_L,71,8121,L,cortex,Frontoparietal,1285,0,0.0
+Temporal_Pole_Sup_L,71,8121,L,cortex,Default,1285,156,0.12140077821011673
+Temporal_Pole_Sup_L,71,8121,L,cortex,Unmapped Cortex,1285,651,0.5066147859922179
+Temporal_Pole_Sup_L,71,8121,L,cortex,Subcortical,1285,0,0.0
+Temporal_Pole_Sup_R,72,8122,R,cortex,Visual,1338,0,0.0
+Temporal_Pole_Sup_R,72,8122,R,cortex,Somatomotor,1338,147,0.10986547085201794
+Temporal_Pole_Sup_R,72,8122,R,cortex,Dorsal Attention,1338,0,0.0
+Temporal_Pole_Sup_R,72,8122,R,cortex,Ventral Attention,1338,26,0.01943198804185351
+Temporal_Pole_Sup_R,72,8122,R,cortex,Limbic,1338,362,0.2705530642750374
+Temporal_Pole_Sup_R,72,8122,R,cortex,Frontoparietal,1338,0,0.0
+Temporal_Pole_Sup_R,72,8122,R,cortex,Default,1338,138,0.1031390134529148
+Temporal_Pole_Sup_R,72,8122,R,cortex,Unmapped Cortex,1338,665,0.4970104633781764
+Temporal_Pole_Sup_R,72,8122,R,cortex,Subcortical,1338,0,0.0
+Temporal_Mid_L,73,8201,L,cortex,Visual,4942,42,0.0084985835694051
+Temporal_Mid_L,73,8201,L,cortex,Somatomotor,4942,121,0.024484014569000404
+Temporal_Mid_L,73,8201,L,cortex,Dorsal Attention,4942,347,0.07021448806151356
+Temporal_Mid_L,73,8201,L,cortex,Ventral Attention,4942,138,0.02792391744233104
+Temporal_Mid_L,73,8201,L,cortex,Limbic,4942,0,0.0
+Temporal_Mid_L,73,8201,L,cortex,Frontoparietal,4942,107,0.021651153379198707
+Temporal_Mid_L,73,8201,L,cortex,Default,4942,1712,0.3464184540671793
+Temporal_Mid_L,73,8201,L,cortex,Unmapped Cortex,4942,2475,0.5008093889113719
+Temporal_Mid_L,73,8201,L,cortex,Subcortical,4942,0,0.0
+Temporal_Mid_R,74,8202,R,cortex,Visual,4409,306,0.06940349285552279
+Temporal_Mid_R,74,8202,R,cortex,Somatomotor,4409,23,0.0052166024041732815
+Temporal_Mid_R,74,8202,R,cortex,Dorsal Attention,4409,445,0.10092991608074393
+Temporal_Mid_R,74,8202,R,cortex,Ventral Attention,4409,144,0.03266046722612837
+Temporal_Mid_R,74,8202,R,cortex,Limbic,4409,0,0.0
+Temporal_Mid_R,74,8202,R,cortex,Frontoparietal,4409,217,0.049217509639374005
+Temporal_Mid_R,74,8202,R,cortex,Default,4409,1117,0.2533454298026763
+Temporal_Mid_R,74,8202,R,cortex,Unmapped Cortex,4409,2157,0.48922658199138125
+Temporal_Mid_R,74,8202,R,cortex,Subcortical,4409,0,0.0
+Temporal_Pole_Mid_L,75,8211,L,cortex,Visual,755,0,0.0
+Temporal_Pole_Mid_L,75,8211,L,cortex,Somatomotor,755,0,0.0
+Temporal_Pole_Mid_L,75,8211,L,cortex,Dorsal Attention,755,0,0.0
+Temporal_Pole_Mid_L,75,8211,L,cortex,Ventral Attention,755,0,0.0
+Temporal_Pole_Mid_L,75,8211,L,cortex,Limbic,755,287,0.3801324503311258
+Temporal_Pole_Mid_L,75,8211,L,cortex,Frontoparietal,755,0,0.0
+Temporal_Pole_Mid_L,75,8211,L,cortex,Default,755,145,0.19205298013245034
+Temporal_Pole_Mid_L,75,8211,L,cortex,Unmapped Cortex,755,323,0.4278145695364238
+Temporal_Pole_Mid_L,75,8211,L,cortex,Subcortical,755,0,0.0
+Temporal_Pole_Mid_R,76,8212,R,cortex,Visual,1187,0,0.0
+Temporal_Pole_Mid_R,76,8212,R,cortex,Somatomotor,1187,0,0.0
+Temporal_Pole_Mid_R,76,8212,R,cortex,Dorsal Attention,1187,0,0.0
+Temporal_Pole_Mid_R,76,8212,R,cortex,Ventral Attention,1187,0,0.0
+Temporal_Pole_Mid_R,76,8212,R,cortex,Limbic,1187,338,0.2847514743049705
+Temporal_Pole_Mid_R,76,8212,R,cortex,Frontoparietal,1187,0,0.0
+Temporal_Pole_Mid_R,76,8212,R,cortex,Default,1187,192,0.16175231676495366
+Temporal_Pole_Mid_R,76,8212,R,cortex,Unmapped Cortex,1187,657,0.5534962089300758
+Temporal_Pole_Mid_R,76,8212,R,cortex,Subcortical,1187,0,0.0
+Temporal_Inf_L,77,8301,L,cortex,Visual,3200,16,0.005
+Temporal_Inf_L,77,8301,L,cortex,Somatomotor,3200,0,0.0
+Temporal_Inf_L,77,8301,L,cortex,Dorsal Attention,3200,416,0.13
+Temporal_Inf_L,77,8301,L,cortex,Ventral Attention,3200,0,0.0
+Temporal_Inf_L,77,8301,L,cortex,Limbic,3200,670,0.209375
+Temporal_Inf_L,77,8301,L,cortex,Frontoparietal,3200,301,0.0940625
+Temporal_Inf_L,77,8301,L,cortex,Default,3200,391,0.1221875
+Temporal_Inf_L,77,8301,L,cortex,Unmapped Cortex,3200,1406,0.439375
+Temporal_Inf_L,77,8301,L,cortex,Subcortical,3200,0,0.0
+Temporal_Inf_R,78,8302,R,cortex,Visual,3557,237,0.06662918189485521
+Temporal_Inf_R,78,8302,R,cortex,Somatomotor,3557,0,0.0
+Temporal_Inf_R,78,8302,R,cortex,Dorsal Attention,3557,525,0.14759628900759067
+Temporal_Inf_R,78,8302,R,cortex,Ventral Attention,3557,0,0.0
+Temporal_Inf_R,78,8302,R,cortex,Limbic,3557,606,0.1703682878830475
+Temporal_Inf_R,78,8302,R,cortex,Frontoparietal,3557,304,0.08546527973010964
+Temporal_Inf_R,78,8302,R,cortex,Default,3557,260,0.07309530503233061
+Temporal_Inf_R,78,8302,R,cortex,Unmapped Cortex,3557,1625,0.4568456564520664
+Temporal_Inf_R,78,8302,R,cortex,Subcortical,3557,0,0.0

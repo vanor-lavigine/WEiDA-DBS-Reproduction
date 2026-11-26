@@ -1,0 +1,16 @@
+{
+  "status": "verified",
+  "tests_passed": 7,
+  "statistical_replay_byte_identical": 15,
+  "archived_targeted_h6_raw_permutation_p_reproduced": {
+    "Unadjusted": 0.04329567043295671,
+    "FD": 0.07329267073292671,
+    "DVARS": 0.0817918208179182
+  },
+  "public_figure_pairs_verified": 7,
+  "private_paired_figure_pair_verified": true,
+  "public_plot_resolution_dpi": 600,
+  "public_pdf_has_no_raster_image_objects": true,
+  "relative_report_links_verified": 34,
+  "public_artifact_privacy_patterns_checked": true
+}

@@ -1,0 +1,3 @@
+﻿condition,n_scans,n_scans_with_exit,total_actual_exits,total_right_truncated_segments,clock_minutes,exact_exit_count_identity,duration_reciprocal_evaluable,duration_reciprocal_equal_count,exact_ratio_identity,reciprocal_mean_seconds,mean_duration_seconds,mean_reciprocal_minus_duration_seconds
+OFF,25,25,310,4,169.82000000000002,25,25,0,25,38.281331259167985,11.984688611160008,26.29664264800798
+ON,25,25,310,9,168.35,25,25,0,25,49.125370049145914,8.915726875446536,40.20964317369937

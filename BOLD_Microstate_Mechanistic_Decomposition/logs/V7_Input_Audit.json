@@ -1,0 +1,26 @@
+{
+  "status": "verified",
+  "retained_cohort": {
+    "hc": 15,
+    "pd_pairs": 25,
+    "scans": 65,
+    "acquired_frames": 210
+  },
+  "independent_participants": 40,
+  "frozen_v6_tables_verified": [
+    "ON_OFF_Pair_Manifest.csv",
+    "Frozen_Cohort_Features.csv",
+    "ON_OFF_Subject_Features.csv",
+    "ON_OFF_Paired_Differences.csv",
+    "ON_OFF_Transition_Matrices.csv"
+  ],
+  "v4_public_files_verified": 71,
+  "frozen_frame_archives_verified": 65,
+  "v4_and_v6_scan_keys_exact": true,
+  "v6_feature_difference_and_transition_tables_exact": true,
+  "on_and_off_in_same_fold": true,
+  "distinct_folds": 5,
+  "frozen_roi_axis_count": 78,
+  "verified_scan_order_pairs": 24,
+  "assessment_data_read": false
+}

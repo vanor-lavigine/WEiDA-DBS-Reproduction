@@ -1,0 +1,116 @@
+{
+  "protocol_commit": "740e4f3c65f601a03ba6171aff5989f7982f9793",
+  "protocol": {
+    "report_base": "0ad06338469b272ca591f65fe66588dc2d50dacf",
+    "frozen_v6": "17d3d1261b223da37280238e615c3176adaef684",
+    "motor_severity_reference": "b16855fc0afa27ad7e85b0543abb4a60292d9479",
+    "baseline": {
+      "method": "A3",
+      "atlas": "AAL78",
+      "k": 4,
+      "tr": 2.1,
+      "band_hz": [
+        0.01,
+        0.08
+      ],
+      "band": "F1",
+      "normalization": "N0",
+      "learner": "G1",
+      "decoder": "S1",
+      "lambda": 0.04
+    },
+    "cohort": {
+      "hc": 15,
+      "pd_pairs": 25,
+      "scans": 65,
+      "acquired_frames": 210
+    },
+    "difference": "ON minus OFF",
+    "seed": 7261126,
+    "permutations": 10000,
+    "bootstrap": 2000,
+    "alpha": 0.05,
+    "identity_tolerance": 1e-12,
+    "composition_pseudocount": 0.5,
+    "wald_shrinkage": 0.1,
+    "primary": [
+      {
+        "id": "M1_W",
+        "outcome": "m1_shapley_w_pp",
+        "unit": "GEV percentage points"
+      },
+      {
+        "id": "M1_F",
+        "outcome": "m1_shapley_f_pp",
+        "unit": "GEV percentage points"
+      },
+      {
+        "id": "M4_COVERAGE",
+        "outcome": "m4_log_coverage",
+        "unit": "natural log ratio"
+      },
+      {
+        "id": "M4_OCCURRENCE",
+        "outcome": "m4_negative_log_occurrence",
+        "unit": "natural log ratio"
+      },
+      {
+        "id": "M4_EXIT_RATE",
+        "outcome": "m4_exit_rate_min",
+        "unit": "exits per minute"
+      },
+      {
+        "id": "M4_EXIT_DESTINATION",
+        "outcome": [
+          "m4_ilr_1",
+          "m4_ilr_2"
+        ],
+        "unit": "Helmert ILR displacement norm",
+        "reuses_previous_H6": true
+      }
+    ],
+    "primary_model": "Unadjusted paired sign flip",
+    "motion_sensitivity_covariates": [
+      "fd",
+      "mean_std_dvars"
+    ],
+    "correction": "Holm over all six endpoints independently within each model; a missing P is padded as one during correction and is NA in the table",
+    "share_min_abs_gev_pp": 0.1,
+    "share_min_abs_log_duration": 0.01,
+    "report_share_only_if_group_total_bootstrap_interval_excludes_zero": true,
+    "windows": [
+      {
+        "window": "Full",
+        "start": 0,
+        "stop": 210
+      },
+      {
+        "window": "First half",
+        "start": 0,
+        "stop": 105
+      },
+      {
+        "window": "Last half",
+        "start": 105,
+        "stop": 210
+      },
+      {
+        "window": "Middle half",
+        "start": 52,
+        "stop": 157
+      }
+    ],
+    "window_min_valid_seconds": 200.0,
+    "window_min_m1_frames": 10,
+    "window_min_complete_m4_episodes": 3,
+    "window_min_estimation_pairs": 3,
+    "acf_max_lag_frames": 48,
+    "acf_efold": 0.36787944117144233,
+    "network_annotation": "Descriptive atlas voxel overlap with official Yeo-7 tight template; retain uncovered and subcortical categories when applicable; compare every frozen fold and report match quality"
+  },
+  "labels": "Archived A3 common-window frame arrays, mapped to the frozen reference index",
+  "head_motion": "Independent V6 Freedman–Lane residual sign flips with separate delta FD and delta DVARS models",
+  "imaging_reprocessing": false,
+  "template_refit": false,
+  "segmentation_rerun": false
+}

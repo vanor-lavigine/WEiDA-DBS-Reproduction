@@ -1,0 +1,34 @@
+{
+  "status": "verified",
+  "no_tracked_legacy_changes": true,
+  "frozen_inputs_unchanged_after_analysis": true,
+  "frozen_files_rehashed": 75,
+  "scans_reproducing_all_frozen_primary_features": 65,
+  "scans_with_105_roi_projection_and_gfp_reconciled": 65,
+  "n_independent_patients": 25,
+  "m1_pair_identity_count": 25,
+  "m1_max_shapley_residual_gev_percentage_points": 1.4432899320127035e-15,
+  "m4_main_pair_identity_count": 25,
+  "m4_max_log_residual": 6.661338147750939e-16,
+  "m4_complete_pair_identity_count": 25,
+  "m4_complete_max_log_residual": 5.551115123125783e-16,
+  "bootstrap": 2000,
+  "permutations": 10000,
+  "seed": 7261126,
+  "holm_family_per_model": 6,
+  "models": [
+    "Unadjusted",
+    "FD",
+    "DVARS"
+  ],
+  "python": "3.12.7",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2",
+    "Matplotlib": "3.9.2",
+    "threadpoolctl": "3.5.0"
+  },
+  "command": "python -B -X utf8 BOLD_Microstate_Mechanistic_Decomposition/scripts/run_v7.py --prior-input-index <local targeted follow-up input index>"
+}
