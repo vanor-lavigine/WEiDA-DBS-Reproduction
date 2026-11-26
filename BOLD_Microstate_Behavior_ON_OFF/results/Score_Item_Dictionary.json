@@ -1,0 +1,609 @@
+{
+  "file": "PD开关机fMRI评分_202011_gr_20201228.xlsx",
+  "sheet": "开关机fMRI实际纳入患者.UPDRS-III",
+  "scale_label": "原表运动检查总分，33项重算，正式版本待核实",
+  "original_sheet_rating_label": "UPDRS-III",
+  "rating_direction": "higher_is_worse",
+  "allowed_item_values": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rating_direction_reference": "https://www.movementdisorders.org/MDS-Files1/Resources/PDFs/MDS-UPDRS.pdf",
+  "domains": {
+    "total": {
+      "columns": [
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+        "AC",
+        "AD",
+        "AF",
+        "AG",
+        "AH",
+        "AI",
+        "AJ",
+        "AK",
+        "AL",
+        "AM",
+        "AN",
+        "AO",
+        "AP",
+        "AQ",
+        "AR",
+        "AS"
+      ],
+      "item_count": 33,
+      "items": [
+        "speech",
+        "facial_expression",
+        "rigidity_neck",
+        "rigidity_arm_right",
+        "rigidity_arm_left",
+        "rigidity_leg_right",
+        "rigidity_leg_left",
+        "finger_tapping_right",
+        "finger_tapping_left",
+        "hand_movements_right",
+        "hand_movements_left",
+        "pronation_supination_right",
+        "pronation_supination_left",
+        "toe_tapping_right",
+        "toe_tapping_left",
+        "leg_agility_right",
+        "leg_agility_left",
+        "arising",
+        "gait",
+        "gait_freezing",
+        "postural_stability",
+        "posture",
+        "body_bradykinesia",
+        "postural_tremor_right",
+        "postural_tremor_left",
+        "kinetic_tremor_right",
+        "kinetic_tremor_left",
+        "rest_tremor_arm_right",
+        "rest_tremor_arm_left",
+        "rest_tremor_leg_right",
+        "rest_tremor_leg_left",
+        "rest_tremor_lip_jaw",
+        "rest_tremor_constancy"
+      ]
+    },
+    "rigidity": {
+      "columns": [
+        "J",
+        "K",
+        "L",
+        "M",
+        "N"
+      ],
+      "item_count": 5,
+      "items": [
+        "rigidity_neck",
+        "rigidity_arm_right",
+        "rigidity_arm_left",
+        "rigidity_leg_right",
+        "rigidity_leg_left"
+      ]
+    },
+    "bradykinesia": {
+      "columns": [
+        "O",
+        "P",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+        "AI"
+      ],
+      "item_count": 11,
+      "items": [
+        "finger_tapping_right",
+        "finger_tapping_left",
+        "hand_movements_right",
+        "hand_movements_left",
+        "pronation_supination_right",
+        "pronation_supination_left",
+        "toe_tapping_right",
+        "toe_tapping_left",
+        "leg_agility_right",
+        "leg_agility_left",
+        "body_bradykinesia"
+      ]
+    },
+    "tremor": {
+      "columns": [
+        "AJ",
+        "AK",
+        "AL",
+        "AM",
+        "AN",
+        "AO",
+        "AP",
+        "AQ",
+        "AR",
+        "AS"
+      ],
+      "item_count": 10,
+      "items": [
+        "postural_tremor_right",
+        "postural_tremor_left",
+        "kinetic_tremor_right",
+        "kinetic_tremor_left",
+        "rest_tremor_arm_right",
+        "rest_tremor_arm_left",
+        "rest_tremor_leg_right",
+        "rest_tremor_leg_left",
+        "rest_tremor_lip_jaw",
+        "rest_tremor_constancy"
+      ]
+    },
+    "gait_balance": {
+      "columns": [
+        "AD",
+        "AF",
+        "AG"
+      ],
+      "item_count": 3,
+      "items": [
+        "gait",
+        "gait_freezing",
+        "postural_stability"
+      ]
+    }
+  },
+  "items": [
+    {
+      "column": "H",
+      "item": "speech",
+      "observed_header": [
+        "言语"
+      ],
+      "comparison_workbook_column": "G",
+      "domains": [
+        "total"
+      ]
+    },
+    {
+      "column": "I",
+      "item": "facial_expression",
+      "observed_header": [
+        "面部表情"
+      ],
+      "comparison_workbook_column": "H",
+      "domains": [
+        "total"
+      ]
+    },
+    {
+      "column": "J",
+      "item": "rigidity_neck",
+      "observed_header": [
+        "强直",
+        "脖子"
+      ],
+      "comparison_workbook_column": "I",
+      "domains": [
+        "total",
+        "rigidity"
+      ]
+    },
+    {
+      "column": "K",
+      "item": "rigidity_arm_right",
+      "observed_header": [
+        "上肢:右"
+      ],
+      "comparison_workbook_column": "J",
+      "domains": [
+        "total",
+        "rigidity"
+      ]
+    },
+    {
+      "column": "L",
+      "item": "rigidity_arm_left",
+      "observed_header": [
+        "上肢:左"
+      ],
+      "comparison_workbook_column": "K",
+      "domains": [
+        "total",
+        "rigidity"
+      ]
+    },
+    {
+      "column": "M",
+      "item": "rigidity_leg_right",
+      "observed_header": [
+        "下肢:右"
+      ],
+      "comparison_workbook_column": "L",
+      "domains": [
+        "total",
+        "rigidity"
+      ]
+    },
+    {
+      "column": "N",
+      "item": "rigidity_leg_left",
+      "observed_header": [
+        "下肢:左"
+      ],
+      "comparison_workbook_column": "M",
+      "domains": [
+        "total",
+        "rigidity"
+      ]
+    },
+    {
+      "column": "O",
+      "item": "finger_tapping_right",
+      "observed_header": [
+        "手指拍打",
+        "右"
+      ],
+      "comparison_workbook_column": "N",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "P",
+      "item": "finger_tapping_left",
+      "observed_header": [
+        "左"
+      ],
+      "comparison_workbook_column": "O",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "S",
+      "item": "hand_movements_right",
+      "observed_header": [
+        "手掌运动",
+        "右"
+      ],
+      "comparison_workbook_column": "P",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "T",
+      "item": "hand_movements_left",
+      "observed_header": [
+        "左"
+      ],
+      "comparison_workbook_column": "Q",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "U",
+      "item": "pronation_supination_right",
+      "observed_header": [
+        "前臂回旋",
+        "右"
+      ],
+      "comparison_workbook_column": "R",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "V",
+      "item": "pronation_supination_left",
+      "observed_header": [
+        "左"
+      ],
+      "comparison_workbook_column": "S",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "W",
+      "item": "toe_tapping_right",
+      "observed_header": [
+        "脚趾拍地",
+        "右"
+      ],
+      "comparison_workbook_column": "T",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "X",
+      "item": "toe_tapping_left",
+      "observed_header": [
+        "左"
+      ],
+      "comparison_workbook_column": "U",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "Y",
+      "item": "leg_agility_right",
+      "observed_header": [
+        "脚灵敏度",
+        "右"
+      ],
+      "comparison_workbook_column": "V",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "Z",
+      "item": "leg_agility_left",
+      "observed_header": [
+        "左"
+      ],
+      "comparison_workbook_column": "W",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "AC",
+      "item": "arising",
+      "observed_header": [
+        "起立"
+      ],
+      "comparison_workbook_column": "AB",
+      "domains": [
+        "total"
+      ]
+    },
+    {
+      "column": "AD",
+      "item": "gait",
+      "observed_header": [
+        "步态"
+      ],
+      "comparison_workbook_column": "AC",
+      "domains": [
+        "total",
+        "gait_balance"
+      ]
+    },
+    {
+      "column": "AF",
+      "item": "gait_freezing",
+      "observed_header": [
+        "步态冻结",
+        "步态冻结的评估"
+      ],
+      "comparison_workbook_column": "AD",
+      "domains": [
+        "total",
+        "gait_balance"
+      ]
+    },
+    {
+      "column": "AG",
+      "item": "postural_stability",
+      "observed_header": [
+        "姿势平稳度"
+      ],
+      "comparison_workbook_column": "AE",
+      "domains": [
+        "total",
+        "gait_balance"
+      ]
+    },
+    {
+      "column": "AH",
+      "item": "posture",
+      "observed_header": [
+        "姿势"
+      ],
+      "comparison_workbook_column": "AF",
+      "domains": [
+        "total"
+      ]
+    },
+    {
+      "column": "AI",
+      "item": "body_bradykinesia",
+      "observed_header": [
+        "全身自发性的动作评估",
+        "身体动作迟缓"
+      ],
+      "comparison_workbook_column": "X",
+      "domains": [
+        "total",
+        "bradykinesia"
+      ]
+    },
+    {
+      "column": "AJ",
+      "item": "postural_tremor_right",
+      "observed_header": [
+        "姿态性震颤",
+        "右"
+      ],
+      "comparison_workbook_column": "AG",
+      "domains": [
+        "total",
+        "tremor"
+      ]
+    },
+    {
+      "column": "AK",
+      "item": "postural_tremor_left",
+      "observed_header": [
+        "左"
+      ],
+      "comparison_workbook_column": "AH",
+      "domains": [
+        "total",
+        "tremor"
+      ]
+    },
+    {
+      "column": "AL",
+      "item": "kinetic_tremor_right",
+      "observed_header": [
+        "动作性震颤",
+        "右"
+      ],
+      "comparison_workbook_column": "AI",
+      "domains": [
+        "total",
+        "tremor"
+      ]
+    },
+    {
+      "column": "AM",
+      "item": "kinetic_tremor_left",
+      "observed_header": [
+        "左"
+      ],
+      "comparison_workbook_column": "AJ",
+      "domains": [
+        "total",
+        "tremor"
+      ]
+    },
+    {
+      "column": "AN",
+      "item": "rest_tremor_arm_right",
+      "observed_header": [
+        "静止型震颤",
+        "上肢:右"
+      ],
+      "comparison_workbook_column": "AK",
+      "domains": [
+        "total",
+        "tremor"
+      ]
+    },
+    {
+      "column": "AO",
+      "item": "rest_tremor_arm_left",
+      "observed_header": [
+        "上肢:左"
+      ],
+      "comparison_workbook_column": "AL",
+      "domains": [
+        "total",
+        "tremor"
+      ]
+    },
+    {
+      "column": "AP",
+      "item": "rest_tremor_leg_right",
+      "observed_header": [
+        "下肢:右"
+      ],
+      "comparison_workbook_column": "AM",
+      "domains": [
+        "total",
+        "tremor"
+      ]
+    },
+    {
+      "column": "AQ",
+      "item": "rest_tremor_leg_left",
+      "observed_header": [
+        "下肢:左"
+      ],
+      "comparison_workbook_column": "AN",
+      "domains": [
+        "total",
+        "tremor"
+      ]
+    },
+    {
+      "column": "AR",
+      "item": "rest_tremor_lip_jaw",
+      "observed_header": [
+        "嘴唇/下巴"
+      ],
+      "comparison_workbook_column": "AO",
+      "domains": [
+        "total",
+        "tremor"
+      ]
+    },
+    {
+      "column": "AS",
+      "item": "rest_tremor_constancy",
+      "observed_header": [
+        "持续性"
+      ],
+      "comparison_workbook_column": "AP",
+      "domains": [
+        "total",
+        "tremor"
+      ]
+    }
+  ],
+  "excluded_prediction_columns": {
+    "Q": [
+      "AI预测手指拍打",
+      "右"
+    ],
+    "R": [
+      "左"
+    ],
+    "AA": [
+      "AI预测腿部灵活性",
+      "右"
+    ],
+    "AB": [
+      "左"
+    ],
+    "AE": [
+      "AI预测步态"
+    ]
+  },
+  "excluded_cached_totals": {
+    "scoring_sheet": [
+      "AT"
+    ],
+    "comparison_raw_sheet": [
+      "Y"
+    ]
+  },
+  "gait_balance_scope": "预定义探索性的步态、步态冻结及姿势平稳度三项和"
+}

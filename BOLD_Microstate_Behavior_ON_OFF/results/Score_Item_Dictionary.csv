@@ -1,0 +1,34 @@
+column,item,observed_header,comparison_workbook_column,domains
+H,speech,言语,G,total
+I,facial_expression,面部表情,H,total
+J,rigidity_neck,强直 | 脖子,I,total | rigidity
+K,rigidity_arm_right,上肢:右,J,total | rigidity
+L,rigidity_arm_left,上肢:左,K,total | rigidity
+M,rigidity_leg_right,下肢:右,L,total | rigidity
+N,rigidity_leg_left,下肢:左,M,total | rigidity
+O,finger_tapping_right,手指拍打 | 右,N,total | bradykinesia
+P,finger_tapping_left,左,O,total | bradykinesia
+S,hand_movements_right,手掌运动 | 右,P,total | bradykinesia
+T,hand_movements_left,左,Q,total | bradykinesia
+U,pronation_supination_right,前臂回旋 | 右,R,total | bradykinesia
+V,pronation_supination_left,左,S,total | bradykinesia
+W,toe_tapping_right,脚趾拍地 | 右,T,total | bradykinesia
+X,toe_tapping_left,左,U,total | bradykinesia
+Y,leg_agility_right,脚灵敏度 | 右,V,total | bradykinesia
+Z,leg_agility_left,左,W,total | bradykinesia
+AC,arising,起立,AB,total
+AD,gait,步态,AC,total | gait_balance
+AF,gait_freezing,步态冻结 | 步态冻结的评估,AD,total | gait_balance
+AG,postural_stability,姿势平稳度,AE,total | gait_balance
+AH,posture,姿势,AF,total
+AI,body_bradykinesia,全身自发性的动作评估 | 身体动作迟缓,X,total | bradykinesia
+AJ,postural_tremor_right,姿态性震颤 | 右,AG,total | tremor
+AK,postural_tremor_left,左,AH,total | tremor
+AL,kinetic_tremor_right,动作性震颤 | 右,AI,total | tremor
+AM,kinetic_tremor_left,左,AJ,total | tremor
+AN,rest_tremor_arm_right,静止型震颤 | 上肢:右,AK,total | tremor
+AO,rest_tremor_arm_left,上肢:左,AL,total | tremor
+AP,rest_tremor_leg_right,下肢:右,AM,total | tremor
+AQ,rest_tremor_leg_left,下肢:左,AN,total | tremor
+AR,rest_tremor_lip_jaw,嘴唇/下巴,AO,total | tremor
+AS,rest_tremor_constancy,持续性,AP,total | tremor

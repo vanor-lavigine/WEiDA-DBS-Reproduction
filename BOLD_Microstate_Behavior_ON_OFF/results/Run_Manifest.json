@@ -1,0 +1,171 @@
+{
+  "source_commit": "f54f4205048a61149385958bd05c47e1911353ff",
+  "analysis_plan_commit": "22f9bd13834030b6cc961f98a110768fb5187e53",
+  "execution_head": "a6124bf349fcb90649505d8070a2641f2fb44999",
+  "branch": "analysis/behavior-onoff",
+  "command": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/scripts/run_behavior_onoff.py",
+  "verify_command": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/scripts/verify_behavior_onoff.py",
+  "protocol": {
+    "source_commit": "f54f4205048a61149385958bd05c47e1911353ff",
+    "contrast": "ON-OFF",
+    "imaging": {
+      "method": "A3",
+      "atlas": "AAL78",
+      "k": 4,
+      "tr_s": 2.1,
+      "band_hz": [
+        0.01,
+        0.08
+      ],
+      "band_profile": "F1",
+      "normalization": "N0",
+      "template": "G1",
+      "decoder": "S1",
+      "lambda": 0.04,
+      "folds": 5,
+      "window": "frozen common valid window",
+      "duration_unit": "s",
+      "fd_quality": {
+        "threshold_mm": 0.5,
+        "strictly_greater": true,
+        "exclude_before_tr": 1,
+        "exclude_after_tr": 2,
+        "decoder": "V10 separate contiguous blocks with original normalization"
+      }
+    },
+    "comparison": {
+      "main": "date-unrestricted with established patient and DBS condition linkage",
+      "date_sensitivity": "existing project date-verified subset",
+      "quality_sensitivity": "main paired cohort with fixed FD quality duration",
+      "expected_main": 25,
+      "expected_date_verified": 22,
+      "expected_clinical_reference": 27
+    },
+    "items": {
+      "total": [
+        "H:P",
+        "S:Z",
+        "AC:AD",
+        "AF:AS"
+      ],
+      "rigidity": [
+        "J:N"
+      ],
+      "bradykinesia": [
+        "O:P",
+        "S:Z",
+        "AI"
+      ],
+      "tremor": [
+        "AJ:AS"
+      ],
+      "gait_balance": [
+        "AD",
+        "AF",
+        "AG"
+      ],
+      "excluded_predictions": [
+        "Q:R",
+        "AA:AB",
+        "AE"
+      ]
+    },
+    "behaviors": [
+      "total",
+      "rigidity",
+      "bradykinesia",
+      "tremor",
+      "gait_balance"
+    ],
+    "states": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "signs": {
+      "clinical_improvement": "OFF minus ON",
+      "duration_change": "ON minus OFF",
+      "clinical_rate": "(OFF minus ON) / OFF if OFF > 0, otherwise NA"
+    },
+    "statistics": {
+      "alpha": 0.05,
+      "normality_alpha": 0.05,
+      "alternative": "two-sided",
+      "wilcoxon_round_digits": 12,
+      "wilcoxon_method": "approx with zero differences removed",
+      "minimum_n": 3,
+      "bootstraps": 9999,
+      "seed": 20261127,
+      "bh_slots": {
+        "clinical": 5,
+        "duration": 4,
+        "association": 20
+      },
+      "missing_slot_p": 1
+    },
+    "reference_doi": "10.1016/j.jneumeth.2024.110115"
+  },
+  "protocol_sha256": "60fa9362d891a740ada3403556d934d15185db22f920c9e40d07403e84df638c",
+  "registry_sha256": "97d51742968c2d455be38ea33e4d85d16088d09a2156e896e950e1e4fa9798f5",
+  "seed": 20261127,
+  "source_file_count": 206,
+  "input_collection_sha256": "175f91872c321b151d497fd3151192f4aa131534628c9c995c6fc7f660849761",
+  "original_workbook_sha256": {
+    "PD开关机fMRI评分_20201218改善率..xlsx": "c96a1e44403785c5960e02f0f5e420b3bf383ed645753a6f1960f687c38d88cd",
+    "PD开关机fMRI评分_202011_gr_20201228.xlsx": "36dbb5d32b12332e17981d0f8d9d58179bab2535bd4393a862237e5fe2ec3876",
+    "PD-开关机人口学及刺激参数_2023.07.31(1).xlsx": "cf8e8c460cae931841fcbef7661ce9998db85814367e3a62ee7ed52b86281a88",
+    "105原始访视逐人核查.xlsx": "f056d9314b760ea72ba0dc26b71a015c0090a87a1bc9fb3d387b5a621e1cb196"
+  },
+  "eeg_review_sha256": "9d7252b32c76603761d3b83c28ec90cbc26a0b5bde8d90e18fe1c525e3e6aba4",
+  "cohort_flow": {
+    "clinical_reference": 27,
+    "imaging": 25,
+    "eligible_clinical_linkage": 25,
+    "main": 25,
+    "date_verified": 22,
+    "quality": 25,
+    "primary_pairs_without_exact_image": 0
+  },
+  "imaging_fingerprints": {
+    "Frozen_Cohort_Features.csv": "0b396250993ee8086fbe4dc0830e2e9047b5904071379c407cce82ea649e0897",
+    "ON_OFF_Pair_Manifest.csv": "bb4eb24358b2864399c4f4eee5a9b00e06a9ac11cd7f7839bacaec18d9b3cbe1",
+    "V4_Scan_Metrics.csv": "b3768e0f66ed7255d76855fabad90902d29979a5668ea625817fd097a4eec822",
+    "V4_Maps.npz": "f63d41cd8d8e95dd5c481b5b2cf69cea051887d9ef128edf9251c73140c47a8f",
+    "v6_protocol_sha256": "2d34f042882a82933f5e07aa0545a8b6991ea2fdf5b278c2b79c73ecde93da1e"
+  },
+  "start_utc": "2026-11-26T17:13:46.020923+00:00",
+  "end_utc": "2026-11-26T17:13:52.933334+00:00",
+  "python": "3.12.7",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "matplotlib": "3.9.2",
+    "numba": "0.60.0",
+    "openpyxl": "3.1.5"
+  },
+  "scripts_sha256": {
+    "behavior_protocol.py": "0274e3749ba24057fde32e3b63a1bd3eb735b7b064f707b16cd790be075b163f",
+    "behavior_report.py": "61f59c8f9ae9e7719e69a1982a5b83e53e577899cd36436bc6dd74e178ff6441",
+    "behavior_stats.py": "f5989e34e5821c178f764912744fd2d729d3da7adc5437e799637e9a2f51f5a6",
+    "clinical.py": "a0b966eba171dd9941141d768cd0be232a4e15a197021c1e75990139cdb94be4",
+    "imaging_inputs.py": "6757b60a0da3e41798778c2d1533b48cedd4171005135306c9e6afb49a75f048",
+    "run_behavior_onoff.py": "d9093ef78e79e9b5b000c04d6c28b3308933d09e3410ab1c5f375696c164a479",
+    "verify_behavior_onoff.py": "bf1f55647c5b7ded9f8c2cc5e6a222b73c9d652d27b23c53a0769924dcdf6d35"
+  },
+  "public_outputs_sha256": {
+    "results/Association_Sensitivities.csv": "6e99375635e7f545dcb9836c9f6a0af6e0e52bc0af66761f41d03baad648ebd3",
+    "results/Clinical_Paired_Results.csv": "fba402cc3ec67ab46ca00c233749cbf4a5c21c6c275184c2d2c5403379979f5e",
+    "results/Clinical_Reference_Descriptives.csv": "f0ecf95f66993eb87004bfb2e4e88aeb567c276b3a1e5dbe73cc65b516318dd4",
+    "results/Cohort_Flow.csv": "d87481f058eb66f450bd03a397c0efb4fcacd04250afeea291e1851bb02faca1",
+    "results/Duration_Motor_Associations.csv": "aa123641779a016789d5c1022593276280b7d4bd3eb5221f178f562ef0dd5069",
+    "results/Duration_Paired_Results.csv": "acc1cd3fb7f3aed4a2a04cd1b259d5c9600b1de43317f302cc2b0e461fa58be4",
+    "results/Score_Item_Dictionary.csv": "f4dcf9e9b04c7786ed8b4b4e0b7fa5e63ec551ad6d471ec9eb33f1f49388765f",
+    "results/Score_Item_Dictionary.json": "9cba7e0e84a6c9a3afd40cb6e06c328c10566410233fdc9511106d426e4f5ca2",
+    "figures/Clinical_Paired_Changes.png": "5b5ad87f201904cf7fcdbb6dcfc49e95aada34d505dd1741084eab51a068220c",
+    "figures/Duration_Motor_Associations.png": "5d2d29c1add9fa41a658de21a82ce8865f5a7e407628f24b0d082c10eb0ed5c3",
+    "reports/Behavior_ON_OFF_Report.md": "d20af88c040c27fa224e66acfa391eb02dd9a5b151246ee343a5d6b1947340c4",
+    "reports/Data_and_Score_Audit.md": "355b4a6e916d45a43c71710f8d06cda2c12983222917e6c06ee78f03cabbe341"
+  }
+}
