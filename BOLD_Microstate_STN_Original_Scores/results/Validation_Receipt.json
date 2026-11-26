@@ -1,0 +1,13 @@
+{
+  "status": "verified",
+  "tests_passed": 8,
+  "results_verified_byte_identical": 9,
+  "public_relative_links_checked": 12,
+  "public_candidates_scanned": 24,
+  "source_names_dates_scan_keys_excluded_from_public_artifacts": true,
+  "new_model_rows_completed": 60,
+  "prior_model_rows_recomputed": 12,
+  "source_hashes_verified_during_replay": true,
+  "private_scatter_pdf_and_png_valid": true,
+  "protocol_commit": "f0e0bd1847bdbc682f35fd945e720e6f6b5d52a4"
+}

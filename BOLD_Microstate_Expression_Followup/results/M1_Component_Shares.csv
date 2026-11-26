@@ -1,0 +1,3 @@
+﻿endpoint,unit,minimum_abs_mean_weight_pp,effect,n_patients,ci95_low,ci95_high,bootstrap_valid,bootstrap_failed,status,reason
+A1,percent of the original mean M1 weight contribution,0.1,108.53557976804773,25,75.88405109826644,153.26059495889842,1998,2,OK,
+A2,percent of the original mean M1 weight contribution,0.1,-8.535579768047713,25,-53.26059495889844,24.115948901733596,1998,2,OK,

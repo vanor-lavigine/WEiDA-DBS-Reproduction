@@ -1,0 +1,68 @@
+{
+  "source_commits": {
+    "report_base": "dc9c732dbbf7d3cd9005bbd908d75f5ffb1ce987",
+    "v8_source_commit": "6b2978c97fc38bc05f3ce577b60e66941c173768",
+    "v8_archive_commit": "2b44ada9fc1439d33a61d6a8438fc76c248561d8",
+    "v7_imaging_commit": "e53035dd01bb01979d6f1ce7eec7201ec372d1d3"
+  },
+  "branch": "experiment/v9-microstate-expression-followup",
+  "protocol_commit": "0b162b181b088c735c4a06a3e9a8fa4f35ac2808",
+  "working_directory": "Repository root",
+  "command_with_default_source_layout": "python -B -X utf8 BOLD_Microstate_Expression_Followup/scripts/run_v9.py",
+  "archive_verification_command": "python -B -X utf8 BOLD_Microstate_Expression_Followup/scripts/verify_v8_archive.py",
+  "input_index": "private/manifests/Input_Hashes.json",
+  "indexed_available_files": 102,
+  "inputs_reverified_after_analysis": true,
+  "seed": 7261126,
+  "requested_resampling_per_estimate": {
+    "permutation": 10000,
+    "bootstrap": 2000
+  },
+  "python_version": "3.12.7",
+  "software_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2",
+    "threadpoolctl": "3.5.0",
+    "matplotlib": "3.9.2",
+    "numba": "0.60.0"
+  },
+  "threadpool_limit": 1,
+  "imaging_cohort": {
+    "paired_patients": 25,
+    "frozen_scans": 65
+  },
+  "clinical_visit_counts": {
+    "verified_identity_condition_visit": 22,
+    "verified_identity_condition_visit_insufficient": 1,
+    "documented_visit_date_conflict": 2
+  },
+  "decomposition_checks": {
+    "decomposable_pairs": 25,
+    "undecomposable_pairs": 0,
+    "decomposition_status_counts": {
+      "off": {
+        "OK": 25
+      },
+      "on": {
+        "OK": 25
+      }
+    },
+    "max_error_original_weight_contribution_pp": 4.440892098500626e-16,
+    "max_error_original_gev_change_pp": 1.2212453270876722e-15
+  },
+  "expression_checks": {
+    "scans_with_verified_hard_label_gev": 65,
+    "missing_frame_archives_by_condition": {},
+    "source_scans_shorter_than_nominal_window": 3,
+    "max_error_hard_label_gev_proportion": 9.8879238130678e-17,
+    "patient_scans_with_independent_m1_frame_check": 50,
+    "e_ge_hard_label_gev_verified_for_available_scans": true,
+    "verified_folds": 5
+  },
+  "main_estimates_available": {
+    "imaging": 2,
+    "clinical": 2
+  }
+}

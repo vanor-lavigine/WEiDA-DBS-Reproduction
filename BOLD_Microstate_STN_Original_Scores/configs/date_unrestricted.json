@@ -1,0 +1,14 @@
+{
+  "v8_reference_commit": "c424cdf819943eca5d0afc1ce18ecf86f4e7061a",
+  "analysis": "User-requested date-unrestricted V8 reanalysis",
+  "parent_protocol": "protocol.json",
+  "source_and_imaging_rule": "Complete STN scores with exact named acquisition identity, DBS condition and both frozen scan keys",
+  "included_visit_statuses": {
+    "verified_identity_condition_visit": 22,
+    "verified_identity_condition_visit_insufficient": 1,
+    "documented_visit_date_conflict": 2
+  },
+  "n_frozen_pairs": 25,
+  "repeat_prespecified_models": true,
+  "verify_against_original_date_filtered_sample": true
+}
