@@ -1,0 +1,82 @@
+{
+  "status": "verified",
+  "v8_archive_commit": "6b2978c97fc38bc05f3ce577b60e66941c173768",
+  "v8_archive_import": "2b44ada9fc1439d33a61d6a8438fc76c248561d8",
+  "v8_report_base": "dc9c732dbbf7d3cd9005bbd908d75f5ffb1ce987",
+  "v8_archive_tree": "f6e5b5dff6dcbc40f34cac575b4d60ef1d94a7f1",
+  "v8_tracked_files": 34,
+  "locked_source_roles_verified": 17,
+  "private_patient_tables_identical_after_original_audit": [
+    23,
+    25
+  ],
+  "full_precision_model_rows": {
+    "date_filtered": 60,
+    "date_unrestricted": 60
+  },
+  "verified_22_shared_endpoints_identical": 12,
+  "visit_counts_date_unrestricted": {
+    "verified": 22,
+    "insufficient": 1,
+    "conflict": 2
+  },
+  "scoring": {
+    "scored_STN_pairs": 27,
+    "outside_frozen": 2,
+    "identity_unresolved": 0,
+    "primary_Y_inflated_rows": 49,
+    "secondary_AT_inflated_rows": 14,
+    "legacy_total_score_changes": 0,
+    "legacy_paired_total_improvement_changes": 0,
+    "legacy_comparable_domains": 13,
+    "legacy_rows_changed_any_comparable_value": 0
+  },
+  "discoveries": {
+    "date_filtered_23": {
+      "Holm3": 0,
+      "BH9": 0,
+      "Holm12": 0
+    },
+    "date_unrestricted_25": {
+      "Holm3": 0,
+      "BH9": 0,
+      "Holm12": 0
+    },
+    "verified_22": {
+      "Holm3": 0,
+      "BH9": 0,
+      "Holm12": 0
+    }
+  },
+  "E8_replay": {
+    "beta": 0.14409024841285728,
+    "ci95_low": 0.010935947479348609,
+    "ci95_high": 0.30334722817131105,
+    "hc3_t": 1.592270893025198,
+    "permutation_p": 0.07649235076492351,
+    "permutations_valid": 10000,
+    "permutations_failed": 0,
+    "bootstrap_valid": 2000,
+    "bootstrap_failed": 0,
+    "n": 25,
+    "model": "Primary_FD",
+    "design": "intercept + off_tremor + fd + delta_duration_4",
+    "outcome": "OFF minus ON tremor score in points",
+    "predictor": "ON minus OFF M4 mean duration in seconds",
+    "effect_unit": "points per second",
+    "ci_method": "patient-row percentile bootstrap",
+    "p_method": "two-sided Freedman-Lane residual permutation",
+    "bh9_q": 0.5682031796820318,
+    "holm12_p": 0.9179082091790822
+  },
+  "seed": 7261126,
+  "software": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2",
+    "openpyxl": "3.1.5",
+    "threadpoolctl": "3.5.0"
+  }
+}
