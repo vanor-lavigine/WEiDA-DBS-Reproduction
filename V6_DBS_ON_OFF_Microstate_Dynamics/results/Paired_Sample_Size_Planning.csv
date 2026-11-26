@@ -1,0 +1,9 @@
+﻿basis,dz,power_target,alpha,retained_pairs,planned_to_recruit,planned_scans,assumed_pair_loss,achieved_power
+conservative fixed target,0.35,0.8,0.025,81,96,192,0.15,0.8048089244345719
+conservative fixed target,0.35,0.9,0.025,104,123,246,0.15,0.9004587074553619
+conservative fixed target,0.4,0.8,0.025,62,73,146,0.15,0.8003811276008856
+conservative fixed target,0.4,0.9,0.025,81,96,192,0.15,0.903492533660594
+"half observed gev_1, cap 0.40",0.4,0.8,0.025,62,73,146,0.15,0.8003811276008856
+"half observed gev_1, cap 0.40",0.4,0.9,0.025,81,96,192,0.15,0.903492533660594
+"half observed duration_4, cap 0.40",0.3555975150337642,0.8,0.025,78,92,184,0.15,0.8016947893042328
+"half observed duration_4, cap 0.40",0.3555975150337642,0.9,0.025,101,119,238,0.15,0.9009863035853792

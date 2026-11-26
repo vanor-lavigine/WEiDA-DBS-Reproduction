@@ -1,0 +1,11 @@
+{
+  "v4_commit": "2d66fb12b5883aa3a81f30c5cf9bd749d6ffaaad",
+  "v5_commit": "a803285ee8da7859fdcfba9e4003412c65f84430",
+  "v4_tag": "v4-microstate-frozen-2026-11-25",
+  "v6_branch": "experiment/v6-dbs-on-off-microstate",
+  "v4_git_files": 72,
+  "v4_original_run_hashes": 41,
+  "v5_git_files": 67,
+  "v5_receipt_hashes": 64,
+  "history_bytes_verified": true
+}

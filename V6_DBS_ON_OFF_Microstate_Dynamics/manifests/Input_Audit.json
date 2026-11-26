@@ -1,0 +1,17 @@
+{
+  "original_feature_table_sha256": "efec55dbaf29348785e68886fca6524e7d3139511f45a4be62b848bf3081742c",
+  "template_sha256": "d9eb66e84946e53cd110beee58998f24e82db8f9b7f2996dcdd112651b145527",
+  "labels": {
+    "count": 65,
+    "sha256": "079dddfdf44aadbb005ece5d9ae9471162b1bbec1e851e8340b08d1e7406d355"
+  },
+  "frozen_mapping_reused": true,
+  "original_metric_parity": true,
+  "scans": 65,
+  "duplicated_scan_ids": 0,
+  "patients": 25,
+  "valid_trs": 12574,
+  "verified_order_pairs": 24,
+  "protocol_sha256": "2d34f042882a82933f5e07aa0545a8b6991ea2fdf5b278c2b79c73ecde93da1e",
+  "plan_sha256": "5597cd28863b005066c1e3a1672098131b3df4f8050270c3b15386f27682981a"
+}

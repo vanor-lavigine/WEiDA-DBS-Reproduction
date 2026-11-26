@@ -1,0 +1,57 @@
+{
+  "total_pairs": 25,
+  "verified_pairs": 24,
+  "on_first": 24,
+  "off_first": 0,
+  "same_day": 24,
+  "unknown_order": 1,
+  "verified_medication_pairs": 0,
+  "documented_scoring_timestamps": 0,
+  "interval_minutes": {
+    "n": 24,
+    "mean": 113.40236666666665,
+    "median": 109.97695833333333,
+    "min": 41.86058333333334,
+    "max": 171.90016666666668
+  },
+  "interval_quartiles_minutes": [
+    97.04144166666666,
+    142.51910833333332
+  ],
+  "matching_basis": "Exact original archived scan key and condition, checked against both frozen scans in each participant",
+  "sidecar_clock_comparisons": 40,
+  "sidecar_within_one_second": 40,
+  "scoring_workbook_sha256": "f056d9314b760ea72ba0dc26b71a015c0090a87a1bc9fb3d387b5a621e1cb196",
+  "source_inventory_sha256": "908ddc97af9ff9a1472d72b0c5ef66bc0365e38a82a5bcd48589c86dee1b1481",
+  "stimulus_order_separable_in_verified_pairs": false,
+  "on_minus_off_quality": {
+    "valid_frames": {
+      "n": 25,
+      "mean": -1.68,
+      "median": -3.0,
+      "min": -19.0,
+      "max": 20.0
+    },
+    "mean_fd": {
+      "n": 25,
+      "mean": 0.04402790659383629,
+      "median": 0.03234605329186602,
+      "min": -0.23506864243036374,
+      "max": 0.5345102340727274
+    },
+    "dvars": {
+      "n": 25,
+      "mean": 4.363072849377989,
+      "median": 2.861039827751185,
+      "min": -29.49142679904306,
+      "max": 43.90194024401916
+    },
+    "std_dvars": {
+      "n": 25,
+      "mean": 0.021308394832535896,
+      "median": 0.02422791387559775,
+      "min": -0.16468016267942565,
+      "max": 0.4434618612440191
+    }
+  }
+}

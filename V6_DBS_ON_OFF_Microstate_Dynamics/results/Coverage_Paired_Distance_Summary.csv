@@ -1,0 +1,2 @@
+﻿summary,n_pairs,mean,median,ci95_low,ci95_high,bootstrap_valid
+within-patient ON to OFF Aitchison distance,25,1.1622064399827168,1.0955652814471204,0.9651178343715824,1.3693491006589382,2000

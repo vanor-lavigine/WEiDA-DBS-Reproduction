@@ -1,0 +1,16 @@
+{
+  "status": "BLOCKED",
+  "archived_export_versions": 3,
+  "archive_matched_scan_rows_per_version": [
+    50,
+    50,
+    50
+  ],
+  "archive_has_assessment_dates": false,
+  "archive_has_medication_clock": false,
+  "n_eligible_pairs": 0,
+  "n_frozen_pairs": 25,
+  "verified_visit_gate": 3,
+  "evidence_sha256": "78d9ccd797c052434f5fee3ded4885aedf5b3b23415ff50500fe67060f047331",
+  "reason": "Archived scores link to participant and DBS condition but lack verified original assessment-to-scan visit evidence"
+}

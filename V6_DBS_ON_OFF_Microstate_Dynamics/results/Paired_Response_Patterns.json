@@ -1,0 +1,24 @@
+{
+  "n_profiles": 25,
+  "n_direction_defined": 25,
+  "n_same_halfspace": 21,
+  "n_opposite_halfspace": 4,
+  "median_leave_one_out_cosine": 0.7236711409804453,
+  "cosine_quartiles": [
+    0.3114377111564323,
+    0.904647331443037
+  ],
+  "ward_clusters": 2,
+  "ward_cluster_sizes": [
+    9,
+    16
+  ],
+  "ward_silhouette": 0.35706829411803953,
+  "stability_median_ari": 1.0,
+  "stability_ari_quartiles": [
+    1.0,
+    1.0
+  ],
+  "stability_subsamples": 500,
+  "subsample_pairs": 20
+}

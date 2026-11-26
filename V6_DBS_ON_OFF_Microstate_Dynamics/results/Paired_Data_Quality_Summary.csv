@@ -1,0 +1,4 @@
+﻿condition,scans,participants,min_input_frames,max_input_frames,min_valid_frames,median_valid_frames,max_valid_frames,total_valid_frames,scans_with_internal_gaps,input_initial_frames_absent,mean_fd,mean_dvars,mean_std_dvars
+HC,15,15,210,210,180,198.0,202,2912,0,0,0.19323385249704297,49.03785863795853,1.1405445148325362
+OFF,25,25,209,210,180,197.0,203,4852,0,1,0.1500246139636493,45.88524995119617,1.1185679353110047
+ON,25,25,209,210,173,195.0,202,4810,0,2,0.1940525205574856,50.24832280057416,1.1398763301435406

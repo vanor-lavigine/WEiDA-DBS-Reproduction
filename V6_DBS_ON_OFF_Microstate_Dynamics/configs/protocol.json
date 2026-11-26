@@ -1,0 +1,22 @@
+{
+  "v4_commit": "2d66fb12b5883aa3a81f30c5cf9bd749d6ffaaad",
+  "v5_commit": "a803285ee8da7859fdcfba9e4003412c65f84430",
+  "v4_tag": "v4-microstate-frozen-2026-11-25",
+  "branch": "experiment/v6-dbs-on-off-microstate",
+  "cohort": {"hc": 15, "pd_pairs": 25, "scans": 65, "acquired_frames": 210},
+  "baseline": {"method": "A3", "atlas": "AAL78", "k": 4, "tr": 2.1, "band_hz": [0.01, 0.08], "band": "F1", "normalization": "N0", "learner": "G1", "decoder": "S1", "lambda": 0.04},
+  "seed": 7261126,
+  "restoration_seed": 70261125,
+  "permutations": 10000,
+  "bootstrap": 2000,
+  "alpha": 0.05,
+  "normality_alpha": 0.05,
+  "tie_tolerance": 1e-12,
+  "wald_ridge": 0.10,
+  "trim_fraction": 0.20,
+  "heterogeneity_subsamples": 500,
+  "planning": {"effect_targets": [0.35, 0.40], "power_targets": [0.80, 0.90], "primary_tests": 2, "pair_attrition": 0.15},
+  "clinical": {"minimum_confirmed_pairs": 3},
+  "primary": ["gev_1", "duration_4"],
+  "secondary": ["occurrence_1", "switching_rate", "coverage_1", "coverage_2", "coverage_3", "coverage_4"]
+}

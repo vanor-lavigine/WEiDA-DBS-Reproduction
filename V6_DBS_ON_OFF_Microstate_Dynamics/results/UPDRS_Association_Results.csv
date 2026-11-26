@@ -1,0 +1,5 @@
+﻿endpoint,family,status,n_pairs,reason,rho,ci95_low,ci95_high,loo_rho_low,loo_rho_high,raw_p,permutation_p,fd_p,family_size,holm_p,fdr_p,permutation_holm_p,permutation_fdr_p,fd_holm_p,fd_fdr_p
+gev_1,UPDRS association,BLOCKED,0,Archived scores link to participant and DBS condition but lack verified original assessment-to-scan visit evidence,,,,,,,,,4,,,,,,
+duration_4,UPDRS association,BLOCKED,0,Archived scores link to participant and DBS condition but lack verified original assessment-to-scan visit evidence,,,,,,,,,4,,,,,,
+occurrence_1,UPDRS association,BLOCKED,0,Archived scores link to participant and DBS condition but lack verified original assessment-to-scan visit evidence,,,,,,,,,4,,,,,,
+switching_rate,UPDRS association,BLOCKED,0,Archived scores link to participant and DBS condition but lack verified original assessment-to-scan visit evidence,,,,,,,,,4,,,,,,
