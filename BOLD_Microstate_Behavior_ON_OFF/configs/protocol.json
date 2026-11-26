@@ -1,0 +1,101 @@
+{
+  "source_commit": "f54f4205048a61149385958bd05c47e1911353ff",
+  "contrast": "ON-OFF",
+  "imaging": {
+    "method": "A3",
+    "atlas": "AAL78",
+    "k": 4,
+    "tr_s": 2.1,
+    "band_hz": [
+      0.01,
+      0.08
+    ],
+    "band_profile": "F1",
+    "normalization": "N0",
+    "template": "G1",
+    "decoder": "S1",
+    "lambda": 0.04,
+    "folds": 5,
+    "window": "frozen common valid window",
+    "duration_unit": "s",
+    "fd_quality": {
+      "threshold_mm": 0.5,
+      "strictly_greater": true,
+      "exclude_before_tr": 1,
+      "exclude_after_tr": 2,
+      "decoder": "V10 separate contiguous blocks with original normalization"
+    }
+  },
+  "comparison": {
+    "main": "date-unrestricted with established patient and DBS condition linkage",
+    "date_sensitivity": "existing project date-verified subset",
+    "quality_sensitivity": "main paired cohort with fixed FD quality duration",
+    "expected_main": 25,
+    "expected_date_verified": 22,
+    "expected_clinical_reference": 27
+  },
+  "items": {
+    "total": [
+      "H:P",
+      "S:Z",
+      "AC:AD",
+      "AF:AS"
+    ],
+    "rigidity": [
+      "J:N"
+    ],
+    "bradykinesia": [
+      "O:P",
+      "S:Z",
+      "AI"
+    ],
+    "tremor": [
+      "AJ:AS"
+    ],
+    "gait_balance": [
+      "AD",
+      "AF",
+      "AG"
+    ],
+    "excluded_predictions": [
+      "Q:R",
+      "AA:AB",
+      "AE"
+    ]
+  },
+  "behaviors": [
+    "total",
+    "rigidity",
+    "bradykinesia",
+    "tremor",
+    "gait_balance"
+  ],
+  "states": [
+    "M1",
+    "M2",
+    "M3",
+    "M4"
+  ],
+  "signs": {
+    "clinical_improvement": "OFF minus ON",
+    "duration_change": "ON minus OFF",
+    "clinical_rate": "(OFF minus ON) / OFF if OFF > 0, otherwise NA"
+  },
+  "statistics": {
+    "alpha": 0.05,
+    "normality_alpha": 0.05,
+    "alternative": "two-sided",
+    "wilcoxon_round_digits": 12,
+    "wilcoxon_method": "approx with zero differences removed",
+    "minimum_n": 3,
+    "bootstraps": 9999,
+    "seed": 20261127,
+    "bh_slots": {
+      "clinical": 5,
+      "duration": 4,
+      "association": 20
+    },
+    "missing_slot_p": 1
+  },
+  "reference_doi": "10.1016/j.jneumeth.2024.110115"
+}
