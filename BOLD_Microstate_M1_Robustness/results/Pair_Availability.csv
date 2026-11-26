@@ -1,0 +1,4 @@
+﻿mode,off_status,on_status,decomposable,patients
+original_window,OK,OK,True,25
+fd_censor_frozen_labels,OK,OK,True,25
+fd_censor_s1,OK,OK,True,25

@@ -1,0 +1,54 @@
+{
+  "command": "python -B -X utf8 BOLD_Microstate_M1_Robustness/scripts/run_v10.py",
+  "protocol_commit": "16038f115c037000ee3caa705dd7831372d0894d",
+  "python": "3.12.7",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2",
+    "threadpoolctl": "3.5.0",
+    "numba": "0.60.0"
+  },
+  "threads": 1,
+  "report_base": "0a8dbedf64761daab773ab52d315c670f529be64",
+  "anchor_v9": "4f85b39fae6f67637a0599ea3fb03189050fe73a",
+  "seed": 7261126,
+  "permutations": 10000,
+  "bootstrap": 2000,
+  "locked_files_unchanged": 195,
+  "roi_scans": 65,
+  "patient_pairs": 25,
+  "original_210_TR_FD_verified_scans": 65,
+  "short_roi_series_missing_first_tr": 3,
+  "fd_definition": "fMRIPrep 21.0.2 Power FD",
+  "fd_units": "mm",
+  "replay": {
+    "archived_s1_label_replays_exact": 65,
+    "v4_censored_window_replays_exact": 65,
+    "censored_blocks_replayed_independently": 282,
+    "max_archived_gfp_abs_error": 0.0,
+    "max_g1_fit_correlation_abs_error": 0.0,
+    "max_censored_v4_gev_abs_error": 5.551115123125783e-17
+  },
+  "algebra": {
+    "original_window": {
+      "complete_pairs": 25,
+      "unavailable_pairs": 0,
+      "max_error_weight_identity_pp": 1.7763568394002505e-15,
+      "max_error_gev_identity_pp": 2.4424906541753444e-15
+    },
+    "fd_censor_frozen_labels": {
+      "complete_pairs": 25,
+      "unavailable_pairs": 0,
+      "max_error_weight_identity_pp": 8.881784197001252e-16,
+      "max_error_gev_identity_pp": 1.3322676295501878e-15
+    },
+    "fd_censor_s1": {
+      "complete_pairs": 25,
+      "unavailable_pairs": 0,
+      "max_error_weight_identity_pp": 1.3322676295501878e-15,
+      "max_error_gev_identity_pp": 1.3322676295501878e-15
+    }
+  }
+}

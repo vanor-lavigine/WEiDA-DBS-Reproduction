@@ -1,0 +1,64 @@
+﻿mode,sample,metric,n_patients,effect,ci95_low,ci95_high,bootstrap_valid,bootstrap_failed
+original_window,All decomposable pairs,K_C,25,0.9278556170905482,0.3946807923366296,1.4808361490425994,2000,0
+original_window,All decomposable pairs,K_R,25,-0.0729694875158262,-0.3464557853325188,0.1788839560312989,2000,0
+original_window,All decomposable pairs,C_W,25,0.854886129574722,0.3664015186041844,1.357276121103052,2000,0
+original_window,All decomposable pairs,C_F,25,0.3181463847015051,-0.09213278205723573,0.7651551656505198,2000,0
+original_window,All decomposable pairs,delta_gev_pp,25,1.173032514276227,0.6853228283829915,1.6608344481209496,2000,0
+original_window,All decomposable pairs,delta_coverage_pp,25,5.931336197837896,2.432628346730218,9.29937927047321,2000,0
+original_window,All decomposable pairs,delta_retained_seconds,25,-3.528000000000002,-10.079999999999998,3.192000000000005,2000,0
+original_window,Retained formal S1 pairs,K_C,25,0.9278556170905482,0.3946807923366296,1.4808361490425994,2000,0
+original_window,Retained formal S1 pairs,K_R,25,-0.0729694875158262,-0.3464557853325188,0.1788839560312989,2000,0
+original_window,Retained formal S1 pairs,C_W,25,0.854886129574722,0.3664015186041844,1.357276121103052,2000,0
+original_window,Retained formal S1 pairs,C_F,25,0.3181463847015051,-0.09213278205723573,0.7651551656505198,2000,0
+original_window,Retained formal S1 pairs,delta_gev_pp,25,1.173032514276227,0.6853228283829915,1.6608344481209496,2000,0
+original_window,Retained formal S1 pairs,delta_coverage_pp,25,5.931336197837896,2.432628346730218,9.29937927047321,2000,0
+original_window,Retained formal S1 pairs,delta_retained_seconds,25,-3.528000000000002,-10.079999999999998,3.192000000000005,2000,0
+fd_censor_frozen_labels,All decomposable pairs,K_C,25,0.8508933223989483,0.19176677429071304,1.4745700703589861,2000,0
+fd_censor_frozen_labels,All decomposable pairs,K_R,25,-0.13796410688681515,-0.3834614158871581,0.10200844429706152,2000,0
+fd_censor_frozen_labels,All decomposable pairs,C_W,25,0.7129292155121333,0.024755584848075208,1.3343576333784193,2000,0
+fd_censor_frozen_labels,All decomposable pairs,C_F,25,0.3190420674675314,-0.13103483396092658,0.7832096943880303,2000,0
+fd_censor_frozen_labels,All decomposable pairs,delta_gev_pp,25,1.0319712829796648,0.3859265723118959,1.6585394006536844,2000,0
+fd_censor_frozen_labels,All decomposable pairs,delta_coverage_pp,25,5.639444980758498,1.6543556608317653,9.550505676436106,2000,0
+fd_censor_frozen_labels,All decomposable pairs,delta_retained_seconds,25,-18.647999999999993,-53.3442,15.7101,2000,0
+fd_censor_frozen_labels,Retained formal S1 pairs,K_C,25,0.8508933223989483,0.19176677429071304,1.4745700703589861,2000,0
+fd_censor_frozen_labels,Retained formal S1 pairs,K_R,25,-0.13796410688681515,-0.3834614158871581,0.10200844429706152,2000,0
+fd_censor_frozen_labels,Retained formal S1 pairs,C_W,25,0.7129292155121333,0.024755584848075208,1.3343576333784193,2000,0
+fd_censor_frozen_labels,Retained formal S1 pairs,C_F,25,0.3190420674675314,-0.13103483396092658,0.7832096943880303,2000,0
+fd_censor_frozen_labels,Retained formal S1 pairs,delta_gev_pp,25,1.0319712829796648,0.3859265723118959,1.6585394006536844,2000,0
+fd_censor_frozen_labels,Retained formal S1 pairs,delta_coverage_pp,25,5.639444980758498,1.6543556608317653,9.550505676436106,2000,0
+fd_censor_frozen_labels,Retained formal S1 pairs,delta_retained_seconds,25,-18.647999999999993,-53.3442,15.7101,2000,0
+fd_censor_s1,All decomposable pairs,K_C,25,0.7934642601825818,0.14311740682868607,1.3939546726990801,2000,0
+fd_censor_s1,All decomposable pairs,K_R,25,-0.10233566056054957,-0.35512659994070184,0.13959228896785753,2000,0
+fd_censor_s1,All decomposable pairs,C_W,25,0.691128599622032,-0.013689153967418205,1.3125081735072506,2000,0
+fd_censor_s1,All decomposable pairs,C_F,25,0.337509040338645,-0.11749953567529635,0.804362875135855,2000,0
+fd_censor_s1,All decomposable pairs,delta_gev_pp,25,1.0286376399606771,0.3657885321355916,1.6540896255397517,2000,0
+fd_censor_s1,All decomposable pairs,delta_coverage_pp,25,5.40166006600918,1.344214082473322,9.329661819598988,2000,0
+fd_censor_s1,All decomposable pairs,delta_retained_seconds,25,-18.647999999999993,-53.3442,15.7101,2000,0
+fd_censor_s1,Retained formal S1 pairs,K_C,25,0.7934642601825818,0.14311740682868607,1.3939546726990801,2000,0
+fd_censor_s1,Retained formal S1 pairs,K_R,25,-0.10233566056054957,-0.35512659994070184,0.13959228896785753,2000,0
+fd_censor_s1,Retained formal S1 pairs,C_W,25,0.691128599622032,-0.013689153967418205,1.3125081735072506,2000,0
+fd_censor_s1,Retained formal S1 pairs,C_F,25,0.337509040338645,-0.11749953567529635,0.804362875135855,2000,0
+fd_censor_s1,Retained formal S1 pairs,delta_gev_pp,25,1.0286376399606771,0.3657885321355916,1.6540896255397517,2000,0
+fd_censor_s1,Retained formal S1 pairs,delta_coverage_pp,25,5.40166006600918,1.344214082473322,9.329661819598988,2000,0
+fd_censor_s1,Retained formal S1 pairs,delta_retained_seconds,25,-18.647999999999993,-53.3442,15.7101,2000,0
+fd_censor_frozen_labels minus original_window,Common complete pairs across three modes,K_C,25,-0.07696229469159975,-0.3452151677579078,0.1481801479888692,2000,0
+fd_censor_frozen_labels minus original_window,Common complete pairs across three modes,K_R,25,-0.06499461937098897,-0.20104967715764097,0.06717728994693435,2000,0
+fd_censor_frozen_labels minus original_window,Common complete pairs across three modes,C_W,25,-0.14195691406258867,-0.4783053257657875,0.0786140167597896,2000,0
+fd_censor_frozen_labels minus original_window,Common complete pairs across three modes,C_F,25,0.0008956827660263133,-0.09003587072895043,0.06853168756657271,2000,0
+fd_censor_frozen_labels minus original_window,Common complete pairs across three modes,delta_gev_pp,25,-0.1410612312965624,-0.5214964718751617,0.12326970902401237,2000,0
+fd_censor_frozen_labels minus original_window,Common complete pairs across three modes,delta_coverage_pp,25,-0.2918912170793976,-1.890003161607671,1.1429467176548067,2000,0
+fd_censor_frozen_labels minus original_window,Common complete pairs across three modes,delta_retained_seconds,25,-15.11999999999999,-47.88840000000001,18.396000000000004,2000,0
+fd_censor_s1 minus fd_censor_frozen_labels,Common complete pairs across three modes,K_C,25,-0.05742906221636671,-0.13726199642217504,0.00961811987871306,2000,0
+fd_censor_s1 minus fd_censor_frozen_labels,Common complete pairs across three modes,K_R,25,0.0356284463262656,-0.01056037755185654,0.0898160330811828,2000,0
+fd_censor_s1 minus fd_censor_frozen_labels,Common complete pairs across three modes,C_W,25,-0.02180061589010121,-0.06450213194090496,0.016373171053887556,2000,0
+fd_censor_s1 minus fd_censor_frozen_labels,Common complete pairs across three modes,C_F,25,0.01846697287111367,-0.012194332599863926,0.05239372636188039,2000,0
+fd_censor_s1 minus fd_censor_frozen_labels,Common complete pairs across three modes,delta_gev_pp,25,-0.0033336430189874534,-0.01759050842308796,0.012612818084912986,2000,0
+fd_censor_s1 minus fd_censor_frozen_labels,Common complete pairs across three modes,delta_coverage_pp,25,-0.23778491474931726,-0.7800809979803506,0.21607914358061595,2000,0
+fd_censor_s1 minus fd_censor_frozen_labels,Common complete pairs across three modes,delta_retained_seconds,25,0.0,0.0,0.0,2000,0
+fd_censor_s1 minus original_window,Common complete pairs across three modes,K_C,25,-0.13439135690796644,-0.41054248044421154,0.10095150485795998,2000,0
+fd_censor_s1 minus original_window,Common complete pairs across three modes,K_R,25,-0.029366173044723373,-0.19220253215327596,0.1290699720828237,2000,0
+fd_censor_s1 minus original_window,Common complete pairs across three modes,C_W,25,-0.16375752995268988,-0.5186954866146727,0.06694677896038093,2000,0
+fd_censor_s1 minus original_window,Common complete pairs across three modes,C_F,25,0.01936265563713998,-0.0756969762421858,0.09366000555328159,2000,0
+fd_censor_s1 minus original_window,Common complete pairs across three modes,delta_gev_pp,25,-0.14439487431554984,-0.5310269743887702,0.12445032201790228,2000,0
+fd_censor_s1 minus original_window,Common complete pairs across three modes,delta_coverage_pp,25,-0.5296761318287148,-2.079544441070731,0.9229092091648927,2000,0
+fd_censor_s1 minus original_window,Common complete pairs across three modes,delta_retained_seconds,25,-15.11999999999999,-47.88840000000001,18.396000000000004,2000,0

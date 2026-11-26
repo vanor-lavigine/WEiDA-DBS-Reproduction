@@ -1,0 +1,83 @@
+{
+  "method": "A3",
+  "draws": 2000,
+  "repeat_unit": "participant stratified within original fold",
+  "same_resample_multiplicity_on_off": true,
+  "first_seed": 10910000,
+  "last_seed": 10911999,
+  "status_counts": {
+    "ok": 2000
+  },
+  "matches_by_state": {
+    "M1": 1019,
+    "M2": 1658,
+    "M3": 712,
+    "M4": 1450
+  },
+  "all_four_match_count": 549,
+  "m1_match_fraction": 0.5095,
+  "min_spatial_r": 0.6,
+  "min_bidirectional_margin": 0.05,
+  "verified_against_original_public_summary": true,
+  "max_interval_absolute_difference": 0.0,
+  "match_flags_identical_draw_by_draw_to_v4_reliability": true,
+  "v4_significance_archive": {
+    "files": 200,
+    "group_sha256": "ee2de001f0aea1f4ca16bd6d00e925c6448231260ff8405231deefe7d42e9c44",
+    "fields": {
+      "fixed": [
+        10,
+        3,
+        43
+      ],
+      "full": [
+        10,
+        3,
+        43
+      ],
+      "matches": [
+        10,
+        4
+      ],
+      "status": [
+        10
+      ]
+    }
+  },
+  "v4_reliability_archive": {
+    "files": 200,
+    "group_sha256": "2651a2cb092587b704900a28545b909a5b11ad521073eac6dc8265d7d255d21b",
+    "fields": {
+      "beta": [
+        10,
+        2,
+        4,
+        3,
+        23
+      ],
+      "stable": [
+        10,
+        4,
+        4
+      ],
+      "status": [
+        10
+      ],
+      "converged": [
+        10,
+        5
+      ],
+      "counts": [
+        10
+      ]
+    }
+  },
+  "group_hash_method": "SHA-256 of concatenated raw file SHA-256 bytes in draw-start order",
+  "inference": "matched-only coverage and GEV contrast distributions; unmatched draws remain missing",
+  "refit_absolute_condition_readouts_available": false,
+  "refit_K_C_interval_available": false,
+  "missing_refit_K_C_inputs": [
+    "paired patient scan-level C, W, F after successful matching in each draw",
+    "per-draw paired multiplicities linked to those readouts"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "public_text_lf_normalized_sha256": {
+    "BOLD_Microstate_STN_Original_Scores/configs/protocol.json": "8ff43dbc57af2822a6de79611e0a0e36f41b6ba210d472243168e4e3629d6481",
+    "BOLD_Microstate_STN_Original_Scores/configs/date_unrestricted.json": "65fd6b0cc52d9d14ad8584169ccccf81245d6fdcfb940a65774c290b87940a22",
+    "BOLD_Microstate_STN_Original_Scores/results/Score_Reconciliation_Summary.csv": "fd7698a478e308f173bf83d3fe0105badce92353d8f81c7c0f1619fe4da8bab2",
+    "BOLD_Microstate_STN_Original_Scores/results/STN_Cohort_Flow.csv": "807e0802c5836537b860110eae11b2873c6efc5c4ee9bf4eacf9e8dd65c98a55",
+    "BOLD_Microstate_Expression_Followup/configs/protocol.json": "54aaca795dc3eed0508a6a1c4b9117239a7125a3c0e7f3c21983d2b2cb0097f2",
+    "BOLD_Microstate_Expression_Followup/results/M1_Component_Statistics.csv": "8b5329e73f96214b1a14efd0d73b0a6c3217bb5423996446d1a8afb4f6d3667e",
+    "BOLD_Microstate_Expression_Followup/results/M1_Component_Motion_Sensitivity.csv": "029b56356011025d17ca060bcf24d7b24faee3901446f202f60ae13bbb44ddcc",
+    "BOLD_Microstate_Expression_Followup/results/M1_Component_Shares.csv": "f427c1d04ff85b28a6c5ca66057cf48f383977b2971532b5348c745e67bb590f",
+    "BOLD_Microstate_Expression_Followup/results/V7_V9_Joint_Correction.csv": "60f74cb6a242b18b11eac804929bc841e02654fc4abfb904c55c2d0c0ac16000",
+    "BOLD_Microstate_Expression_Followup/results/Continuous_Expression_Group_Summary.csv": "06d71cceeda9ea62dc85ed15707ee53d52a5335cf5577a6f2ebf8f5b56a663e7",
+    "BOLD_Microstate_Expression_Followup/results/Continuous_Expression_Motor_Associations.csv": "7b4f50e84f90dc91b826e4fe2d147bd22ff4fc48a68de8b1b8790e85aebb33c3",
+    "BOLD_Microstate_Expression_Followup/results/V8_V9_Clinical_Joint_Correction.csv": "1d5fbee833a000753e0be60ac150c26403ee283d382ac88d226e4beaa29e5a74"
+  },
+  "private_source_collection_scheme": "Sort lowercase file SHA-256 hex strings, concatenate each with LF, then SHA-256 the ASCII bytes. Counts retain multiplicity.",
+  "private_source_collections": {
+    "v8_locked_sources_and_date_unrestricted_table": {
+      "files": 18,
+      "sha256": "fa7d8ccb7e3e500fed26e19aabddcdd5fb6fcb22de117c47f877ad939935ac1c"
+    },
+    "v9_locked_source_files": {
+      "files": 102,
+      "sha256": "a95ad1aa37b79c3598c85737168652dd0bd1f353e50b152f8a3970d20de76499"
+    },
+    "v10_roi_clock_series": {
+      "files": 65,
+      "sha256": "2b66b7b916ebc8028ed806535600bf848755b878aa67d1f61e255950e409f246"
+    },
+    "v10_fd_archive_and_verified_confounds": {
+      "files": 2,
+      "sha256": "25ea474e23a381ab3671d87d2aded8c756b8c3788c9a5c311ed539a1a4bf2449"
+    }
+  }
+}

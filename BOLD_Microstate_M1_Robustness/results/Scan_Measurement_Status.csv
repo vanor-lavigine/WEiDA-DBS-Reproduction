@@ -1,0 +1,10 @@
+﻿mode,condition,status,scans
+original_window,HC,OK,15
+fd_censor_frozen_labels,HC,OK,15
+fd_censor_s1,HC,OK,15
+original_window,OFF,OK,25
+fd_censor_frozen_labels,OFF,OK,25
+fd_censor_s1,OFF,OK,25
+original_window,ON,OK,25
+fd_censor_frozen_labels,ON,OK,25
+fd_censor_s1,ON,OK,25
