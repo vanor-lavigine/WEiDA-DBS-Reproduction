@@ -1,0 +1,32 @@
+{
+  "imaging_v7": "e53035dd01bb01979d6f1ce7eec7201ec372d1d3",
+  "imaging_v6": "17d3d1261b223da37280238e615c3176adaef684",
+  "seed": 7261126,
+  "permutations_requested_per_endpoint": 10000,
+  "bootstrap_requested_per_endpoint": 2000,
+  "n_original_stn_pairs": 27,
+  "n_main_eligible_pairs": 23,
+  "n_independently_verified_pairs": 22,
+  "primary_family": 3,
+  "exploratory_family": 9,
+  "global_family": 12,
+  "models": [
+    "Primary_FD",
+    "No_Motion",
+    "DVARS",
+    "Verified_Visit",
+    "Percentage_FD"
+  ],
+  "old_full_analysis_reproduced": true,
+  "input_files_unchanged": true,
+  "historical_files_unchanged": true,
+  "python": "3.12.7",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2",
+    "openpyxl": "3.1.5",
+    "matplotlib": "3.9.2"
+  }
+}

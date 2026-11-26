@@ -1,0 +1,41 @@
+{
+  "v7_commit": "e53035dd01bb01979d6f1ce7eec7201ec372d1d3",
+  "v6_commit": "17d3d1261b223da37280238e615c3176adaef684",
+  "baseline": {"method":"A3","atlas":"AAL78","k":4,"tr":2.1,"band_hz":[0.01,0.08],"band":"F1","normalization":"N0","learner":"G1","decoder":"S1","lambda":0.04},
+  "cohort": {"hc": 15, "original_pd_pairs": 25, "original_scans": 65},
+  "seed": 7261126,
+  "permutations": 10000,
+  "bootstrap": 2000,
+  "alpha": 0.05,
+  "tolerance": 1e-12,
+  "source_names": {
+    "primary": "PD开关机fMRI评分_20201218改善率..xlsx",
+    "secondary": "PD开关机fMRI评分_202011_gr_20201228.xlsx",
+    "demographics": "PD-开关机人口学及刺激参数_2023.07.31(1).xlsx"
+  },
+  "predictors": [
+    {"key":"m1_gev_delta_pp","summary":"M1 GEV","unit":"GEV percentage point","status":"updates prior hypothesis"},
+    {"key":"delta_duration_4","summary":"M4 mean duration","unit":"second","status":"updates prior hypothesis"},
+    {"key":"m1_shapley_w_pp","summary":"M1 amplitude-weight contribution","unit":"GEV percentage point","status":"new decomposition association"}
+  ],
+  "primary_outcome": "motor_total",
+  "domain_outcomes": ["rigidity", "bradykinesia", "tremor"],
+  "descriptive_domains": ["speech", "facial_expression", "rigidity", "bradykinesia", "arising", "gait", "gait_freezing", "postural_stability", "posture", "postural_tremor", "kinetic_tremor", "rest_tremor", "tremor", "motor_total"],
+  "primary_formula": "OFF minus ON score ~ image predictor + OFF reference score + delta_FD",
+  "images_difference": "ON minus OFF",
+  "score_version": "unverified",
+  "visit_rules": {
+    "verified": "Unique exact participant, scan and DBS keys and original item dates agree with archived DICOM acquisition dates in both conditions",
+    "insufficient": "Exact identity and condition with consistent archive roster dates but no independently validated scan date on one or both sides",
+    "conflict": "Any documented date conflict between original item assessment and local imaging evidence excludes the entire pair",
+    "identity": "Unique same original study code, recorded Chinese name and ON/OFF scan keys in the audited acquisition roster, cross-checked against the demographic patient code and target; name variants retained without substituting a name"
+  },
+  "models": [
+    {"name":"Primary_FD","motion":"fd","sample":"eligible","outcome_scale":"absolute"},
+    {"name":"No_Motion","motion":null,"sample":"eligible","outcome_scale":"absolute"},
+    {"name":"DVARS","motion":"mean_std_dvars","sample":"eligible","outcome_scale":"absolute"},
+    {"name":"Verified_Visit","motion":"fd","sample":"verified","outcome_scale":"absolute"},
+    {"name":"Percentage_FD","motion":"fd","sample":"eligible","outcome_scale":"percentage"}
+  ],
+  "multiple_testing": {"total_family":"Holm3","domains_family":"BH9","all_family":"Holm12"}
+}

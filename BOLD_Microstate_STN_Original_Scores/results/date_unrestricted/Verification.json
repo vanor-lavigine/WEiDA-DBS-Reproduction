@@ -1,0 +1,15 @@
+{
+  "v8_reference_commit": "c424cdf819943eca5d0afc1ce18ecf86f4e7061a",
+  "n_date_unrestricted": 25,
+  "date_conflict_included": 2,
+  "n_independently_verified": 22,
+  "n_original_date_filtered": 23,
+  "models_completed": 60,
+  "valid_permutations_per_model": 10000,
+  "valid_bootstrap_per_model": 2000,
+  "original_date_filtered_inputs_and_results_verified": true,
+  "same_day_subset_reproduced": true,
+  "main_holm3_positive": 0,
+  "exploratory_bh9_positive": 0,
+  "overall_holm12_positive": 0
+}
