@@ -1,0 +1,30 @@
+{
+  "report_base": "dc9c732dbbf7d3cd9005bbd908d75f5ffb1ce987",
+  "v8_source_commit": "6b2978c97fc38bc05f3ce577b60e66941c173768",
+  "v8_archive_commit": "2b44ada9fc1439d33a61d6a8438fc76c248561d8",
+  "v7_imaging_commit": "e53035dd01bb01979d6f1ce7eec7201ec372d1d3",
+  "baseline": {"method":"A3","atlas":"AAL78","k":4,"tr":2.1,"band_hz":[0.01,0.08],"band":"F1","normalization":"N0","learner":"G1","decoder":"S1","lambda":0.04},
+  "seed": 7261126,
+  "permutations": 10000,
+  "bootstrap": 2000,
+  "tolerance": 1e-12,
+  "alpha": 0.05,
+  "cohort": {"image_pairs":25,"clinical_pairs":25,"same_date_pairs":22,"frame_archives":65},
+  "clinical_visit_counts": {"verified_identity_condition_visit":22,"verified_identity_condition_visit_insufficient":1,"documented_visit_date_conflict":2},
+  "hypotheses": [
+    {"id":"A1","name":"M1 occupancy contribution","field":"k_coverage_pp","family":"imaging","unit":"GEV percentage points"},
+    {"id":"A2","name":"M1 relative amplitude contribution","field":"k_relative_amplitude_pp","family":"imaging","unit":"GEV percentage points"},
+    {"id":"B1","name":"M1 continuous template expression versus total motor improvement","field":"delta_e1_x100","family":"clinical","unit":"motor score points per 0.01 expression"},
+    {"id":"B2","name":"M4 continuous template expression versus total motor improvement","field":"delta_e4_x100","family":"clinical","unit":"motor score points per 0.01 expression"}
+  ],
+  "imaging_models": {"Unadjusted":null,"FD":"fd","DVARS":"mean_std_dvars"},
+  "clinical_models": ["Primary_FD","No_Motion","DVARS","Verified_Visit"],
+  "imaging_test": "Paired two-sided patient sign flip; V7 residual sign flip for motion models",
+  "clinical_test": "V8 two-sided Freedman-Lane patient residual permutation with an HC3 coefficient statistic",
+  "imaging_difference": "ON minus OFF",
+  "clinical_improvement": "motor score OFF minus ON",
+  "old_and_new_families": {"imaging":{"planned":2,"joint":8},"clinical":{"planned":2,"joint":14}},
+  "component_share_min_abs_gev_pp": 0.10,
+  "reported_expression_states": [1,4],
+  "frame_alignment": "corr_aligned[:, raw_to_frozen] = clipped_corr_raw; negative labels excluded"
+}
