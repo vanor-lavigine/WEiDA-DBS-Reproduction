@@ -1,5 +1,11 @@
 # WEiDA-DBS Reproduction
 
+## 最新微状态总结
+
+[**BOLD 微状态研究进展与计算方法**](reports/BOLD_Microstate_Research_Progress_and_Methods.md) · 更新于 2026 年 11 月 26 日
+
+汇总已归档的 **15 名 HC、25 名 ON/OFF 配对患者、65 次扫描**的微状态分析，包含 BOLD 到四态模板及时间分段的计算公式、指标定义、显著性结果和研究限制。公式采用 GitHub 原生数学格式，打开文件预览即可阅读。
+
 ## V100 预处理交接
 
 截至 2026 年 11 月 16 日，V100 上这批修复 BIDS 副本的 **126 个静息态 BOLD run** 已完成 fMRIPrep 和 XCP-D。122 个 run 走 CIFTI，4 个 run 走 NIfTI。每个 run 均保留 210 个时间点，TR 为 2.1 秒。计数单位为 run，独立受试人数及 ON/OFF 配对仍需依据原始队列证据确认。
