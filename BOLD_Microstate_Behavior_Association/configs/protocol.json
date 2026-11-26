@@ -1,0 +1,18 @@
+{
+  "imaging_commit": "17d3d1261b223da37280238e615c3176adaef684",
+  "cohort": {"hc": 15, "pd_pairs": 25, "scans": 65, "tr_seconds": 2.1},
+  "seed": 7261126,
+  "permutations": 10000,
+  "bootstrap": 2000,
+  "alpha": 0.05,
+  "minimum_pairs": 3,
+  "minimum_fd_pairs": 4,
+  "tolerance": 1e-12,
+  "archive_versions": ["WEiDA4-1_atlas1_group0", "WEiDA3-42_atlas1_group2", "WEiDA4-3_atlas1_group2"],
+  "endpoints": [
+    {"field": "gev_1", "label": "M1 GEV", "unit": "proportion", "display_unit": "百分点", "display_multiplier": 100},
+    {"field": "duration_4", "label": "M4 平均停留", "unit": "seconds", "display_unit": "秒", "display_multiplier": 1},
+    {"field": "occurrence_1", "label": "M1 出现率", "unit": "episodes/second", "display_unit": "次/分钟", "display_multiplier": 60},
+    {"field": "switching_rate", "label": "全局切换率", "unit": "transitions/second", "display_unit": "次/分钟", "display_multiplier": 60}
+  ]
+}
