@@ -1,0 +1,32 @@
+{
+  "base_commit": "3c32098232e1c5a6f2ddcfeefe5bd5b979047a11",
+  "imaging_commit": "17d3d1261b223da37280238e615c3176adaef684",
+  "cohort": {
+    "frozen_scans": 65,
+    "frozen_pd_scans": 50,
+    "frozen_pd_pairs": 25,
+    "hc_scans": 15,
+    "valid_trs": 12574,
+    "scan_clock_pairs": 24,
+    "on_first_pairs": 24,
+    "verified_medication_pairs": 0
+  },
+  "score_source": "WEiDA4-1_atlas1_group0",
+  "visit_evidence": "archived_unverified_visit",
+  "verified_pairs": 0,
+  "software": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2",
+    "matplotlib": "3.9.2",
+    "openpyxl": "3.1.5"
+  },
+  "seed": 7261126,
+  "permutations": 10000,
+  "bootstrap": 2000,
+  "stage_family_size": 11,
+  "cumulative_family_size": 15,
+  "inputs_unchanged": true
+}

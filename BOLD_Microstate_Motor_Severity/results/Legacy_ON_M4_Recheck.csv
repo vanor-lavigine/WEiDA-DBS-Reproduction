@@ -1,0 +1,2 @@
+﻿evidence_class,condition,band_hz,metric,score_source,visit_evidence,method,family_size,archived_n,archived_r,archived_raw_p,archived_bh42_p,status,n_patients,r,ci95_low,ci95_high,raw_p,bh42_p
+prior_result_recalculation,ON,0.04-0.07,legacy_m4_occurrence_rate,WEiDA4-1_atlas1_group0,archived_unverified_visit,Pearson with Fisher 95% CI,42,25,-0.6412090532585051,0.000552321144793903,0.023197488081343927,REPRODUCED,25,-0.6412090532585053,-0.8268483946256114,-0.32958139397700037,0.0005523211447939,0.0231974880813438
