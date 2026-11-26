@@ -11,7 +11,7 @@
 
 ## 四项临床关联
 
-每名患者的行为改善为 $\mathrm{score}_{\rm OFF}-\mathrm{score}_{\rm ON}$，正值表示 ON 时评分较低。四项影像变化均为 $\Delta X=X_{\rm ON}-X_{\rm OFF}$。主分析按终点保留有两侧评分和影像差值的患者。
+每名患者的行为改善为 $\mathrm{score}_{\mathrm{OFF}}-\mathrm{score}_{\mathrm{ON}}$，正值表示 ON 时评分较低。四项影像变化均为 $\Delta X=X_{\mathrm{ON}}-X_{\mathrm{OFF}}$。主分析按终点保留有两侧评分和影像差值的患者。
 
 | 终点 | 计算单位 | 作图单位 |
 |---|---|---|

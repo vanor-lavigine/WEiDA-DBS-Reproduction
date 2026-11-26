@@ -1,0 +1,88 @@
+{
+  "imaging_commit": "17d3d1261b223da37280238e615c3176adaef684",
+  "software": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2",
+    "matplotlib": "3.9.2",
+    "openpyxl": "3.1.5"
+  },
+  "seed": 7261126,
+  "permutations_requested": 10000,
+  "bootstrap_requested": 2000,
+  "alpha": 0.05,
+  "score_and_imaging_inputs": {
+    "frozen_scans": 65,
+    "frozen_pd_scans": 50,
+    "frozen_pd_pairs": 25,
+    "hc_scans": 15,
+    "valid_trs": 12574,
+    "scan_clock_pairs": 24,
+    "on_first_pairs": 24,
+    "verified_medication_pairs": 0,
+    "historical_archive_counts": {
+      "pairs_compared": 25,
+      "pairs_agree_both_conditions": 18,
+      "pairs_differ_either_total": 7,
+      "pairs_with_different_improvement": 7,
+      "pairs_conflict_by_condition": {
+        "off": 7,
+        "on": 7
+      },
+      "equal_12_component_values": 600
+    },
+    "rowwise_current_comparison": null,
+    "imaging_visit_workbook": {
+      "workbook_available": true,
+      "scans_linked": 48,
+      "scan_dates_available": 48,
+      "assessment_dates_available": 0,
+      "medication_clocks_available": 0,
+      "reference_source_rows_matching": 48
+    },
+    "sources": {
+      "WEiDA4-1_atlas1_group0": {
+        "historical_audited_pairs": 25,
+        "historical_audited_scans": 50,
+        "historical_totals_equal_subtotal": 50,
+        "historical_has_assessment_date": 0,
+        "historical_has_visit_key": 0,
+        "historical_has_medication_clock": 0,
+        "readable_pairs": 25,
+        "readable_scans": 50,
+        "totals_equal_subtotal": 50,
+        "tremor_subtotal_equal_components": 50
+      },
+      "WEiDA3-42_atlas1_group2": {
+        "historical_audited_pairs": 25,
+        "historical_audited_scans": 50,
+        "historical_totals_equal_subtotal": 50,
+        "historical_has_assessment_date": 0,
+        "historical_has_visit_key": 0,
+        "historical_has_medication_clock": 0,
+        "readable_pairs": 0,
+        "readable_scans": 0,
+        "totals_equal_subtotal": null
+      },
+      "WEiDA4-3_atlas1_group2": {
+        "historical_audited_pairs": 25,
+        "historical_audited_scans": 50,
+        "historical_totals_equal_subtotal": 36,
+        "historical_has_assessment_date": 0,
+        "historical_has_visit_key": 0,
+        "historical_has_medication_clock": 0,
+        "readable_pairs": 0,
+        "readable_scans": 0,
+        "totals_equal_subtotal": null
+      }
+    },
+    "reference": "WEiDA4-1_atlas1_group0",
+    "verified_pairs": 0,
+    "verified_reason": "No verified score-to-scan visit records and supporting evidence index",
+    "historical_consistent_pairs_computable": 0,
+    "n_sources_reread": 1
+  },
+  "inputs_unchanged_during_run": true
+}
