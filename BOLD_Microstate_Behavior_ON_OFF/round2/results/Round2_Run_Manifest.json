@@ -1,0 +1,168 @@
+{
+  "reference_commit": "fd5fcc5b0dae27f0c38ce69b92ccb142dd818e05",
+  "branch": "analysis/behavior-onoff",
+  "execution_head": "d3267b0e5bdc7245dab1dd51b856d48aa568526b",
+  "plan_commit": "4171a7422f821f10d68b07c951aa21b50f4f76fd",
+  "protocol_sha256": "ced0789a93082444f32f93ebe0a47e031c8ee71aac7eb649bde85c705ac68f33",
+  "plan_sha256": "97335d63aa12f52cd283551fb863f7d3aa7bcc0d868d8e9549f772502d6b0664",
+  "command": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/round2/scripts/run_round2.py",
+  "verify_command": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/round2/scripts/verify_round2.py",
+  "protocol": {
+    "reference_commit": "fd5fcc5b0dae27f0c38ce69b92ccb142dd818e05",
+    "branch": "analysis/behavior-onoff",
+    "clinical": {
+      "n_pairs": 25,
+      "unit": "score points",
+      "improvement": "OFF minus ON",
+      "response_levels": [
+        "improved",
+        "unchanged",
+        "worse"
+      ],
+      "response_threshold": "exact integer score change",
+      "individual_fraction": "(OFF - ON) / OFF; OFF=0 yields NA only for the fraction",
+      "domains": [
+        "total",
+        "rigidity",
+        "bradykinesia",
+        "tremor",
+        "gait_balance"
+      ],
+      "composition": [
+        "rigidity",
+        "bradykinesia",
+        "tremor",
+        "gait_balance",
+        "other_four"
+      ],
+      "composition_fraction": "mean component improvement / mean total improvement"
+    },
+    "duration": {
+      "A3": {
+        "atlas": "AAL78",
+        "k": 4,
+        "tr_s": 2.1,
+        "band_hz": [
+          0.01,
+          0.08
+        ],
+        "configuration": "N0/G1/S1",
+        "lambda": 0.04,
+        "folds": 5,
+        "window": "original common window",
+        "unit": "s"
+      },
+      "n_pairs": 25,
+      "states": [
+        "M2",
+        "M4"
+      ],
+      "change": "ON minus OFF",
+      "zero_tolerance_s": 1e-12
+    },
+    "m4_reference": {
+      "n_hc": 15,
+      "center": "arithmetic mean",
+      "distances": "absolute difference from common HC M4 center",
+      "change": "distance_OFF minus distance_ON",
+      "zero_tolerance_s": 1e-12,
+      "estimand": "arithmetic mean of paired distance change",
+      "draws": 9999,
+      "seed": 20261127,
+      "ci_percentiles": [
+        2.5,
+        97.5
+      ],
+      "resampling": "Independent resampling of 15 HC and 25 complete patient pairs, with one re-estimated shared center per draw"
+    },
+    "inference": "No new P-value tests. Compare the M4 distance estimate and percentile interval; cite old BH5/BH4 unchanged."
+  },
+  "prior_frozen_sha256": {
+    "results/Clinical_Paired_Results.csv": "fba402cc3ec67ab46ca00c233749cbf4a5c21c6c275184c2d2c5403379979f5e",
+    "results/Duration_Paired_Results.csv": "acc1cd3fb7f3aed4a2a04cd1b259d5c9600b1de43317f302cc2b0e461fa58be4",
+    "results/Score_Item_Dictionary.csv": "f4dcf9e9b04c7786ed8b4b4e0b7fa5e63ec551ad6d471ec9eb33f1f49388765f",
+    "reports/Behavior_ON_OFF_Report.md": "d20af88c040c27fa224e66acfa391eb02dd9a5b151246ee343a5d6b1947340c4",
+    "reports/Data_and_Score_Audit.md": "355b4a6e916d45a43c71710f8d06cda2c12983222917e6c06ee78f03cabbe341",
+    "configs/protocol.json": "60fa9362d891a740ada3403556d934d15185db22f920c9e40d07403e84df638c"
+  },
+  "prior_interpretation_sha256": {
+    "BOLD_Microstate_Mechanistic_Decomposition/reports/V7_M4_Duration_Decomposition.md": "e968950bd1684f6f3547004dbbad89f6816c7796c9081abf0c5f9a545e32f18a",
+    "BOLD_Microstate_Mechanistic_Decomposition/reports/V7_Functional_Network_Annotation.md": "47a294707fbf58bf2a4c30562600b2211a3cb8c4ba72e99853909dee9e965866",
+    "V6_DBS_ON_OFF_Microstate_Dynamics/reports/V6_Normalization_Analysis.md": "2b9273f45713ea4a9be412d4035021ac77abc740f9470cda52db9dd6d81c6e8f",
+    "V6_DBS_ON_OFF_Microstate_Dynamics/reports/V6_Paired_Response_Heterogeneity.md": "5492e0ebf26519ba67ce18146891cad597e92ee9d5dc0933e89c8fc4621f1ec4"
+  },
+  "verified_input_file_count": 23,
+  "input_collection_sha256": "7f4386b035ca86574056ca4e4e36d8c3dd2d0f9069d34d05e95c685478788369",
+  "private_input_digest_convention": "SHA-256 of the sorted list of raw input SHA-256 hashes, each followed by LF",
+  "checks": {
+    "input_pairing_n": 25,
+    "clinical": {
+      "n_clinical_pairs": 25,
+      "original_clinical_summary_checks": 5,
+      "clinical_direction": "OFF minus ON",
+      "rate_rule": "OFF minus ON divided by OFF; NA at OFF = 0",
+      "additive_component_checks": 50,
+      "composition_status": "verified_from_archived_manual_items"
+    },
+    "v6_sources": {
+      "source": "V6 Frozen_Cohort_Features.csv, condition HC, aligned duration_4 on the original common valid window",
+      "unit": "seconds",
+      "n_hc": 15,
+      "n_verified_patient_visit_pairs": 25,
+      "original_clock_tr": 210,
+      "folds": 5,
+      "hc_per_fold": 3,
+      "original_alignment_checked_without_second_mapping": true,
+      "max_abs_duration_seconds_algebra_error": 1.616484723854228e-13,
+      "verified_sha256": {
+        "Frozen_Cohort_Features.csv": "0b396250993ee8086fbe4dc0830e2e9047b5904071379c407cce82ea649e0897",
+        "ON_OFF_Pair_Manifest.csv": "bb4eb24358b2864399c4f4eee5a9b00e06a9ac11cd7f7839bacaec18d9b3cbe1",
+        "input_manifest.csv": "c1a4753623bf1163848808b71749a5135bcaf1fa4923c0a338458020aa509dbb",
+        "Fold_Templates.csv": "d9eb66e84946e53cd110beee58998f24e82db8f9b7f2996dcdd112651b145527",
+        "V6 protocol.json": "2d34f042882a82933f5e07aa0545a8b6991ea2fdf5b278c2b79c73ecde93da1e",
+        "V6 Input_Audit.json": "8aa7e92d6adf32cf710d625ecfc2e7bd9a6581522420210957e1c8d7e75c9b9e"
+      }
+    },
+    "brain": {
+      "distance_definition": "abs(M4_OFF - HC mean) minus abs(M4_ON - same HC mean), seconds",
+      "primary_estimand": "mean within-patient distance reduction",
+      "distance_zero_tolerance_seconds_only_for_counts": 1e-12,
+      "n_closer_and_m4_shorter": 17,
+      "n_m4_shorter": 19,
+      "interval": "95% bootstrap percentile with joint patient pairs and resampled HC mean in each draw",
+      "draws": 9999,
+      "seed": 20261127
+    }
+  },
+  "missing_input_dependencies": {},
+  "public_figure_font": "Microsoft YaHei",
+  "python": "3.12.7",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "matplotlib": "3.9.2"
+  },
+  "start_utc": "2026-11-27T04:18:36.245226+00:00",
+  "finish_utc": "2026-11-27T04:18:38.352103+00:00",
+  "scripts_sha256": {
+    "brain.py": "ab3fc1ee73258af4801f07e9e86b4f7e2dd0dd6f1bf5a62e7c99a6141679c64d",
+    "clinical.py": "e8d5715441dc42979410d24c89943ccb5de5b7ff98a2f9a7270741c11030a03c",
+    "figures.py": "538abcc13106db279ed20dbc033fe6197663368edc960050b4f2b7871adcfbe0",
+    "report_round2.py": "4f5e02b6d6f092d315133462fcf90bff5fb474a8715ab3222abfd62e393ff2d7",
+    "round2_io.py": "2e156f5b7ce472c5cac7071e193de24d74bc9a6187ee2beb35d1055ea73dccc5",
+    "run_round2.py": "0a1a0fd87cc441ecf37bcb542ea798ce1d411211ad9df9d1b71e3177695bf40e",
+    "verify_round2.py": "943d874a1e0a005baabd7068ae3efaa0b222c199b219a8d4d13412f2f681138f"
+  },
+  "public_outputs_sha256": {
+    "figures/Clinical_Improvement_Composition.png": "d15fd974994cd84714d3952dd90d8cc8c03946ce3789cc875d73864a106671a5",
+    "figures/Clinical_Response_Proportions.png": "4933b26eaf987aa1bb5e3973dc25a1d4834dc3140ff6a217d283587699db7661",
+    "figures/M2_M4_Response_Patterns.png": "bb6cf30dd5fcb3963d754f3eff4b744bca59f228b6481f1d1416d225bb458734",
+    "figures/M4_HC_Reference.png": "5a427a186d4245e17b811b45964a84a728b8c672910ba347f5b4989c9e4e9187",
+    "reports/ON_OFF_Round2_Report.md": "f04c368ea52be1e9078068a09be1cfb58baec34596397482a4dcd404a03d1b65",
+    "results/Clinical_Improvement_Composition.csv": "21cebfe7bbf00e6132d51ab431549f31d974839dfa73c6ec062111c8a547fe12",
+    "results/Clinical_Response_Profile.csv": "66f559374a652de59f757dc8a28c8199a9b9c33605e228b1f2a1481f69d1c773",
+    "results/M2_M4_Duration_Change_Summary.csv": "f49ace6951f90e165411e4bdf836178f235cc777fe027940440aec41bf663411",
+    "results/M2_M4_Response_Patterns.csv": "fb7f88011532757fdf776c0ec6d3c3486d3e7426dd61d3098420a8ddb606cf6d",
+    "results/M4_HC_Reference_Summary.csv": "017fd14b06aaf86be0760b0078407d6000ddbc4618eb9b454519160d0000eebd"
+  }
+}

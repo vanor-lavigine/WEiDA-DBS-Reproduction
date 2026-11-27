@@ -1,0 +1,6 @@
+pattern,count,proportion,n_pairs
+both_shorter,11,0.44,25
+only_m2_shorter,5,0.2,25
+only_m4_shorter,8,0.32,25
+both_longer,1,0.04,25
+zero_in_either,0,0,25

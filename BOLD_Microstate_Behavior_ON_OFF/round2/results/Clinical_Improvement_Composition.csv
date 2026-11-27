@@ -1,0 +1,7 @@
+component,n,item_count,off_mean,on_mean,improvement_mean,fraction_of_total_mean
+rigidity,25,5,10.48,5.92,4.56,0.2205029013539652
+bradykinesia,25,11,24,16,8,0.3868471953578337
+tremor,25,10,6.84,1.04,5.8,0.2804642166344294
+gait_balance,25,3,5.28,4.32,0.96,0.04642166344294004
+remaining_four,25,4,6.72,5.36,1.36,0.06576402321083173
+total,25,33,53.32,32.64,20.68,1
