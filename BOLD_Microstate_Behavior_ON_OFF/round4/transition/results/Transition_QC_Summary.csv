@@ -1,0 +1,4 @@
+condition,n_scans,valid_trs,blocks,valid_adjacent_pairs,min_valid_trs,max_valid_trs
+HC,15,2912,15,2897,180,202
+OFF,25,4852,25,4827,180,203
+ON,25,4810,25,4785,173,202

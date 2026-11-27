@@ -1,0 +1,217 @@
+{
+  "source_commit": "5fd010dbf108e88c6e4cd3060b51eaf09b612a71",
+  "source_tree": "b59dad1de3e91fc5e827db9334b6ebf3d6289618",
+  "branch": "analysis/behavior-onoff",
+  "command": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/round4/transition/scripts/run_transition.py",
+  "verify_command": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/round4/transition/scripts/verify_transition.py",
+  "protocol": {
+    "source_commit": "5fd010dbf108e88c6e4cd3060b51eaf09b612a71",
+    "branch": "analysis/behavior-onoff",
+    "cohort": {
+      "HC": 15,
+      "OFF": 25,
+      "ON": 25,
+      "pairs": 25
+    },
+    "imaging": {
+      "atlas": "AAL78",
+      "K": 4,
+      "TR_seconds": 2.1,
+      "band_hz": [
+        0.01,
+        0.08
+      ],
+      "pipeline": "N0/G1/S1",
+      "lambda": 0.04,
+      "folds": 5,
+      "window": "V6 original common-valid window"
+    },
+    "states": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "contrasts": [
+      "OFF-HC",
+      "ON-OFF",
+      "ON-HC"
+    ],
+    "clinical_endpoints": [
+      "total",
+      "rigidity",
+      "bradykinesia",
+      "tremor",
+      "gait_balance"
+    ],
+    "alpha": 0.05,
+    "normality_alpha": 0.05,
+    "bootstrap_draws": 9999,
+    "seed": 20261125,
+    "minimum_n": 3,
+    "rank_decimals": 12,
+    "families": {
+      "WEiDA": 36,
+      "ExitConditional": 36,
+      "Clinical_WEiDA": 80
+    },
+    "clinical_direction": "score_OFF_minus_score_ON",
+    "transition_direction": "probability_first_group_minus_second_group",
+    "hc_conventional_motor_score": 0,
+    "scope": "Participant-resampled raw V4 tests; descriptive diagonals; exploratory historical clinical association"
+  },
+  "protocol_sha256": "bb002fd7365473527869acddc0568ecfbc8efc0b04a034b2d3393087b38f2f59",
+  "plan_sha256": "d1e4d0515c4726e73ef6386ac350f19c891ea2d5a034630c68a8e3e820215837",
+  "registry_sha256": "e1e5c47c0f1f5f99429d237cd7c212b92e66960755109b29ce548b9e3045e5da",
+  "label_and_window_audit": {
+    "scans": 65,
+    "scan_counts": {
+      "HC": 15,
+      "OFF": 25,
+      "ON": 25
+    },
+    "patient_pairs": 25,
+    "folds": 5,
+    "scans_per_condition_and_fold": {
+      "HC": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "OFF": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "ON": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    "archive_sha256": "079dddfdf44aadbb005ece5d9ae9471162b1bbec1e851e8340b08d1e7406d355",
+    "archive_files": 65,
+    "roi_input_sha256_matches": 65,
+    "reference_input_role_sha256": {
+      "round1_run_manifest": "189aa2163f245c5ce317c64771106cc2e01c7f1fcf11e1207b452d9dcfef92ae",
+      "round2_run_manifest": "1ae1307c1242fb13e67d081be5dc1b9cb440adc127f72b411abe9718a9ab42b7",
+      "v6_protocol": "2d34f042882a82933f5e07aa0545a8b6991ea2fdf5b278c2b79c73ecde93da1e",
+      "v6_input_audit": "8aa7e92d6adf32cf710d625ecfc2e7bd9a6581522420210957e1c8d7e75c9b9e",
+      "v4_archive_receipt": "dc83eb9c0bc88f676ed9750540238fa156b959aa1d1b2c0208be6c3614719058",
+      "v6_cohort_features": "0b396250993ee8086fbe4dc0830e2e9047b5904071379c407cce82ea649e0897",
+      "v6_pair_manifest": "bb4eb24358b2864399c4f4eee5a9b00e06a9ac11cd7f7839bacaec18d9b3cbe1",
+      "v4_original_features": "efec55dbaf29348785e68886fca6524e7d3139511f45a4be62b848bf3081742c",
+      "v4_scan_intake_manifest": "c1a4753623bf1163848808b71749a5135bcaf1fa4923c0a338458020aa509dbb",
+      "v4_frozen_fold_templates": "d9eb66e84946e53cd110beee58998f24e82db8f9b7f2996dcdd112651b145527"
+    },
+    "original_fold_mapping_reused": true,
+    "valid_trs": 12574,
+    "valid_blocks": 65,
+    "valid_adjacent_pairs": 12509,
+    "scans_with_internal_gaps": 0,
+    "window_and_transition_count_parity_scans": 65,
+    "duration_coverage_occurrence_parity_scans": 65,
+    "max_abs_numeric_error_vs_v6": 3.552713678800501e-15,
+    "undefined_weida_source_rows": 0,
+    "undefined_exit_source_rows": 0
+  },
+  "archived_v6_probability_parity": {
+    "edges_verified": 16,
+    "exact_count_and_denominator_parity": true,
+    "maximum_absolute_probability_difference": 5.551115123125783e-17
+  },
+  "clinical_patient_pairs": 25,
+  "clinical_score_basis": "archived 33 manual items, five stored absolute improvement variables",
+  "clinical_same_visit_full_pairs": 0,
+  "verified_input_files": 146,
+  "input_collection_sha256": "3f234bffc57c533d7ae7e2db83003b281902fd6da9cad76956ca9e69351f9f56",
+  "private_receipt": "private/round4/transition/Transition_Input_Hashes.json",
+  "private_outputs": {
+    "scan_tables": [
+      "Transition_Counts_All_Scans.csv",
+      "Transition_Matrix_All_Scans.csv",
+      "Transition_Probability_WEiDA.csv",
+      "Transition_Probability_ExitConditional.csv"
+    ],
+    "figures": [
+      "M4_SelfLoop_Individual_Paired.png"
+    ]
+  },
+  "families": {
+    "ExitConditional": {
+      "slots": 36,
+      "estimable": 36,
+      "bh_pass": 0,
+      "holm_pass": 0
+    },
+    "WEiDA": {
+      "slots": 36,
+      "estimable": 36,
+      "bh_pass": 0,
+      "holm_pass": 0
+    },
+    "Clinical_WEiDA": {
+      "slots": 80,
+      "estimable": 80,
+      "bh_pass": 0
+    }
+  },
+  "previous_inputs_sha256": {
+    "BOLD_Microstate_Behavior_ON_OFF/reports/Behavior_ON_OFF_Report.md": "d20af88c040c27fa224e66acfa391eb02dd9a5b151246ee343a5d6b1947340c4",
+    "BOLD_Microstate_Behavior_ON_OFF/round2/reports/ON_OFF_Round2_Report.md": "f04c368ea52be1e9078068a09be1cfb58baec34596397482a4dcd404a03d1b65",
+    "BOLD_Microstate_Behavior_ON_OFF/round3/reports/ON_OFF_Coverage_Clinical_Rate_Report.md": "1f9335563d00be627109cc553352b2b00c37102e71b18fa861d5d94879bea0bf",
+    "BOLD_Microstate_Behavior_ON_OFF/round4/audit/Clinical_Timing_Audit_Report.md": "b3f2481e27f17ce754d15b623587fc6d764d89c7d226cbaa2983ce497236effb",
+    "V4_WEiDA_Statistical_Framework_Microstate/reports/WEIDA_STATISTICAL_PROTOCOL.md": "dd35a1968ab33c8daf496c0d36f60b725be05f5d1d45e5151eb5aad70b48f846",
+    "V4_WEiDA_Statistical_Framework_Microstate/reports/V4_STATISTICAL_RESULTS.md": "55bc9097f6668f89e6da896255b34b249c829b1b697cee02facd087dfff91835",
+    "V4_WEiDA_Statistical_Framework_Microstate/scripts/statistics_v4.py": "f941c53eb6d178e42b305b82f9fdfa351c02da733e07ff1179940e6a872894ee",
+    "BOLD_Microstate_Behavior_ON_OFF/round3/scripts/coverage_inputs.py": "b41e62780aa6d5ca8ae1358226712e3ea04da74e695ca68d762f6965a201f548",
+    "V6_DBS_ON_OFF_Microstate_Dynamics/results/Transition_Matrices.csv": "a210d21312f8b6e404a8ec2c1d19567d108af90032fe6b6724ad6250fe73ac98"
+  },
+  "scripts_sha256": {
+    "run_transition.py": "c4a00802336443cf72ec931bfd8d2ec153cdaec8dfbc93ef31073379c6a551f7",
+    "transition_figures.py": "3e6b19baf153f6c4f344d9c3407402eb2ec53a84077eaa83cb46a675215c1ae3",
+    "transition_io.py": "3f0b55cec38cbcb43b46e1506ffa2696f1f3cdcb7f6d339db3495024cac1325b",
+    "transition_report.py": "9bbb4348190718ceebe6555989bcbdfa9df3674a82417927ffb68ab40ba233fc",
+    "transition_sources.py": "2f8530c9910222fc2c7b3ae0fe2579b922e2f1ca978c39d26f4316b42048a60d",
+    "transition_stats.py": "3cdbf45e2026fe99817c7fa5cf13a516dd7307366ffaf0a8be9a1cb2587c196c",
+    "transition_summaries.py": "01cb26c71e3f40e59c226228c8fb3321c407f5c406872fb9b1aee524c957fb61",
+    "verify_transition.py": "fc83bfb810ec71e24694ef707c44e0a8dcbce87f0b10d314c0c2f47a5641bd4f"
+  },
+  "public_outputs_sha256": {
+    "figures/M4_Exit_Directions.png": "4b9a8979464ead149f7d865dac17f7e0e4de271fef8dfd4d1ffe79813207c7db",
+    "figures/M4_SelfLoop_Paired_Summary.png": "ddd4af9eb8de9001c486b8d51083c08c2004b803d0e550a71e51218b9edc28c3",
+    "figures/Transition_WEiDA_Forest.png": "3cc003a299cbe207a14f0724f26f9bef23222edf16eb89a04666c5044c7794ab",
+    "figures/Transition_WEiDA_HC.png": "8535d5650df4c230f5c2cf22ed7c81d545a5439e5ba2351637296d01e4bb0916",
+    "figures/Transition_WEiDA_OFF.png": "4130dedd03148bf7f8122625edb374bc06ae649892783f93d825415bc8ed094d",
+    "figures/Transition_WEiDA_OFF_minus_HC.png": "27e07d5bfc279b28ff95604c322f5ba25c2d7d4b4ecd4562b268eae4c8dbd223",
+    "figures/Transition_WEiDA_ON.png": "15b05a46ea2ba6cfe46fd76aec78a05716c18ecb0f232eb70c33e44a8be5d5fa",
+    "figures/Transition_WEiDA_ON_minus_HC.png": "3ab806e7f366ae69649673c124b08212d5921924b18ebf3642201034be5a5783",
+    "figures/Transition_WEiDA_ON_minus_OFF.png": "90f391ddaac0c82e734890abd3522b53f03e46cf670522b64bd76973b3aeeede",
+    "reports/A3_Transition_Dynamics_Report.md": "c67ae131205e90495ab3dd26db5747940b15daa45d39bce74d136b678c03b25f",
+    "results/M4_Transition_Summary.csv": "c529645ad7f8f0bafdb0946320f4ebb433b3eadf7273e50db495800300352c58",
+    "results/Transition_Clinical_Associations.csv": "3fc45ee19db5d0600b85db744e11ba3e5a37d20e4d8ca3bf156c7553d366b5b1",
+    "results/Transition_Group_Comparisons.csv": "3800e68b3639275a41b4ba911d512bbc18134173f0b8d468862b4d73f5d83e80",
+    "results/Transition_HC_Reference.csv": "d100760c25b14746023247243d0bc35e1b80c02189f4403ecb7979bbfa576d3f",
+    "results/Transition_Probability_ExitConditional.csv": "d34b99f26d8021697ec7d99b3d9f2919d42d8e362880c9666674420d475a0391",
+    "results/Transition_Probability_WEiDA.csv": "b393e3b7b0c90086ad24b1ba2cc603d6ffb2cb133a6e3f9127b568ffb1a21d3f",
+    "results/Transition_QC_Summary.csv": "80fd7654708107fe2fdb48fe0e8209a4c7d17a47027ae6023e2de72d1b582aa8",
+    "results/Transition_Statistical_Corrections.csv": "c5393493dccb71c37b89fbb15781ff04ce95c328d420fb8af28339a6578b9747"
+  },
+  "plot_font": "Microsoft YaHei",
+  "plot_metadata_key": "Transition_Annotations",
+  "python": "3.12.7",
+  "libraries": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2",
+    "matplotlib": "3.9.2",
+    "pillow": "10.4.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source_commit": "5fd010dbf108e88c6e4cd3060b51eaf09b612a71",
+  "branch": "analysis/behavior-onoff",
+  "cohort": {"HC": 15, "OFF": 25, "ON": 25, "pairs": 25},
+  "imaging": {"atlas": "AAL78", "K": 4, "TR_seconds": 2.1, "band_hz": [0.01, 0.08], "pipeline": "N0/G1/S1", "lambda": 0.04, "folds": 5, "window": "V6 original common-valid window"},
+  "states": ["M1", "M2", "M3", "M4"],
+  "contrasts": ["OFF-HC", "ON-OFF", "ON-HC"],
+  "clinical_endpoints": ["total", "rigidity", "bradykinesia", "tremor", "gait_balance"],
+  "alpha": 0.05,
+  "normality_alpha": 0.05,
+  "bootstrap_draws": 9999,
+  "seed": 20261125,
+  "minimum_n": 3,
+  "rank_decimals": 12,
+  "families": {"WEiDA": 36, "ExitConditional": 36, "Clinical_WEiDA": 80},
+  "clinical_direction": "score_OFF_minus_score_ON",
+  "transition_direction": "probability_first_group_minus_second_group",
+  "hc_conventional_motor_score": 0,
+  "scope": "Participant-resampled raw V4 tests; descriptive diagonals; exploratory historical clinical association"
+}
