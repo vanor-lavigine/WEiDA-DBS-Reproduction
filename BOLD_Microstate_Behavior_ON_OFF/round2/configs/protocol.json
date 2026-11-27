@@ -1,0 +1,70 @@
+{
+  "reference_commit": "fd5fcc5b0dae27f0c38ce69b92ccb142dd818e05",
+  "branch": "analysis/behavior-onoff",
+  "clinical": {
+    "n_pairs": 25,
+    "unit": "score points",
+    "improvement": "OFF minus ON",
+    "response_levels": [
+      "improved",
+      "unchanged",
+      "worse"
+    ],
+    "response_threshold": "exact integer score change",
+    "individual_fraction": "(OFF - ON) / OFF; OFF=0 yields NA only for the fraction",
+    "domains": [
+      "total",
+      "rigidity",
+      "bradykinesia",
+      "tremor",
+      "gait_balance"
+    ],
+    "composition": [
+      "rigidity",
+      "bradykinesia",
+      "tremor",
+      "gait_balance",
+      "other_four"
+    ],
+    "composition_fraction": "mean component improvement / mean total improvement"
+  },
+  "duration": {
+    "A3": {
+      "atlas": "AAL78",
+      "k": 4,
+      "tr_s": 2.1,
+      "band_hz": [
+        0.01,
+        0.08
+      ],
+      "configuration": "N0/G1/S1",
+      "lambda": 0.04,
+      "folds": 5,
+      "window": "original common window",
+      "unit": "s"
+    },
+    "n_pairs": 25,
+    "states": [
+      "M2",
+      "M4"
+    ],
+    "change": "ON minus OFF",
+    "zero_tolerance_s": 1e-12
+  },
+  "m4_reference": {
+    "n_hc": 15,
+    "center": "arithmetic mean",
+    "distances": "absolute difference from common HC M4 center",
+    "change": "distance_OFF minus distance_ON",
+    "zero_tolerance_s": 1e-12,
+    "estimand": "arithmetic mean of paired distance change",
+    "draws": 9999,
+    "seed": 20261127,
+    "ci_percentiles": [
+      2.5,
+      97.5
+    ],
+    "resampling": "Independent resampling of 15 HC and 25 complete patient pairs, with one re-estimated shared center per draw"
+  },
+  "inference": "No new P-value tests. Compare the M4 distance estimate and percentile interval; cite old BH5/BH4 unchanged."
+}
