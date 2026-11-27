@@ -1,0 +1,66 @@
+{
+  "reference_commit": "eb4a9ab9222ce883787a9183c925ec4e0fe00682",
+  "reference_tree": "eb926317e1589e80ff1e83a80ab370ac1ba5b7ef",
+  "branch": "analysis/behavior-onoff",
+  "cohort": {
+    "n_pairs": 25,
+    "condition_unit": "one patient with exact original ON and OFF scans",
+    "include_hc": false
+  },
+  "imaging": {
+    "method": "A3",
+    "atlas": "AAL78",
+    "k": 4,
+    "tr_s": 2.1,
+    "band_hz": [
+      0.01,
+      0.08
+    ],
+    "configuration": "N0/G1/S1",
+    "lambda": 0.04,
+    "folds": 5,
+    "window": "original common valid window",
+    "coverage_unit": "proportion 0..1",
+    "coverage_delta": "ON minus OFF",
+    "closure_tolerance": 1e-12,
+    "direction_tolerance": 1e-12
+  },
+  "states": [
+    "M1",
+    "M2",
+    "M3",
+    "M4"
+  ],
+  "clinical_endpoints": [
+    "total",
+    "rigidity",
+    "bradykinesia",
+    "tremor",
+    "gait_balance"
+  ],
+  "clinical_definitions": {
+    "total": "原表运动总分，33 项人工条目重算",
+    "rigidity": "强直五项合计",
+    "bradykinesia": "运动徐缓十一项合计",
+    "tremor": "震颤十项合计",
+    "gait_balance": "三项步态与平衡探索性合计"
+  },
+  "scores": {
+    "absolute_improvement": "OFF minus ON",
+    "improvement_rate": "(OFF minus ON) / OFF",
+    "off_zero": "NA rate; keep score and absolute change"
+  },
+  "statistics": {
+    "test": "Spearman",
+    "alternative": "two-sided",
+    "minimum_n": 3,
+    "correction": "BH-FDR",
+    "bh_family_size": 20,
+    "alpha": 0.05,
+    "unestimable_placeholder": 1,
+    "main": "rate",
+    "secondary": "absolute_on_identical_main_cases",
+    "seed": null
+  },
+  "private_scope": "private/round3; full linked patient data and scatter only local"
+}
