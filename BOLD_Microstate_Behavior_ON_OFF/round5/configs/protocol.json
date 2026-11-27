@@ -1,0 +1,20 @@
+{
+  "source_commit": "cbfc6c6c2d4f4b1e9b751919135fdddefeae9560",
+  "branch": "analysis/behavior-onoff",
+  "seed": 20261127,
+  "permutations": 10000,
+  "bootstrap_draws": 9999,
+  "alpha": 0.05,
+  "cohort": {"HC": 15, "OFF": 25, "ON": 25, "pairs": 25},
+  "imaging": {"method": "A3", "atlas": "AAL78", "K": 4, "TR_seconds": 2.1, "band_hz": [0.01, 0.08], "pipeline": "N0/G1/S1", "lambda": 0.04, "folds": 5, "window": "V6 original common-valid window"},
+  "states": ["M1", "M2", "M3", "M4"],
+  "ridge": 0.10,
+  "ridge_sensitivity": [0.0, 0.05, 0.10, 0.20],
+  "covariance_relative_cutoff": 1e-12,
+  "jeffreys_count": 0.5,
+  "ilr_basis": "positive successive Helmert contrasts in M1,M2,M3,M4 order",
+  "families": {"P0_primary": 1, "P2_ILR": 5, "P3_motion": 8, "P4_historical_spearman": 80, "P4_joint": 1, "P4_baseline": 7},
+  "hc_conventional_motor_score": 0,
+  "quality_window": {"strict_fd_above_mm": 0.5, "exclude_previous_TR": 1, "exclude_next_TR": 2},
+  "clinically_confirmed_same_visit_pairs": 0
+}

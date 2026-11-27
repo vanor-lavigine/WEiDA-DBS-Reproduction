@@ -1,0 +1,4 @@
+condition,n,mean_total_score,sd_total_score,score_basis
+HC,15,0,0,conventional_zero_descriptive_reference
+OFF,25,53.32,16.092751991709392,archived_historical_manual_total
+ON,25,32.640000000000001,11.557393016304903,archived_historical_manual_total

@@ -1,0 +1,267 @@
+{
+  "source_commit": "cbfc6c6c2d4f4b1e9b751919135fdddefeae9560",
+  "source_tree": "619484f6d6760f30a88729b505ebd8f584f1eef8",
+  "branch": "analysis/behavior-onoff",
+  "protocol": {
+    "source_commit": "cbfc6c6c2d4f4b1e9b751919135fdddefeae9560",
+    "branch": "analysis/behavior-onoff",
+    "seed": 20261127,
+    "permutations": 10000,
+    "bootstrap_draws": 9999,
+    "alpha": 0.05,
+    "cohort": {
+      "HC": 15,
+      "OFF": 25,
+      "ON": 25,
+      "pairs": 25
+    },
+    "imaging": {
+      "method": "A3",
+      "atlas": "AAL78",
+      "K": 4,
+      "TR_seconds": 2.1,
+      "band_hz": [
+        0.01,
+        0.08
+      ],
+      "pipeline": "N0/G1/S1",
+      "lambda": 0.04,
+      "folds": 5,
+      "window": "V6 original common-valid window"
+    },
+    "states": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "ridge": 0.1,
+    "ridge_sensitivity": [
+      0.0,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "covariance_relative_cutoff": 1e-12,
+    "jeffreys_count": 0.5,
+    "ilr_basis": "positive successive Helmert contrasts in M1,M2,M3,M4 order",
+    "families": {
+      "P0_primary": 1,
+      "P2_ILR": 5,
+      "P3_motion": 8,
+      "P4_historical_spearman": 80,
+      "P4_joint": 1,
+      "P4_baseline": 7
+    },
+    "hc_conventional_motor_score": 0,
+    "quality_window": {
+      "strict_fd_above_mm": 0.5,
+      "exclude_previous_TR": 1,
+      "exclude_next_TR": 2
+    },
+    "clinically_confirmed_same_visit_pairs": 0
+  },
+  "protocol_sha256": "6b7664666dcde857fab7c68a9d97715f8e9481e6317a0211539b2f4a2d4c4d71",
+  "plan_sha256": "e76b56d95153c4c876bc628f4ac5f17d8dbf7eac34c8d9da437534931c28c571",
+  "commands": {
+    "run": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/round5/scripts/run_round5.py",
+    "verify": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/round5/scripts/verify_round5.py"
+  },
+  "completed_steps": [
+    "verify_round4_inputs",
+    "P0_whole_vector",
+    "P1_M4_dynamics",
+    "P2_row_ILR",
+    "P3_motion_order",
+    "P4_clinical",
+    "reports_figures"
+  ],
+  "frozen_archive_audit": {
+    "scans": 65,
+    "scan_counts": {
+      "HC": 15,
+      "OFF": 25,
+      "ON": 25
+    },
+    "patient_pairs": 25,
+    "folds": 5,
+    "scans_per_condition_and_fold": {
+      "HC": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "OFF": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "ON": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    "archive_sha256": "079dddfdf44aadbb005ece5d9ae9471162b1bbec1e851e8340b08d1e7406d355",
+    "archive_files": 65,
+    "roi_input_sha256_matches": 65,
+    "reference_input_role_sha256": {
+      "round1_run_manifest": "189aa2163f245c5ce317c64771106cc2e01c7f1fcf11e1207b452d9dcfef92ae",
+      "round2_run_manifest": "1ae1307c1242fb13e67d081be5dc1b9cb440adc127f72b411abe9718a9ab42b7",
+      "v6_protocol": "2d34f042882a82933f5e07aa0545a8b6991ea2fdf5b278c2b79c73ecde93da1e",
+      "v6_input_audit": "8aa7e92d6adf32cf710d625ecfc2e7bd9a6581522420210957e1c8d7e75c9b9e",
+      "v4_archive_receipt": "dc83eb9c0bc88f676ed9750540238fa156b959aa1d1b2c0208be6c3614719058",
+      "v6_cohort_features": "0b396250993ee8086fbe4dc0830e2e9047b5904071379c407cce82ea649e0897",
+      "v6_pair_manifest": "bb4eb24358b2864399c4f4eee5a9b00e06a9ac11cd7f7839bacaec18d9b3cbe1",
+      "v4_original_features": "efec55dbaf29348785e68886fca6524e7d3139511f45a4be62b848bf3081742c",
+      "v4_scan_intake_manifest": "c1a4753623bf1163848808b71749a5135bcaf1fa4923c0a338458020aa509dbb",
+      "v4_frozen_fold_templates": "d9eb66e84946e53cd110beee58998f24e82db8f9b7f2996dcdd112651b145527"
+    },
+    "original_fold_mapping_reused": true,
+    "valid_trs": 12574,
+    "valid_blocks": 65,
+    "valid_adjacent_pairs": 12509,
+    "scans_with_internal_gaps": 0,
+    "window_and_transition_count_parity_scans": 65,
+    "duration_coverage_occurrence_parity_scans": 65,
+    "max_abs_numeric_error_vs_v6": 3.552713678800501e-15,
+    "undefined_weida_source_rows": 0,
+    "undefined_exit_source_rows": 0,
+    "round4_private_matrix_recounted": true,
+    "round4_public_receipt_verified": true,
+    "round4_input_receipt_count": 146,
+    "v6_archive_transition_parity": {
+      "edges_verified": 16,
+      "exact_count_and_denominator_parity": true,
+      "maximum_absolute_probability_difference": 1.1102230246251565e-16
+    }
+  },
+  "motion_order_audit": {
+    "n_pairs": 25,
+    "on_first": 24,
+    "off_first": 0,
+    "order_unknown": 1,
+    "order_effect_identifiable": false,
+    "legacy_date_verified": 22,
+    "round4_both_same_day": 21,
+    "round4_both_same_visit": 0,
+    "head_motion_available_pairs": 25,
+    "std_dvars_source": "mean standardized DVARS (ON minus OFF), fixed V6 variable",
+    "quality": {
+      "status": "matched original V4/V10 exposure archives",
+      "mode": "fd_censor_frozen_labels",
+      "scans": 50,
+      "counts": {
+        "OFF": {
+          "original_frames": 4852,
+          "retained_frames": 4334,
+          "valid_blocks": 94,
+          "adjacency_pairs": 4240
+        },
+        "ON": {
+          "original_frames": 4810,
+          "retained_frames": 4112,
+          "valid_blocks": 134,
+          "adjacency_pairs": 3978
+        }
+      }
+    },
+    "motion_family_slots": 8,
+    "exposure_order_source": "Round4 original-clock audit cross-checked against V6 paired acquisition times"
+  },
+  "verified_inputs": 173,
+  "input_collection_sha256": "a5ee50e034d8a6201e04b9b5e798ff1e2ea2504f12a37af7fbc029a273237e26",
+  "private_input_receipt": "private/Round5_Input_Hashes.json",
+  "families": {
+    "P0_primary": {
+      "slots": 1,
+      "estimable": 1,
+      "bh_pass": 1,
+      "holm_pass": 1
+    },
+    "P2_ILR": {
+      "slots": 5,
+      "estimable": 5,
+      "bh_pass": 0,
+      "holm_pass": 0
+    },
+    "P3_motion": {
+      "slots": 8,
+      "estimable": 8,
+      "bh_pass": 7,
+      "holm_pass": 6
+    },
+    "P4_historical_spearman": {
+      "slots": 80,
+      "estimable": 80,
+      "bh_pass": 0,
+      "holm_pass": null
+    },
+    "P4_joint": {
+      "slots": 1,
+      "estimable": 1,
+      "bh_pass": 0,
+      "holm_pass": 0
+    },
+    "P4_baseline": {
+      "slots": 7,
+      "estimable": 7,
+      "bh_pass": 0,
+      "holm_pass": 0
+    }
+  },
+  "figure_metadata_key": "Round5_Annotations",
+  "scripts_sha256": {
+    "m4_clinical.py": "67b4e1d3af8075dfcf1ab442bfca796d58b9b887c6c35a053a6ac64351de069b",
+    "m4_dynamics.py": "954910b26524933fc845726a69ce464c7b11df32aa07d0c782899b237b245d36",
+    "motion_sensitivity.py": "ca5d3d34c5bb40a3147fe8dab9691341cefdf6cfdee6ff5fa5f665bb6fa8f8cf",
+    "omnibus.py": "edf49fd6e594eac13d529db72b5f81baded36b3e9cf991775dc6415b752d03d0",
+    "round5_io.py": "de24908e476e69c1cf951ddf3489ab25a89644595fa249cc27737b27ac08f780",
+    "round5_reports.py": "0e0c8c4f5469b822f22cf6b5002670e15922b0a203c912f65cfce0ecd1d06546",
+    "row_ilr.py": "a777b07537f84d03d28b8f0c297a2073834408386c046719ef7ad96c4f59ab25",
+    "run_round5.py": "158a61d3653c783e078a9bdde1ecab6d096c5cee174d0926e5a211d5aa2654d2",
+    "verify_round5.py": "4a5eaa0d350d0402f8eaf1c1378c0443da0fa8850890fd78543ee06c1978348c"
+  },
+  "public_outputs_sha256": {
+    "figures/M4_Dynamics_Decomposition.png": "5125dab3899c6089c72675d5edfa018937218400658c40246e1f8e453b1fb3cf",
+    "figures/M4_Entry_Exit_Comparison.png": "f2781122d502d01440977ce6cb247a38247e9d1900838fffc8d5f114a4733b3c",
+    "reports/M4_Clinical_Interpretation.md": "c6c25569a9d22058c3b2d63c87d908c033c19df2b99e10686f6c9bd3d98cb17e",
+    "reports/Round5_Final_Interpretation.md": "52bba5d958f7b880a41b7e1e569be0e438fe973aa31cc7df9a410ea97bfd9ad5",
+    "reports/Round5_M4_Mechanistic_Report.md": "8f1c7bb92f01dc3ebd0f503beca06ecdd11be5273ef1d9784f9f122bdc3af3e3",
+    "reports/Round5_Robustness_Report.md": "d33786c19d8fc058a74feb0dc66de4a2529d3090a3a95bcdb5ca0a7fb67f568f",
+    "reports/Round5_Transition_Optimization_Report.md": "c6407168c2f21faaa774eaa70fde4771fe7d072bde91ff0dce2028cf732116c1",
+    "reports/Transition_Robustness_Report.md": "cc2c0e17f36c9eef064824b94b0dedc8117d51b33ad9ab4ce635cbd1e5bf3fb3",
+    "results/M4_Baseline_Adjusted_Models.csv": "9febcf79bfecc7a8917e4aa87ededf87d7de5c9b621ca2c6bf442ea7b1540948",
+    "results/M4_Clinical_Associations.csv": "35e128e5e412ed6e71e6929e93690ead424afcadf631ee718544d0ad798acadc",
+    "results/M4_Clinical_Reference_Summary.csv": "93075e33c4d2863b11c25760cabe066ab44ca72fd5bd3b5b2ed15eb60ce2f18a",
+    "results/M4_Dynamics_Decomposition.csv": "c6c3f10f57fd4df6f12025fb2c2ec0039b2949d2070899313004012ccddbf2c8",
+    "results/M4_Dynamics_Paired_Effects.csv": "b5c5325d742dc03e602be7f019c9f6c4731056b5b96d0947218e01e92c2bed3a",
+    "results/M4_Entry_Exit_Analysis.csv": "69ce76bd602bfc3d52beba96c8c0caafe1c8961a43d478a2c9b470f51dfe088c",
+    "results/M4_Joint_Response_Analysis.csv": "2c087bff8bbfe65225fc1b9b5de06ed119894bbb4aa701e341a779808d3a9689",
+    "results/M4_Joint_Response_Predictor_Diagnostics.csv": "265ad7e9bb9d622cb46502108c3d749546cf3e17d41dbcb3c09abf85a60f8d34",
+    "results/Omnibus_Transition_Covariance.csv": "5d07218bd4231c0e2c97e5b4df7225c870f9a3cbf475276155b2d1949ea2b908",
+    "results/Omnibus_Transition_Results.csv": "fd816cea76b8fb9b57265619a06e044246d0f3fe7af7bbc909f8525bbbe75f4d",
+    "results/Omnibus_Transition_Sensitivity.csv": "8f8a0a5dc79321e034aa24f9ee2228b4ffee43dbaaa35a0220e41a71b5a66435",
+    "results/Omnibus_Transition_Vector.csv": "dcc10318a4f18581e2e3b469aa69b52a23e10c863bf44447363a9368491a5bfa",
+    "results/Transition_ILR_Omnibus.csv": "65ef6b1b15c35b3ad8ba8b8d61476724d0a2b0d33a1e74882c096040b29f4cdf",
+    "results/Transition_ILR_Results.csv": "b031c8b5d13e2933e57b309b2a68d4ee7e7ef07f741ad8a6d6de48db955cac74",
+    "results/Transition_ILR_Sensitivity.csv": "fc8273c5b2f79163500302f58cb99bea78983dabe4ca83992edd7684e1e9628e",
+    "results/Transition_Motion_Sensitivity.csv": "3aa1a76a49fb006ba3733dd861493908fb0bee061142d35a1cb4aaae5db2b4d6",
+    "results/Transition_Order_Sensitivity.csv": "8664d516b65da8aa76bf2d6e111b3fe2fd89d94a4ead1ddc826d260597a8a62e"
+  },
+  "python": "3.12.7",
+  "libraries": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "statsmodels": "0.14.2",
+    "matplotlib": "3.9.2",
+    "pillow": "10.4.0"
+  }
+}
