@@ -1,0 +1,223 @@
+{
+  "reference_commit": "eb4a9ab9222ce883787a9183c925ec4e0fe00682",
+  "reference_tree": "eb926317e1589e80ff1e83a80ab370ac1ba5b7ef",
+  "execution_head": "18855616d9ecccae23d9c2a172dc47d47f0dc795",
+  "branch": "analysis/behavior-onoff",
+  "plan_commit": "ddc6b2e5ca55fce6c10f66bd882e185a0711c11a",
+  "command": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/round3/scripts/run_round3.py",
+  "verify_command": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/round3/scripts/verify_round3.py",
+  "protocol": {
+    "reference_commit": "eb4a9ab9222ce883787a9183c925ec4e0fe00682",
+    "reference_tree": "eb926317e1589e80ff1e83a80ab370ac1ba5b7ef",
+    "branch": "analysis/behavior-onoff",
+    "cohort": {
+      "n_pairs": 25,
+      "condition_unit": "one patient with exact original ON and OFF scans",
+      "include_hc": false
+    },
+    "imaging": {
+      "method": "A3",
+      "atlas": "AAL78",
+      "k": 4,
+      "tr_s": 2.1,
+      "band_hz": [
+        0.01,
+        0.08
+      ],
+      "configuration": "N0/G1/S1",
+      "lambda": 0.04,
+      "folds": 5,
+      "window": "original common valid window",
+      "coverage_unit": "proportion 0..1",
+      "coverage_delta": "ON minus OFF",
+      "closure_tolerance": 1e-12,
+      "direction_tolerance": 1e-12
+    },
+    "states": [
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "clinical_endpoints": [
+      "total",
+      "rigidity",
+      "bradykinesia",
+      "tremor",
+      "gait_balance"
+    ],
+    "clinical_definitions": {
+      "total": "原表运动总分，33 项人工条目重算",
+      "rigidity": "强直五项合计",
+      "bradykinesia": "运动徐缓十一项合计",
+      "tremor": "震颤十项合计",
+      "gait_balance": "三项步态与平衡探索性合计"
+    },
+    "scores": {
+      "absolute_improvement": "OFF minus ON",
+      "improvement_rate": "(OFF minus ON) / OFF",
+      "off_zero": "NA rate; keep score and absolute change"
+    },
+    "statistics": {
+      "test": "Spearman",
+      "alternative": "two-sided",
+      "minimum_n": 3,
+      "correction": "BH-FDR",
+      "bh_family_size": 20,
+      "alpha": 0.05,
+      "unestimable_placeholder": 1,
+      "main": "rate",
+      "secondary": "absolute_on_identical_main_cases",
+      "seed": null
+    },
+    "private_scope": "private/round3; full linked patient data and scatter only local"
+  },
+  "protocol_sha256": "6d23436463e89b679c070f68912e44771efe11361616a4cd613b0fd2d0cab6fc",
+  "tests_registry_sha256": "52b00422cdbd612807bbf0fc2c9610b4f1a4f9d9ed0f8ea5ac9a249a0e9b2698",
+  "prior_sources_sha256": {
+    "configs/protocol.json": "60fa9362d891a740ada3403556d934d15185db22f920c9e40d07403e84df638c",
+    "reports/Behavior_ON_OFF_Report.md": "d20af88c040c27fa224e66acfa391eb02dd9a5b151246ee343a5d6b1947340c4",
+    "results/Score_Item_Dictionary.csv": "f4dcf9e9b04c7786ed8b4b4e0b7fa5e63ec551ad6d471ec9eb33f1f49388765f",
+    "round2/reports/ON_OFF_Round2_Report.md": "f04c368ea52be1e9078068a09be1cfb58baec34596397482a4dcd404a03d1b65",
+    "ANALYSIS_PLAN.md": "5ddfacb3c73c5562ab31e23e7c3f1261d64290e5bdfefa3718a41e507d877cc8",
+    "results/Run_Manifest.json": "189aa2163f245c5ce317c64771106cc2e01c7f1fcf11e1207b452d9dcfef92ae",
+    "round2/results/Round2_Run_Manifest.json": "1ae1307c1242fb13e67d081be5dc1b9cb440adc127f72b411abe9718a9ab42b7",
+    "scripts/behavior_stats.py": "f5989e34e5821c178f764912744fd2d729d3da7adc5437e799637e9a2f51f5a6",
+    "round2/scripts/round2_io.py": "2e156f5b7ce472c5cac7071e193de24d74bc9a6187ee2beb35d1055ea73dccc5",
+    "round2/scripts/clinical.py": "e8d5715441dc42979410d24c89943ccb5de5b7ff98a2f9a7270741c11030a03c",
+    "round2/scripts/brain.py": "ab3fc1ee73258af4801f07e9e86b4f7e2dd0dd6f1bf5a62e7c99a6141679c64d"
+  },
+  "input_checks": {
+    "patient_pairs": 25,
+    "verified_patient_scans": 50,
+    "different_scan_keys_across_conditions": true,
+    "paired_patient_scan_and_fold_keys_verified": true,
+    "hc_in_correlations": 0,
+    "source_alignment_reused_without_permutation": true,
+    "original_common_window_and_clock_verified": true,
+    "coverage_input_unit": "fraction 0–1",
+    "coverage_closure_tolerance": 1e-12,
+    "max_abs_coverage_sum_error": 3.3306690738754696e-16,
+    "max_abs_delta_coverage_sum_error": 2.7755575615628914e-16,
+    "manual_total_item_count": 33,
+    "clinical_eligibility": {
+      "total": {
+        "absolute_available": 25,
+        "rate_available": 25,
+        "off_zero": 0,
+        "other_missing_rate": 0,
+        "negative_rate": 0,
+        "zero_rate": 0
+      },
+      "rigidity": {
+        "absolute_available": 25,
+        "rate_available": 25,
+        "off_zero": 0,
+        "other_missing_rate": 0,
+        "negative_rate": 1,
+        "zero_rate": 1
+      },
+      "bradykinesia": {
+        "absolute_available": 25,
+        "rate_available": 25,
+        "off_zero": 0,
+        "other_missing_rate": 0,
+        "negative_rate": 1,
+        "zero_rate": 2
+      },
+      "tremor": {
+        "absolute_available": 25,
+        "rate_available": 19,
+        "off_zero": 6,
+        "other_missing_rate": 0,
+        "negative_rate": 0,
+        "zero_rate": 1
+      },
+      "gait_balance": {
+        "absolute_available": 25,
+        "rate_available": 25,
+        "off_zero": 0,
+        "other_missing_rate": 0,
+        "negative_rate": 2,
+        "zero_rate": 7
+      }
+    },
+    "verified_raw_source_count": 12,
+    "input_collection_sha256": "87b5b824e17cce797ec1fc9a8ce5ebd7387bea53f7933ed26d792e56d95fffff",
+    "verified_v6_sha256": {
+      "Frozen_Cohort_Features.csv": "0b396250993ee8086fbe4dc0830e2e9047b5904071379c407cce82ea649e0897",
+      "ON_OFF_Pair_Manifest.csv": "bb4eb24358b2864399c4f4eee5a9b00e06a9ac11cd7f7839bacaec18d9b3cbe1",
+      "input_manifest.csv": "c1a4753623bf1163848808b71749a5135bcaf1fa4923c0a338458020aa509dbb",
+      "Fold_Templates.csv": "d9eb66e84946e53cd110beee58998f24e82db8f9b7f2996dcdd112651b145527"
+    }
+  },
+  "verified_input_file_count": 12,
+  "input_collection_sha256": "87b5b824e17cce797ec1fc9a8ce5ebd7387bea53f7933ed26d792e56d95fffff",
+  "statistical_families": {
+    "main_rate": {
+      "slots": 20,
+      "passes": 0
+    },
+    "secondary_absolute_same_cases": {
+      "slots": 20,
+      "passes": 0
+    }
+  },
+  "clinical_rate_eligibility": {
+    "total": {
+      "n_rate": 25,
+      "n_off_zero": 0,
+      "n_other_missing": 0
+    },
+    "rigidity": {
+      "n_rate": 25,
+      "n_off_zero": 0,
+      "n_other_missing": 0
+    },
+    "bradykinesia": {
+      "n_rate": 25,
+      "n_off_zero": 0,
+      "n_other_missing": 0
+    },
+    "tremor": {
+      "n_rate": 19,
+      "n_off_zero": 6,
+      "n_other_missing": 0
+    },
+    "gait_balance": {
+      "n_rate": 25,
+      "n_off_zero": 0,
+      "n_other_missing": 0
+    }
+  },
+  "same_case_sets_guaranteed_by_shared_patient_mask": true,
+  "plot_font": "Microsoft YaHei",
+  "heatmap_annotation_key": "Round3_Annotations",
+  "python": "3.12.7",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.2",
+    "matplotlib": "3.9.2",
+    "pillow": "10.4.0"
+  },
+  "started_utc": "2026-11-27T06:33:41.497285+00:00",
+  "ended_utc": "2026-11-27T06:33:44.948073+00:00",
+  "scripts_sha256": {
+    "coverage_figures.py": "eef60ffacf74ed1142533b503306750e34cae6e5dd2f71ff6da8a4a9592b0db1",
+    "coverage_inputs.py": "b41e62780aa6d5ca8ae1358226712e3ea04da74e695ca68d762f6965a201f548",
+    "coverage_report.py": "a6e5194fee573faab02ab350352a0a7e3320fab005619369edcf309d8606a1c7",
+    "coverage_stats.py": "e66cca058cf602d52b0853019089b94c018cf8227769e1343728a295a3c8402e",
+    "round3_io.py": "790cbec9bbb1f8dee8927701cce459a48f4366016102389cbb7a5c5dd94d9369",
+    "run_round3.py": "d82b1286fca7b7863f65b49e5226a61033265f2c66e1a2e7af17633765e8acf1",
+    "verify_round3.py": "96158cf84fe4e860c5d5c5563889436e03a5e68a9e2794ab2aaef067552cf446"
+  },
+  "public_outputs_sha256": {
+    "figures/Coverage_Clinical_Rate_Heatmap.png": "d30aefc74121585d0da2fb879ae6357ce322c984a6418d1d9d7aaa16833c0315",
+    "reports/ON_OFF_Coverage_Clinical_Rate_Report.md": "1f9335563d00be627109cc553352b2b00c37102e71b18fa861d5d94879bea0bf",
+    "results/Clinical_Rate_Eligibility.csv": "f51ac19fb3aad0dbdd180d6b8245c01e218a21808d3e94a4a99d744a7861ac38",
+    "results/Coverage_Change_Summary.csv": "6758de635137bb412ab586319a4f904e47ba99a5e951b6508bbb7324af54e46b",
+    "results/Coverage_Clinical_Absolute_Associations.csv": "a0906182fcb716bfbaf9397336f5a7560fed9d7c97e9ae5bd5bdbacb65a1cc1e",
+    "results/Coverage_Clinical_Rate_Associations.csv": "a602e11a5c76e75a5e020135b216f5af22cf72c47870e69932ed5bd44f1e0f51"
+  }
+}

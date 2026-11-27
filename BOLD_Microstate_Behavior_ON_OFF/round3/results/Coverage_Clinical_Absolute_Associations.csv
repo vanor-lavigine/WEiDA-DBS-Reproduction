@@ -1,0 +1,21 @@
+state,clinical_endpoint,clinical_definition,n,n_off_zero,n_missing,n_excluded,analysis,rho,raw_p,direction,reason,fdr_q,bh_family_size,passes_fdr,evidence
+M1,total,原表运动总分，33 项人工条目重算,25,0,0,0,absolute_same_cases,0.14164746306523582,0.49942408538585814,positive,,0.88416928468347367,20,False,no_evidence
+M1,rigidity,强直五项合计,25,0,0,0,absolute_same_cases,0.31035323695425537,0.13107160760304332,positive,,0.87381071735362215,20,False,no_evidence
+M1,bradykinesia,运动徐缓十一项合计,25,0,0,0,absolute_same_cases,-0.070175658996391971,0.73888828125212891,negative,,0.95126431513521736,20,False,no_evidence
+M1,tremor,震颤十项合计,19,6,0,6,absolute_same_cases,0.18689992532316554,0.44358153800504707,positive,,0.88416928468347367,20,False,no_evidence
+M1,gait_balance,三项步态与平衡探索性合计,25,0,0,0,absolute_same_cases,0.15660804143185908,0.45471179496342617,positive,,0.88416928468347367,20,False,no_evidence
+M2,total,原表运动总分，33 项人工条目重算,25,0,0,0,absolute_same_cases,-0.13163976187040941,0.5305015708100842,negative,,0.88416928468347367,20,False,no_evidence
+M2,rigidity,强直五项合计,25,0,0,0,absolute_same_cases,0.15963237656074056,0.44593669513828127,positive,,0.88416928468347367,20,False,no_evidence
+M2,bradykinesia,运动徐缓十一项合计,25,0,0,0,absolute_same_cases,-0.053595695607134522,0.79915441117131147,negative,,0.95126431513521736,20,False,no_evidence
+M2,tremor,震颤十项合计,19,6,0,6,absolute_same_cases,-0.20018664987220575,0.41123564769143728,negative,,0.88416928468347367,20,False,no_evidence
+M2,gait_balance,三项步态与平衡探索性合计,25,0,0,0,absolute_same_cases,-0.36555296046305408,0.072340543870218238,negative,,0.87381071735362215,20,False,no_evidence
+M3,total,原表运动总分，33 项人工条目重算,25,0,0,0,absolute_same_cases,0.035411865766308954,0.86654643144538435,positive,,0.95126431513521736,20,False,no_evidence
+M3,rigidity,强直五项合计,25,0,0,0,absolute_same_cases,-0.21775096026003929,0.29573285721610987,negative,,0.88416928468347367,20,False,no_evidence
+M3,bradykinesia,运动徐缓十一项合计,25,0,0,0,absolute_same_cases,0.14652060669576344,0.48462538318592985,positive,,0.88416928468347367,20,False,no_evidence
+M3,tremor,震颤十项合计,19,6,0,6,absolute_same_cases,-0.23916104188272369,0.32407665247122697,negative,,0.88416928468347367,20,False,no_evidence
+M3,gait_balance,三项步态与平衡探索性合计,25,0,0,0,absolute_same_cases,0.33012492024196516,0.10703271781065431,positive,,0.87381071735362215,20,False,no_evidence
+M4,total,原表运动总分，33 项人工条目重算,25,0,0,0,absolute_same_cases,0.080446521143027958,0.70226827181940576,positive,,0.95126431513521736,20,False,no_evidence
+M4,rigidity,强直五项合计,25,0,0,0,absolute_same_cases,-0.049981981981396924,0.81245242874922097,negative,,0.95126431513521736,20,False,no_evidence
+M4,bradykinesia,运动徐缓十一项合计,25,0,0,0,absolute_same_cases,0.014652060669576345,0.94458117264834862,positive,,0.95126431513521736,20,False,no_evidence
+M4,tremor,震颤十项合计,19,6,0,6,absolute_same_cases,0.10186488820930822,0.67817332471207281,positive,,0.95126431513521736,20,False,no_evidence
+M4,gait_balance,三项步态与平衡探索性合计,25,0,0,0,absolute_same_cases,0.012882923716759616,0.95126431513521736,positive,,0.95126431513521736,20,False,no_evidence

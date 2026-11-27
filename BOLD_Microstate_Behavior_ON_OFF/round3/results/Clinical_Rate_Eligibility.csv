@@ -1,0 +1,6 @@
+clinical_endpoint,clinical_definition,n_pairs,n_valid_rate,n_off_zero,n_missing,n_missing_off_score,n_missing_on_score,n_valid_absolute
+total,原表运动总分，33 项人工条目重算,25,25,0,0,0,0,25
+rigidity,强直五项合计,25,25,0,0,0,0,25
+bradykinesia,运动徐缓十一项合计,25,25,0,0,0,0,25
+tremor,震颤十项合计,25,19,6,0,0,0,25
+gait_balance,三项步态与平衡探索性合计,25,25,0,0,0,0,25
