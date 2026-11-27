@@ -1,0 +1,40 @@
+condition,metric,n,denominator,percent,evidence
+ON,Confirmed same visit,0,25,0,assessment-scan link
+ON,Confirmed same day,22,25,88,assessment-scan link
+ON,Near-time assessment,0,25,0,assessment-scan link
+ON,Different visit,2,25,8,assessment-scan link
+ON,Date unavailable,1,25,4,assessment-scan link
+ON,Identity uncertain,0,25,0,assessment-scan link
+ON,date_difference_hours_computable,0,25,0,documented temporal precision
+ON,calendar_date_difference_days_computable,24,25,96,documented temporal precision
+ON,score_before,1,25,4,score relative to acquisition
+ON,score_after,1,25,4,score relative to acquisition
+ON,score_same_recorded_time,0,25,0,score relative to acquisition
+ON,score_unknown,23,25,92,score relative to acquisition
+OFF,Confirmed same visit,0,25,0,assessment-scan link
+OFF,Confirmed same day,21,25,84,assessment-scan link
+OFF,Near-time assessment,0,25,0,assessment-scan link
+OFF,Different visit,2,25,8,assessment-scan link
+OFF,Date unavailable,2,25,8,assessment-scan link
+OFF,Identity uncertain,0,25,0,assessment-scan link
+OFF,date_difference_hours_computable,0,25,0,documented temporal precision
+OFF,calendar_date_difference_days_computable,23,25,92,documented temporal precision
+OFF,score_before,1,25,4,score relative to acquisition
+OFF,score_after,1,25,4,score relative to acquisition
+OFF,score_same_recorded_time,0,25,0,score relative to acquisition
+OFF,score_unknown,23,25,92,score relative to acquisition
+both,Confirmed same visit,0,50,0,assessment-scan link
+both,Confirmed same day,43,50,86,assessment-scan link
+both,Near-time assessment,0,50,0,assessment-scan link
+both,Different visit,4,50,8,assessment-scan link
+both,Date unavailable,3,50,6,assessment-scan link
+both,Identity uncertain,0,50,0,assessment-scan link
+both,date_difference_hours_computable,0,50,0,documented temporal precision
+both,calendar_date_difference_days_computable,47,50,94,documented temporal precision
+both,score_before,2,50,4,score relative to acquisition
+both,score_after,2,50,4,score relative to acquisition
+both,score_same_recorded_time,0,50,0,score relative to acquisition
+both,score_unknown,46,50,92,score relative to acquisition
+patient_pair,group_A,0,25,0,both DBS conditions combined
+patient_pair,group_B,25,25,100,both DBS conditions combined
+patient_pair,group_C,0,25,0,both DBS conditions combined

@@ -1,0 +1,15 @@
+{
+  "audit_id": "round4_clinical_scan_timing",
+  "source_commit": "d96dc60cb7384fec576b321440160eb3ebfeebde",
+  "cohort": {"STN_pairs": 25, "HC_scans": 15},
+  "frozen_imaging": {"atlas": "AAL78", "K": 4, "TR_seconds": 2.1, "passband_hz": [0.01, 0.08], "pipeline": "N0/G1/S1", "lambda": 0.04},
+  "visit_statuses": ["Confirmed same visit", "Confirmed same day", "Near-time assessment", "Different visit", "Date unavailable", "Identity uncertain"],
+  "score_date_source_precedence": "An explicit acquisition-date annotation overrides a generic assessment-date heading; preserve the original cell and mark the assessment date unavailable",
+  "time_difference": "score_time minus acquisition_time, hours only for comparable recorded times; calendar days for date-only evidence",
+  "near_time_threshold_hours": null,
+  "group_A_rule": "both visits directly documented",
+  "group_B_rule": "both identities, DBS conditions and score sources verified, but at least one visit unconfirmed",
+  "group_C_rule": "identity, condition or score source unverified for at least one assessment",
+  "same_visit_association": {"protocol": "round3 primary Coverage change vs relative improvement", "minimum_valid_pairs": 3, "states": 4, "scores": 5, "test": "two-sided Spearman", "correction": "BH20", "alpha": 0.05},
+  "random_seed": null
+}

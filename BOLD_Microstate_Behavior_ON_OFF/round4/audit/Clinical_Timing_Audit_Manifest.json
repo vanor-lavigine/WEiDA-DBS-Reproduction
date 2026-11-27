@@ -1,0 +1,284 @@
+{
+  "source_commit": "d96dc60cb7384fec576b321440160eb3ebfeebde",
+  "source_tree": "d1f5455381e46da7806df4a0fe8270f5258c5e4c",
+  "branch": "analysis/behavior-onoff",
+  "protocol": {
+    "audit_id": "round4_clinical_scan_timing",
+    "source_commit": "d96dc60cb7384fec576b321440160eb3ebfeebde",
+    "cohort": {
+      "STN_pairs": 25,
+      "HC_scans": 15
+    },
+    "frozen_imaging": {
+      "atlas": "AAL78",
+      "K": 4,
+      "TR_seconds": 2.1,
+      "passband_hz": [
+        0.01,
+        0.08
+      ],
+      "pipeline": "N0/G1/S1",
+      "lambda": 0.04
+    },
+    "visit_statuses": [
+      "Confirmed same visit",
+      "Confirmed same day",
+      "Near-time assessment",
+      "Different visit",
+      "Date unavailable",
+      "Identity uncertain"
+    ],
+    "score_date_source_precedence": "An explicit acquisition-date annotation overrides a generic assessment-date heading; preserve the original cell and mark the assessment date unavailable",
+    "time_difference": "score_time minus acquisition_time, hours only for comparable recorded times; calendar days for date-only evidence",
+    "near_time_threshold_hours": null,
+    "group_A_rule": "both visits directly documented",
+    "group_B_rule": "both identities, DBS conditions and score sources verified, but at least one visit unconfirmed",
+    "group_C_rule": "identity, condition or score source unverified for at least one assessment",
+    "same_visit_association": {
+      "protocol": "round3 primary Coverage change vs relative improvement",
+      "minimum_valid_pairs": 3,
+      "states": 4,
+      "scores": 5,
+      "test": "two-sided Spearman",
+      "correction": "BH20",
+      "alpha": 0.05
+    },
+    "random_seed": null
+  },
+  "protocol_sha256": "b1044abaa4b517730e12dd53aa8a7fd3cbcb9bc75bb0162a9954a0a4008ac2c4",
+  "plan_sha256": "608c4bfd7e28ca8b55c40d419e2b1d9c03b73ec36da1dc505aa43aac7312e470",
+  "command": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/round4/audit/scripts/run_timing_audit.py",
+  "verify_command": "python -B -X utf8 BOLD_Microstate_Behavior_ON_OFF/round4/audit/scripts/verify_timing_audit.py",
+  "previous_evidence_sha256": {
+    "reports/Data_and_Score_Audit.md": "355b4a6e916d45a43c71710f8d06cda2c12983222917e6c06ee78f03cabbe341",
+    "ANALYSIS_PLAN.md": "5ddfacb3c73c5562ab31e23e7c3f1261d64290e5bdfefa3718a41e507d877cc8",
+    "results/Run_Manifest.json": "189aa2163f245c5ce317c64771106cc2e01c7f1fcf11e1207b452d9dcfef92ae",
+    "results/Clinical_Paired_Results.csv": "fba402cc3ec67ab46ca00c233749cbf4a5c21c6c275184c2d2c5403379979f5e",
+    "round2/results/Clinical_Response_Profile.csv": "66f559374a652de59f757dc8a28c8199a9b9c33605e228b1f2a1481f69d1c773",
+    "round3/ANALYSIS_PLAN.md": "25bb03f7a96d4898b46499132e8a7c49f03ddef43070bd9ba00d7f2126a27443",
+    "round3/results/Round3_Run_Manifest.json": "4acc949bf8cb4ad16e466141b79b7e5b90107fb351ecdca67a15fa16f26519d6"
+  },
+  "raw_input_files": 26,
+  "source_facts": {
+    "assessment_sources": {
+      "frozen_score_rows": 50,
+      "raw_stn_rows_per_workbook": {
+        "authoritative": 54,
+        "comparison": 54
+      },
+      "raw_stn_rows_dual_source_exact": 54,
+      "frozen_score_rows_archived_33_items_and_total_exact": 50,
+      "frozen_score_rows_identity_confirmed": 50,
+      "frozen_score_rows_condition_confirmed": 50,
+      "frozen_score_rows_by_precision": {
+        "date": 49,
+        "unavailable": 1
+      },
+      "score_dates_reclassified_as_acquisition": 1,
+      "frozen_score_rows_by_medication": {
+        "OFF": 50
+      },
+      "direct_score_scan_visit_links": 0,
+      "demographic_name_discrepancy_patients": 1,
+      "historical_date_labels_by_visit": {
+        "verified_identity_condition_visit": 44,
+        "documented_visit_date_conflict": 4,
+        "verified_identity_condition_visit_insufficient": 2
+      },
+      "comparison_archive_sha_match": false,
+      "original_score_source_inventory": {
+        "authoritative": {
+          "file": "PD开关机fMRI评分_202011_gr_20201228.xlsx",
+          "sheet": "开关机fMRI实际纳入患者.UPDRS-III",
+          "assessment_column": "D",
+          "assessment_header": "评估时间"
+        },
+        "comparison": {
+          "file": "PD开关机fMRI评分_20201218改善率..xlsx",
+          "sheet": "开关机fMRI实际纳入患者.UPDRS-III(原始数据)",
+          "assessment_column": "C",
+          "assessment_header": "评估时间",
+          "worksheets_reviewed": 14,
+          "assessment_columns_reviewed": 14,
+          "recorded_assessment_cells_by_precision_including_repeated_tables": {
+            "date": 782
+          },
+          "candidate_timing_annotation_cells": 0
+        },
+        "demographics": {
+          "file": "PD-开关机人口学及刺激参数_2023.07.31(1).xlsx",
+          "sheet": "PD-DBS开关机fMRI患者总名单"
+        }
+      },
+      "demographic_schedule": {
+        "scan_sheets": 1,
+        "scan_schedule_rows": 16,
+        "scan_schedule_clocks": 7,
+        "frozen_stn_names": 0
+      },
+      "annotation_scope": {
+        "remarks": 8,
+        "assessor": 32,
+        "possible_timing_annotations": 0,
+        "workbook_cell_comments_by_source": {
+          "score_secondary": 2,
+          "score_primary": 15,
+          "score_demographics": 1
+        },
+        "scan_date_proxy_comments_by_source_including_repeated_tables": {
+          "score_secondary": 1,
+          "score_primary": 13,
+          "score_demographics": 0
+        }
+      }
+    },
+    "scan_sources": {
+      "frozen_patient_scans": 50,
+      "frozen_hc_scans": 15,
+      "patient_identity_confirmed_scans": 50,
+      "patient_condition_confirmed_scans": 50,
+      "patient_dicom_timestamp_scans": 48,
+      "patient_sidecar_clock_scans": 50,
+      "dicom_date_matches_roster_scans": 44,
+      "dicom_date_disagrees_roster_scans": 4,
+      "dicom_bids_exact_clock_matches": 48,
+      "workbook_timestamp_crosschecks": 48,
+      "patient_scan_medication_documented_scans": 0,
+      "patient_switch_documented_scans": 0,
+      "patient_stabilization_documented_scans": 0,
+      "patient_stim_continuity_documented_scans": 0,
+      "hc_dicom_timestamp_scans": 0,
+      "hc_sidecar_clock_scans": 15,
+      "hc_roster_candidate_dates": 15,
+      "historic_source_coverage": {
+        "matched_raw_dicom_headers_read": 43773,
+        "archived_candidate_xlsx_examined": 625,
+        "archived_review_unreadable_directories": 11,
+        "archived_bold_scans_tsv_records": 0,
+        "archived_structured_reports_screened": 4
+      },
+      "source_roles": [
+        "frozen_pair_manifest",
+        "frozen_cohort_manifest",
+        "original_named_acquisition_rosters",
+        "original_roster_digest_crosscheck",
+        "original_bids_inventory_capture",
+        "repeated_bids_inventory_capture",
+        "original_bids_timing_discovery",
+        "original_acquisition_date_candidates",
+        "original_dicom_date_clock_header_matches",
+        "original_dicom_series_validated_date_conflicts",
+        "secondary_visit_workbook_crosscheck"
+      ]
+    },
+    "hc_assessment_sources": {
+      "frozen_hc": 15,
+      "scan_identity_confirmed": 15,
+      "health_roster_rows": 16,
+      "health_roster_rows_outside_frozen": 1,
+      "roster_scan_date_agreement": 15,
+      "health_roster_scan_clock_recorded": 6,
+      "health_roster_motor_score_fields": 0,
+      "motor_assessment_documented": 0,
+      "motor_score_available": 0,
+      "measured_zero_verified": 0,
+      "same_instrument_confirmed": 0,
+      "same_day_assessment_confirmed": 0,
+      "same_visit_confirmed": 0,
+      "usable_as_clinical_reference": 0,
+      "zero_provenance": "all_zero_claim_unverified_no_source_score_or_imputation_found",
+      "candidate_workbooks": {
+        "manual_item_workbook": [
+          {
+            "worksheets_checked": 1,
+            "hidden_worksheets_checked": 0,
+            "keyed_hc_rows_outside_health_roster": 0,
+            "formula_and_cached_value_layers_checked": true,
+            "matches_archived_receipt": true
+          }
+        ],
+        "improvement_crosscheck_workbook": [
+          {
+            "worksheets_checked": 14,
+            "hidden_worksheets_checked": 0,
+            "keyed_hc_rows_outside_health_roster": 0,
+            "formula_and_cached_value_layers_checked": true,
+            "matches_archived_receipt": false
+          }
+        ],
+        "demographics_workbook": [
+          {
+            "worksheets_checked": 2,
+            "hidden_worksheets_checked": 0,
+            "keyed_hc_rows_outside_health_roster": 0,
+            "formula_and_cached_value_layers_checked": true,
+            "matches_archived_receipt": true
+          }
+        ],
+        "historical_visit_trace_workbook": [
+          {
+            "worksheets_checked": 4,
+            "hidden_worksheets_checked": 0,
+            "keyed_hc_rows_outside_health_roster": 0,
+            "formula_and_cached_value_layers_checked": true
+          }
+        ],
+        "historical_patient_score_workbook": [
+          {
+            "worksheets_checked": 3,
+            "hidden_worksheets_checked": 0,
+            "keyed_hc_rows_outside_health_roster": 0,
+            "formula_and_cached_value_layers_checked": true
+          }
+        ],
+        "embedded_acquisition_workbooks": [
+          {
+            "worksheets_checked": 3,
+            "hidden_worksheets_checked": 0,
+            "keyed_hc_rows_outside_health_roster": 0,
+            "formula_and_cached_value_layers_checked": true
+          }
+        ]
+      },
+      "archived_clinical_exports": {
+        "condition_keyed_patient_assessment_rows": 50,
+        "archived_patient_pairs": 25,
+        "archived_score_domain_rows": 50,
+        "keyed_hc_score_rows": 0
+      }
+    },
+    "hc_scan_sources": {
+      "hc_dicom_timestamp_scans": 0,
+      "hc_sidecar_clock_scans": 15,
+      "hc_roster_candidate_dates": 15
+    }
+  },
+  "patient_group_counts": {
+    "A": 0,
+    "B": 25,
+    "C": 0
+  },
+  "same_visit_association": "insufficient_confirmed_pairs",
+  "private_receipt": "private/round4/audit/Clinical_Timing_Input_Hashes.json",
+  "script_sha256": {
+    "hc_sources_audit.py": "f8be1d73878ed4be4cfe04cc1944f8937acf29dbf7c4e13a4960edf54a134831",
+    "run_timing_audit.py": "07d90af9e4736036bc9e7ab72bf41c81625d1b7aea19fd9a9a442b10ac67ad11",
+    "scan_sources_audit.py": "5bf6d853db61d4f809a8a02fd735b0299b5488cc03c85f3a58f9b3600c597281",
+    "score_sources_audit.py": "b71288aeae3a3b67cb3f6d187d3b6110fcff2d019a66945f5f1bf8fb5a056ffe",
+    "timing_outputs.py": "d9d54650e2046b65e52690e9367ccf31e7a878999375a915bc40bd876fcef3ca",
+    "timing_report.py": "8562bdcd5b705e5bf161b0d0b1137e6c989d2c507cbc44693e380aa5ee2e6789",
+    "timing_rules.py": "a005c1a7a909f0ae6c95e36391216fd219ba0e84077158f50b7a7f7ec4a9fa39",
+    "verify_timing_audit.py": "d0d617d343da4aeaff5ab9b1f97d41015c5cda6b4cc0732fa0eef9fd018b8e08"
+  },
+  "public_output_sha256": {
+    "Clinical_Scan_Visit_Matching.csv": "2f9e7117e940febed83317e9ccbfb2d3002aaa350878ce7ad0f2ca91e717c592",
+    "Clinical_Timing_Audit_Report.md": "b3f2481e27f17ce754d15b623587fc6d764d89c7d226cbaa2983ce497236effb",
+    "HC_Clinical_Score_Audit.csv": "225be12a1b0379c2ec3d64682801150d879842f68b8aa37da6e3fdc475aa32d8",
+    "Medication_Stimulation_Audit.csv": "c3638824cd208b2e6898a26aeeca3786c9994b554ba247352a0fad623000082f",
+    "Scan_Order_Audit.csv": "fc0236bbbbc6522ec2fe0913f4c693b6917984f49a79b4ee8c983df807324fc6",
+    "Timing_Difference_Summary.csv": "93a6d6a8f8a1ac8d3b98792e2cac73d83b5736acb17cea071c831cee696f7488",
+    "Timing_Evidence_Inventory.csv": "3fc47e51da554271223d4f91d81ff19bb363354604f8236051567d0f34b85ae3"
+  },
+  "python": "3.12.7",
+  "pandas": "2.2.2"
+}

@@ -1,0 +1,7 @@
+metric,n,denominator,percent,evidence
+scan_identity_confirmed,15,15,100,frozen HC scan linked to source cohort
+motor_assessment_documented,0,15,0,documented original assessment
+measured_zero_verified,0,15,0,actual measured score of zero
+same_instrument_confirmed,0,15,0,shared instrument and scoring rules verified
+same_visit_confirmed,0,15,0,original assessment and BOLD visit linked
+usable_as_clinical_reference,0,15,0,"measured zero, comparable scale and visit verified"

@@ -1,0 +1,6 @@
+metric,n,denominator,percent,evidence
+ON first,24,25,96,DBS scan order from common-clock time
+OFF first,0,25,0,DBS scan order from common-clock time
+same recorded time,0,25,0,DBS scan order from common-clock time
+unverified,1,25,4,DBS scan order from common-clock time
+same_calendar_day_and_known_order,24,25,96,resolved scan dates

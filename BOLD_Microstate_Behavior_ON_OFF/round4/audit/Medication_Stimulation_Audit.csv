@@ -1,0 +1,15 @@
+condition,metric,n,denominator,percent,evidence
+ON,score_medication_OFF,25,25,100,condition-specific evidence
+ON,scan_medication_documented,0,25,0,condition-specific evidence
+ON,scan_DBS_condition_verified,25,25,100,condition-specific evidence
+ON,stim_switch_time_documented,0,25,0,condition-specific evidence
+ON,stabilization_hours_verified,0,25,0,condition-specific evidence
+ON,in_scan_stimulation_documented,0,25,0,condition-specific evidence
+OFF,score_medication_OFF,25,25,100,condition-specific evidence
+OFF,scan_medication_documented,0,25,0,condition-specific evidence
+OFF,scan_DBS_condition_verified,25,25,100,condition-specific evidence
+OFF,stim_switch_time_documented,0,25,0,condition-specific evidence
+OFF,stabilization_hours_verified,0,25,0,condition-specific evidence
+OFF,in_scan_stimulation_documented,0,25,0,condition-specific evidence
+patient_pair,scan_medication_comparable,0,25,0,both scan medication states documented
+patient_pair,scan_medication_same_confirmed,0,25,0,same medication state at both scans

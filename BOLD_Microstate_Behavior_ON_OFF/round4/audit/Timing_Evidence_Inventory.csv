@@ -1,0 +1,12 @@
+source_role,record_scope,records_checked,unit,use_in_audit
+Frozen cohort and pair manifests,V6 patient-condition-scan keys and frozen HC keys,65,scan,Fixes the audit denominator and linkage keys
+Original named acquisition roster,Original demographic and acquisition archive; frozen key cross-check,50,STN scan,Identity and labeled DBS condition; roster dates are candidates
+Original DICOM header evidence,Archived native acquisition date and time tags matched by series,48,STN scan,Best available acquisition date and clock
+Original BIDS sidecar evidence,Two archive captures of original sidecars,50,STN scan,Corroborates acquisition clock
+Archived timing workbook,Derivative archive of acquisition evidence,48,STN scan,Secondary cross-check only
+Original December 28 manual scoring workbook,Manual 33 items and assessment date in source worksheet,54,STN assessment,"Identity, stimulation, assessment medication and date"
+December 18 clinical comparison workbook,"Current file, original-items worksheet plus derived sheets",54,STN assessment,Cross-check relevant rows and items
+Archived manual rescoring and clinical linkage,V8 raw audit and round-one frozen clinical linkage,50,frozen STN assessment,Checks score provenance; prior date labels reported separately
+Demographic and stimulation workbook,Patient study-code/target and healthy acquisition roster worksheets,15,frozen HC scan,Corroborates cohort linkage and documents what the roster records
+HC assessment lookup,Exact normalized identity lookup across original and archived scoring sources,15,frozen HC scan,"Assessment, genuine zero, scale and visit evidence checked separately"
+Prior behavioral audit and protocol,"Round-one audit, clinical paired results and Run_Manifest; round-two response profile",25,STN pair,Historical results and input provenance
